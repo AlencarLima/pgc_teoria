@@ -19,7 +19,7 @@ Para o primeiro processo de sumarização automática para redução de ruído, 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
     \includegraphics[width=0.9\textwidth]{figs/compression_ratio.png} % coloque o arquivo na pasta escolhida
-    \caption{Compression ratio médio (resumo/original) por modelo.}
+    \caption{Compression ratio médio (|resumo|/|original|) por modelo.}
     \label{fig:compression-ratio}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
@@ -44,6 +44,40 @@ A aplicação do modelo XLM-R-Large-ClaimDetection apresentou acurácia de 0,88 
 
 \subsection{Comparação com o SVM}
 Apesar da alta acurácia (0,93), o SVM extraiu textos pouco relevantes na prática, indicando necessidade de refazer essa etapa ou combiná-la com filtragem estrutural.
+
+\begin{table}[H]
+\centering
+\caption{Termos-chave resultantes}
+\label{tab:exemplo-6x5}
+\renewcommand{\arraystretch}{0.9} % um pouco mais de altura nas linhas
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.15\linewidth}|X|X|X|X|}
+\hline
+\textbf{Títulos das notícias} & \textbf{Termos Manuais} & \textbf{Termos BERT} & \textbf{Termos DistilBERT} & \textbf{Termos SBERT} \\
+\hline
+Vulnerabilidades em urnas citadas em vídeo de 2014 já foram corrigidas & fraudar urnas, vídeo de Diego
+Aranha, não testou as urnas, como
+fiscalizar as urnas, Video viralizando
+Sábado, não te como TSE Fraudar as
+urnas & as vulnerabilidades encontradas no sistema em 2012 ainda não foram corrigidas, a gravação foi feita naquela época: a expressão “eleições 2014” aparece aos 35’’ (veja abaixo) & registra aleatoriamente os votos computados pelos eleitores, o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 & o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 \\
+\hline
+Apertar “confirma” durante tela “confira seu voto” na urna eletrônica anula voto é boato & TSE fraudar as urnas, fraudar
+eleições, derrota antecipada,
+fracasso eleitoral, Não votar nas
+urnas eletrônicas, muito mais votos
+registrados & as pessoas apertarem “confirma” durante a tela “confira seu voto”, todo o voto será anulado & apertar “confirma” durante a tela “confira seu voto” anula o voto, anulação é falsa & a tela em questão não tem qualquer relação com anulação \\
+\hline
+Correntes no WhatsApp e no Telegram mentem sobre o que eleitor pode ou não fazer no domingo & Apertar confira seu voto, perderá
+voto, votos não computadorizados,
+votos serão anulados, teclar ok ou
+confirma & aos fatosf: compartilhe correntes de mensagens no whatsapp & no telegram disseminam informações falsas sobre o & aos fatosf: compartilhe correntes de mensagens no whatsapp \\
+\hline
+Acusação de fraude eleitoral domina correntes de WhatsApp em grupos monitorados & FRAUD3 NA ELE1ÇÃ0,Bolsonaro
+não pode deixar haver, Bolsonaro
+não deixa ter segundo turno, Fraude
+na eleição & a implantação do sistema eletrônico de votação no brasil, em 1996 & esta reportagem foi feita numa colaboração entre agência pública, aos fatos & esta reportagem foi feita numa colaboração entre agência pública, aos fatos \\
+\hline
+\end{tabularx}
+\end{table}
 
 \section{Avaliação}
 Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de desempenho, como acurácia, precisão e revocação (\textit{recall}), possibilitam analisar a proporção de acertos nas classificações textuais em relação a outras classificações já existentes feitas anteriormente, fornecendo uma visão quantitativa sobre a capacidade de cada modelo estudado em classificar textos. Ademais, efetuar comparações com outros métodos ou \textit{benchmarks} é útil para avaliar a eficácia em relação às técnicas estudadas nesta pesquisa, podendo comparar classificações de textos obtidos por esta pesquisa com outras fontes já estabelecidas, como checagem manual presentes em sites de notícias. Além da utilização de métricas, efetuar uma análise de algoritmo para obter o tempo de execução e o consumo de recursos computacionais ajuda a compreender o quão eficaz os métodos utilizados podem ser na prática.
