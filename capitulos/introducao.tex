@@ -1,0 +1,86 @@
+% ----------------------------------------------------------
+% Introdução 
+% Capítulo sem numeração, mas presente no Sumário
+% ----------------------------------------------------------
+
+\chapter[Introdução]{Introdução}
+\label{cap:introducao}
+% \addcontentsline{toc}{chapter}{Introdução}
+
+A criação e disseminação da desinformação não são fenômenos recentes. Desde os tempos em que a comunicação se dava por jornais impressos, rádios, televisões ou até mesmo pela transmissão oral, já existiam tentativas de manipular ou distorcer fatos com diferentes intenções, podendo ser políticas, econômicas ou sociais. No entanto, o avanço tecnológico transformou profundamente esse cenário. A internet e, especialmente, as redes sociais, ampliaram exponencialmente o alcance e a velocidade com que conteúdos são compartilhados.
+
+Com a popularização e o barateamento do acesso à internet, a sociedade passou a viver em um ambiente globalizado e hiperconectado, no qual o fluxo de informações é constante e instantâneo. Plataformas como WhatsApp, Messenger, blogs e portais de notícias tornaram-se canais centrais para o consumo e a troca de conteúdo. Essa democratização da informação, embora traga benefícios, também intensificou o desafio de distinguir o que é verdadeiro do que é manipulador ou enganoso. O excesso de informações, algumas provenientes de fontes jornalísticas verificadas e outras de origem duvidosa, cria um ambiente em que o discernimento crítico se torna essencial para evitar a propagação da desinformação.
+
+A situação torna-se ainda mais preocupante à medida que empresas, governos e até
+indivíduos começam a gerar e disseminar informações por meio de redes sociais para benefícios próprios. Desse modo, analisar e classificar todo dado recebido pode-se tornar demorado e inviável, já que, aproximadamente, 5.3 bilhões de pessoas, o que representa cerca de 66\% da população mundial, possuem acesso a internet de acordo com a União Internacional de Telecomunicações ~\cite{itu2022}, ou seja, são possíveis disseminadores de desinformação, mesmo que não intencionalmente. Para lidar com tal situação, além da implementação de ferramentas capazes de discernir quanto às mensagens transmitidas, é necessário que haja um auxílio governamental de modo a limitar o compartilhamento de informações não verificadas para que seja possível diminuir e evitar a difusão de desinformação.
+
+Além do enfoque computacional, a disseminação de desinformação online apresenta
+um desafio para diversas outras áreas científicas, sendo uma delas a área científica que envolve questões psicológicas. Muitas vezes, a dificuldade para diferenciar a verdade da ficção está relacionada à falta de precisão com que os indivíduos refletem sobre determinado assunto, podendo utilizar menos raciocínio caso a notícia confirme suas próprias ideias. ~\cite{pennycook2021} Dessa forma, é notório que ocorre uma manipulação emocional para incentivar certos tipos de comportamentos que beneficiam o emissor de tais desinformações, tendo como exemplo manipulações com finalidades políticas capazes de proliferarem comportamentos agressivos e preconceituosos ~\cite{souza2019}. Portanto, é possível notar que a vulnerabilidade do pensamento não racional humano pode ser explorada para influenciar comportamentos. Ao mesmo tempo, essa vulnerabilidade pode servir de indício para identificar e classificar textos, auxiliando na classificação computacional dos mesmos, já que conteúdos manipulativos tendem a conter informações que exploram o lado sentimental dos leitores.
+
+É importante ter em mente o tipo específico de informação que será tratado neste trabalho, uma vez que o fenômeno da desordem informacional representa uma das expressões mais complexas da crise contemporânea da comunicação. Conforme analisa Silva~\cite{silva2020}, a desordem informacional manifesta-se no ambiente digital como um caos comunicacional, em que conteúdos verdadeiros, falsos e distorcidos se misturam em alta velocidade, especialmente nas redes sociais como o Twitter. Essa dinâmica, acelerada pela pandemia de COVID-19, caracteriza a chamada infodemia, marcada pelo excesso de informações — algumas corretas, outras enganosas — que dificultam a distinção entre fontes confiáveis e conteúdos manipulados.
+
+De acordo com a tipologia proposta por Wardle e Derakhshan~\cite{wardle2017}, a desordem informacional se estrutura em três dimensões complementares:
+\begin{itemize}
+    \item Mis-information: quando informações falsas são compartilhadas sem intenção de causar dano;
+    \item Dis-information: quando há intenção deliberada de enganar ou prejudicar;
+    \item Mal-information: quando informações verdadeiras são utilizadas com o objetivo de causar dano.
+\end{itemize}
+
+Esses três eixos foram incorporados e ampliados no manual da UNESCO~\cite{unesco2018}, intitulado \textit{Journalism, “Fake News” \& Disinformation}, que trata a desordem informacional como um fenômeno sistêmico, envolvendo dimensões políticas, tecnológicas e cognitivas.
+
+Sob essa perspectiva, o Tribunal Superior Eleitoral (TSE) passou a adotar “desinformação” como conceito guarda-chuva para abarcar diferentes formas de manipulação e distorção de conteúdo em contextos de desordem informacional~\cite{tse2022}. Materiais do TRE-SP explicitam que “fake news” é uma subcategoria específica, ligada à falsificação da forma notícia e à aparência jornalística, enquanto “desinformação” cobre um escopo mais amplo, incluindo postagens, conteúdos audiovisuais, memes e narrativas distorcidas que circulam nas redes~\cite{tresp2023}. Assim, para estudos sobre circulação de informações online e mais especificamente, para este trabalho, o uso do termo “desinformação” mostra-se conceitualmente mais preciso e metodologicamente consistente~\cite{tse2022,tresp2023}.
+
+A literatura especializada reforça essa ampliação conceitual. Marchiori~\cite{marchiori2002} já identificava o paradoxo do excesso informacional, no qual o volume de dados não se converte em conhecimento. Han~\cite{han2018}, por sua vez, descreve o ambiente digital como um “enxame de ruídos”, no qual indivíduos isolados produzem e compartilham incessantemente fragmentos de informação sem coordenação nem filtro, gerando ruído cognitivo coletivo.
+
+Estudos empíricos comprovam os efeitos dessa desordem. Vosoughi, Roy e Aral~\cite{vosoughi2018} mostram que, no Twitter, boatos falsos difundem-se mais longe, mais rápido e mais profundamente do que notícias verdadeiras, chegando a 1.500 pessoas cerca de seis vezes mais rápido, em grande parte associados à novidade da informação e a um perfil emocional distinto nas respostas (mais surpresa e nojo), e não ao efeito de bots. Cinelli et al.~\cite{cinelli2020} analisam várias plataformas e encontram padrões de difusão semelhantes para conteúdos de fontes confiáveis e questionáveis. No Twitter, as estimativas de amplificação indicam que a arquitetura não discrimina a veracidade no ato da difusão, favorecendo a circulação indiscriminada de conteúdo.
+
+Durante a pandemia, o Covid19 Infodemic Observatory~\cite{dedomenico2020} verificou que cerca de 28,9\% das publicações sobre COVID-19 continham informações questionáveis. Já a Organização Pan-Americana da Saúde (OPAS)~\cite{opas2020} conceituou a infodemia como uma “superabundância de informações, precisas e imprecisas, que dificulta a identificação de orientações confiáveis”, destacando o papel das redes sociais como amplificadoras desse processo.
+
+Diante desse cenário, García-Saisó et al.~\cite{garciasaiso2021} enfatizam que a desordem informacional deve ser tratada como questão de saúde pública e de governança democrática, demandando estratégias de comunicação de risco, fortalecimento da checagem de fatos e políticas de alfabetização midiática.
+
+Em síntese, a desordem informacional e, dentro dela, a desinformação, traduz a crise da racionalidade comunicacional contemporânea. Mais do que um problema semântico, trata-se de uma reconfiguração estrutural do ecossistema informativo, em que a abundância de conteúdo, a ausência de filtros e o incentivo algorítmico à polarização substituem a busca pela verdade pela simples viralização. Dessa forma, o presente trabalho concentrar-se-á especificamente no estudo da desinformação.
+
+Com base na análise dos métodos de avaliação de veracidade atual, duas abordagens principais se destacam: a Abordagem Linguística e a Abordagem de Redes. A Abordagem Linguística foca na análise do conteúdo de mensagens enganosas, identificando padrões de linguagem que indicam engano, como o uso de pronomes, conjunções e palavras de emoção negativa. Por outro lado, a Abordagem de Redes utiliza informações de rede, como metadados de mensagens ou consultas estruturadas em redes de conhecimento, para calcular medidas agregadas de engano. ~\cite{ADDConroy} Ambas as abordagens geralmente incorporam técnicas de aprendizado de máquina para treinar classificadores adaptados à análise. No entanto, dado o foco deste trabalho, a Abordagem de Redes será menos explorada, com maior ênfase na exploração das técnicas de Processamento de Linguagem Natural para a detecção de desinformação intencionalmente falsa.
+
+Também é essencial a elaboração de uma definição para fato. Para este estudo, será considerado uma afirmação ou proposição objetiva que pode ser verificada como verdadeira ou falsa com base em evidências disponíveis, sem depender de julgamentos subjetivos como relevância, importância editorial ou interpretações pessoais. Para ser classificada como fato, a afirmação deve ser suficientemente clara, específica e independente de contextos variáveis que possam influenciar sua interpretação. A verificabilidade de um fato depende da existência de métodos ou dados concretos que permitam sua avaliação por diferentes indivíduos ou organizações de maneira consistente e replicável~\cite{claimDetection}. 
+
+%\section{Motivação}
+\section{Objetivos}
+
+\subsection{Objetivo Geral}
+O objetivo geral deste trabalho é extrair, de forma automatizada, termos-chave presentes em notícias relevantes com conteúdos verificados por agências como Aos Fatos, Fatos ou fake, Uol confere e Estadão Verifica com conteúdos envolvendo urnas eletrônicas no Brasil. Para isso, serão utilizadas técnicas avançadas de Processamento de Linguagem Natural, como modelos de transformers, BERT, entre outras abordagens. A partir dessa análise, serão apontados fatores que podem contribuir para o avanço da área de PLN e para a melhoria das ferramentas de detecção de desinformação.
+
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Analisar modelos relevantes por meio de revisão dos modelos de Processamento de Linguagem Natural usados em detecção de fatos relevantes.
+    \item Aplicar modelos em dados verificados e ajusta-los para analisar textos em Português e adaptar para o contexto de desinformação.
+    \item Definir e utilizar métricas apropriadas para avaliar a precisão, recall, F1-score e outras medidas de desempenho dos modelos.
+    \item Coletar, analisar e avaliar os resultados obtidos, utilizando métricas de desempenho e parametrizando diferentes configurações.
+    \item Comparar os resultados com pesquisas existentes, identificar diferenças.
+    \item Sugerir possíveis melhorias e avanços com base nas comparações realizadas.
+\end{itemize}
+
+\section{Justificativa}
+De acordo com uma pesquisa realizada pela PR Newswire, aproximadamente 65\% das gerações Millennials e Z preferem se comunicar com mais frequência por meio de ambientes digitais do que pessoalmente~\cite{prnews}. Este dado revela uma transformação significativa nos padrões de interação social, impulsionada pela popularização dos smartphones, redes sociais e aplicativos de mensagens. Nesse contexto, essas gerações estão mais expostas a conteúdos que podem ser potencialmente falsos, especialmente na forma de textos. A ampla exposição a informações digitais e a velocidade com que elas se disseminam tornam a identificação de desinformação um desafio ainda maior.
+
+Outro fator agravante é o fato de que, apesar de possuírem a obrigação de se atentarem à veracidade das notícias, nem mesmo
+especialistas estão isentos de acreditarem em informações falsas. Em 2013, em um tweet da
+agência de notícias Associated Press, foi dito que houve uma suposta explosão que teria ferido Barack Obama, o que levou a uma perda de 130 bilhões de dólares em ações, tal valor sendo recuperado rapidamente após ser anunciado que a notícia era falsa ~\cite{impactFakeNews}. Entretanto, mesmo com a recuperação econômica rápida, pode-se notar que a disseminação de desinformação tem impactos em toda economia de um país. Desse modo, é inegável que a propagação de informação na internet deve receber atenção de autoridades públicas, empresariais e da comunidade científica.
+
+Diante dessa realidade, é crucial o desenvolvimento de ferramentas que possam tornar esses ambientes digitais mais seguros e menos suscetíveis à desinformação. A revisão e aprimoramento de técnicas para mitigar a disseminação de desinformação são essenciais para superar os desafios atuais. Em particular, o avanço das ferramentas de Processamento de Linguagem Natural desempenha um papel fundamental nesse contexto. Melhorar a capacidade das ferramentas de PLN é crucial para a identificação e a filtragem de informações falsas e enganosas. Isso envolve a análise de algoritmos sofisticados capazes de entender o contexto, a intenção e a veracidade das informações, além de detectar padrões e fontes de desinformação com maior precisão.
+
+O processo de checagem de fatos em uma organização pode ser dividido em quatro etapas principais: (1) monitorar a mídia, capturando conteúdos como artigos, vídeos e imagens; (2) detectar afirmações verificáveis; (3) verificar as afirmações por meio de pesquisa detalhada; e (4) publicar os resultados das verificações. No entanto, a maior parte da pesquisa científica tem-se concentrado na etapa de verificação da veracidade, também conhecido como checking claims, com estudos rotulados como detecção de fake news ou desinformação, colocando em segundo plano etapas iniciais igualmente essenciais, como a detecção de afirmações. ~\cite{claimDetection}
+
+Automatizar essas etapas iniciais, especialmente a detecção de afirmações, é fundamental para alimentar o processo de verificação com entradas relevantes e gerenciar o volume de informações. Sem uma lista bem apurada de afirmações verificáveis, a etapa de determinação da veracidade não pode funcionar de forma eficaz. ~\cite{claimDetection} Portanto, integrar ferramentas automatizadas pode tornar o processo mais eficiente, reduzir a carga de trabalho dos verificadores e aumentar a qualidade e a agilidade na disseminação de informações confiáveis.
+
+%sugestão
+% \section{Estrutura da Monografia}
+
+
+% SUGESTAO: Exemplo de estrutura da monografia:
+
+% O presente relatório está estruturado da seguinte forma: o Capítulo~\ref{cap:fundamentacao_teorica} apresenta..., o Capítulo~\ref{cap:trabalhos_relacionados}... O Capítulo~\ref{cap:metodologia} ..., o Capítulo~\ref{cap:resultados} .... Finalmente, o Capítulo~\ref{cap:conclusao} apresenta ...
+
+
+

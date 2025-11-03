@@ -1,0 +1,177 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Arslan et al. 2020]{dbClaim}
+\abntrefinfo{Arslan et al.}{ARSLAN et al.}{2020}
+{ARSLAN, F. et al. A benchmark dataset of check-worthy factual claims.
+\emph{AAAI}, v.~53, 2020.}
+
+\bibitem[Barbosa et al. 2017]{barbosa2017}
+\abntrefinfo{Barbosa et al.}{BARBOSA et al.}{2017}
+{BARBOSA, J. et al. Introdução ao processamento de linguagem natural usando python.
+\emph{Tutorial NLTK}, p.~3--4, 2017.
+Dispon{\'\i}vel em: \url{https://www.facom.ufu.br/~wendelmelo/terceiros/tutorial\_nltk.pdf}.}
+
+\bibitem[Brito 2024]{raphaelIC}
+\abntrefinfo{Brito}{BRITO}{2024}
+{BRITO, R. M.~P. Detecção de posicionamento como abordagem para identificação de conteúdo desinformativo.
+\emph{Relatório Técnico. XVII Simpósio de Iniciação Científica da UFABC}, 2024.}
+
+\bibitem[Cinelli et al. 2020]{cinelli2020}
+\abntrefinfo{Cinelli et al.}{CINELLI et al.}{2020}
+{CINELLI, M. et al. The covid-19 social media infodemic.
+\emph{Scientific Reports}, v.~10, n.~1, p. 16598, 2020.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1038/s41598-020-73510-5}.}
+
+\bibitem[Conneau et al. 2020]{xlm_r}
+\abntrefinfo{Conneau et al.}{CONNEAU et al.}{2020}
+{CONNEAU, A. et al. Unsupervised cross-lingual representation learning at scale.
+\emph{ACL}, 2020.
+Dispon{\'\i}vel em: \url{https://aclanthology.org/2020.acl-main.747.pdf}.}
+
+\bibitem[Conroy, Rubin e Chen 2015]{ADDConroy}
+\abntrefinfo{Conroy, Rubin e Chen}{CONROY; RUBIN; CHEN}{2015}
+{CONROY, N.; RUBIN, V.; CHEN, Y. Automatic deception detection: Methods for finding fake news.
+\emph{ResearchGate}, 2015.
+Dispon{\'\i}vel em: \url{https://www.researchgate.net/publication/281818865\_Automatic\_Deception\_Detection\_Methods\_for\_Finding\_Fake\_News}.}
+
+\bibitem[Franzese 2017]{prnews}
+\abntrefinfo{Franzese}{FRANZESE}{2017}
+{FRANZESE, A. \emph{Gen Z and Millennials now more likely to communicate with each other digitally than in person}. 2017.
+Dispon{\'\i}vel em: \url{https://www.prnewswire.com/news-releases/gen-z-and-millennials-now-more-likely-to-communicate-with-each-other-digitally-than-in-person-300537770.html}.}
+
+\bibitem[Han 2018]{han2018}
+\abntrefinfo{Han}{HAN}{2018}
+{HAN, B.-C. \emph{No enxame: perspectivas do digital}. Petrópolis, RJ: Vozes, 2018.
+ISBN 9788532658517.}
+
+\bibitem[Ireton e Posetti 2018]{unesco2018}
+\abntrefinfo{Ireton e Posetti}{IRETON; POSETTI}{2018}
+{IRETON, C.; POSETTI, J. (Ed.). \emph{Journalism, `Fake News' \& Disinformation: Handbook for Journalism Education and Training}. Paris: UNESCO Publishing, 2018.
+ISBN 978-92-3-100281-6. Dispon{\'\i}vel em: \url{https://unesdoc.unesco.org/ark:/48223/pf0000265552}.}
+
+\bibitem[{ITU} 2022]{itu2022}
+\abntrefinfo{{ITU}}{{ITU}}{2022}
+{{ITU}. Two-thirds of the world’s population uses the internet, but 2.7 billion people remain offline.
+\emph{ITU Statistics}, 2022.
+Dispon{\'\i}vel em: \url{https://www.itu.int/itu-d/reports/statistics/2022/11/24/ff22-internet-use/}.}
+
+\bibitem[Konstantinovskiy et al. 2021]{claimDetection}
+\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021}
+{KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
+\emph{ACL Anthology}, 2021.
+Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.acl-long.14/}.}
+
+\bibitem[Krell et al. 2022]{padding}
+\abntrefinfo{Krell et al.}{KRELL et al.}{2022}
+{KRELL, M.~M. et al. Efficient sequence packing without cross-contamination: Accelerating large language models without impacting performance.
+\emph{arXiv}, 2022.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.02027}.}
+
+\bibitem[Levy et al. 2014]{claimDetectionExplicacao}
+\abntrefinfo{Levy et al.}{LEVY et al.}{2014}
+{LEVY, R. et al. Context dependent claim detection.
+\emph{ACM}, 2014.}
+
+\bibitem[Lucca e Nunes 2002]{lemaVSStemming}
+\abntrefinfo{Lucca e Nunes}{LUCCA; NUNES}{2002}
+{LUCCA, J. L.~D.; NUNES, M. das G.~V. Lematização versus stemming.
+\emph{NILC}, p.~9, 2002.
+Dispon{\'\i}vel em: \url{http://www.nilc.icmc.usp.br/nilc/download/lematizacao\_versus\_steming.pdf}.}
+
+\bibitem[Marchiori 2002]{marchiori2002}
+\abntrefinfo{Marchiori}{MARCHIORI}{2002}
+{MARCHIORI, P.~Z. A ciência e a gestão da informação: compatibilidades no espaço profissional.
+\emph{Ciência da Informação}, Brasília, v.~31, n.~2, p. 72--79, 2002.
+Dispon{\'\i}vel em: \url{https://revista.ibict.br/ciinf/article/view/962}.}
+
+\bibitem[{Organização Pan-Americana da Saúde (OPAS/OMS)} 2020]{opas2020}
+\abntrefinfo{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{2020}
+{{Organização Pan-Americana da Saúde (OPAS/OMS)}. \emph{Entenda a infodemia e a desinformação na luta contra a COVID-19}.
+Brasília, 2020. Dispon{\'\i}vel em: \url{https://iris.paho.org/handle/10665.2/52054}.}
+
+\bibitem[Pennycook e Rand 2021]{pennycook2021}
+\abntrefinfo{Pennycook e Rand}{PENNYCOOK; RAND}{2021}
+{PENNYCOOK, G.; RAND, D. The psychology of fake news.
+\emph{Trends in Cognitive Sciences}, v.~25, n.~5, p. 399--400, 2021.}
+
+\bibitem[Rapoza 2017]{impactFakeNews}
+\abntrefinfo{Rapoza}{RAPOZA}{2017}
+{RAPOZA, K. Can ‘fake news’ impact the stock market?
+\emph{Forbes}, 2017.}
+
+\bibitem[Risch et al. 2021]{overviewClaim}
+\abntrefinfo{Risch et al.}{RISCH et al.}{2021}
+{RISCH, J. et al. Overview of the germeval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments. In:  \emph{Proceedings of the GermEval 2021 Shared Task on the Identification of Toxic, Engaging, and Fact-Claiming Comments}. Duesseldorf, Germany: Association for Computational Linguistics, 2021. Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.germeval-1.1}.}
+
+\bibitem[Sami 2024]{xlm_r_claim_detection}
+\abntrefinfo{Sami}{SAMI}{2024}
+{SAMI. \emph{Model Card for Model ID}. 2024. HuggingFace.
+Dispon{\'\i}vel em: \url{https://huggingface.co/Sami92/XLM-R-Large-ClaimDetection}.}
+
+\bibitem[Santos et al. 2023]{automaticDetection}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2023}
+{SANTOS, P.~D. et al. Democracia sob ataque: polarização política e produção de conteúdos hostis no twitter nas eleições de 2022.
+\emph{Revista Debates}, 2023.
+Dispon{\'\i}vel em: \url{https://seer.ufrgs.br/index.php/debates/article/view/129776}.}
+
+\bibitem[Santos 2022]{santos2022}
+\abntrefinfo{Santos}{SANTOS}{2022}
+{SANTOS, R. \emph{Processamento de Linguagem Natural: Recursos, Ferramentas e Aplicações para a Língua Portuguesa}. 2022.
+Dissertação de Mestrado.
+Dispon{\'\i}vel em: \url{https://sucupira-legado.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConclusao.jsf?popup=true&id\_trabalho=11601526}.}
+
+\bibitem[Silva 2020]{silva2020}
+\abntrefinfo{Silva}{SILVA}{2020}
+{SILVA, P. V. D.~d. Pandemia e infodemia nas mídias: análise da desordem informacional no twitter.
+\emph{AtoZ: novas práticas em informação e conhecimento}, v.~9, n.~2, p. 148--159, 2020.}
+
+\bibitem[Souza 2019]{souza2019}
+\abntrefinfo{Souza}{SOUZA}{2019}
+{SOUZA, R. B.~R. “fake news”, pós-verdade e sociedade do capital: o irracionalismo como motor da desinformação jornalística.
+\emph{FAMECOS}, v.~26, n.~3, 2019.}
+
+\bibitem[{Tribunal Regional Eleitoral de São Paulo} 2023]{tresp2023}
+\abntrefinfo{{Tribunal Regional Eleitoral de São Paulo}}{{Tribunal Regional Eleitoral de São Paulo}}{2023}
+{{Tribunal Regional Eleitoral de São Paulo}. \emph{Fake news x desinformação: entenda qual é a diferença entre os termos}. 2023.
+Dispon{\'\i}vel em: \url{https://www.tre-sp.jus.br/comunicacao/noticias/2023/Agosto/fake-news-x-desinformacao-entenda-qual-e-a-diferenca-entre-os-termos}.}
+
+\bibitem[{Tribunal Superior Eleitoral} 2022]{tse2022}
+\abntrefinfo{{Tribunal Superior Eleitoral}}{{Tribunal Superior Eleitoral}}{2022}
+{{Tribunal Superior Eleitoral}. \emph{Programa Permanente de Enfrentamento à Desinformação no âmbito da Justiça Eleitoral: Plano Estratégico — Eleições 2022}. Brasília: [s.n.], 2022.
+Dispon{\'\i}vel em: \url{https://www.justicaeleitoral.jus.br/desinformacao/arquivos/programa-permanente-de-enfrentamento-a-desinformacao-novo.pdf}.}
+
+\bibitem[Turner 2024]{introTransformers}
+\abntrefinfo{Turner}{TURNER}{2024}
+{TURNER, R.~E. An introduction to transformers.
+\emph{arXiv}, 2024.
+Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/2304.10557}.}
+
+\bibitem[Vaswani et al. 2017]{transformer_xlm_r}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A. et al. Attention is all you need.
+\emph{NeurIPS}, 2017.}
+
+\bibitem[Vosoughi, Roy e Aral 2018]{vosoughi2018}
+\abntrefinfo{Vosoughi, Roy e Aral}{VOSOUGHI; ROY; ARAL}{2018}
+{VOSOUGHI, S.; ROY, D.; ARAL, S. The spread of true and false news online.
+\emph{Science}, v.~359, n.~6380, p. 1146--1151, 2018.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1126/science.aap9559}.}
+
+\bibitem[Wardle 2017]{wardle2017}
+\abntrefinfo{Wardle}{WARDLE}{2017}
+{WARDLE, H.~D. C. Os três tipos de desordem informacional: Desinformação (dis-information), informação falsa (mis-information) e informação maliciosa (mal-information).
+\emph{PUC}, 2017.
+Dispon{\'\i}vel em: \url{https://periodicos.pucminas.br/SapereAude/article/view/32503}.}
+
+\bibitem[Yacouby e Axman 2020]{yacouby2020}
+\abntrefinfo{Yacouby e Axman}{YACOUBY; AXMAN}{2020}
+{YACOUBY, R.; AXMAN, D. Probabilistic extension of precision, recall, and f1 score for more thorough evaluation of classification models.
+\emph{ACL Anthology}, 2020.
+Dispon{\'\i}vel em: \url{https://aclanthology.org/2020.eval4nlp-1.9/}.}
+
+\end{thebibliography}

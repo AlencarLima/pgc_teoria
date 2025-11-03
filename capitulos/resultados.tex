@@ -1,0 +1,59 @@
+\chapter{Resultados e Discussões}
+\label{cap:resultados}
+\section{Resultados Esperados}
+Compreender quais são as técnicas mais eficazes para extração de termos-chave em
+ambientes digitais. Junto a isso, descobrir quais são os obstáculos atuais e futuros que devem
+ser superados para obter-se um avanço no processamento de linguagem natural. Os
+conhecimentos gerados com este projeto serão utilizados para facilitar e guiar futuros trabalhos
+da área computacional, jornalística ou até mesmo social, já que o processo linguístico por
+escrita engloba diversos fatores que podem ser analisados por diferentes áreas. Essa revisão
+também será aplicada para contribuir com o combate da geração de informações falsas
+espalhadas em plataformas digitais e evitar os impactos causados pela mesma na esfera social
+e econômica.
+
+\section{Resultados Obtidos}
+
+\subsection{Sumarização}
+Para o primeiro processo de sumarização automática para redução de ruído, três modelos foram avaliados: BERT-base, DistilBERT e SBERT-MiniLM. Em todos os casos, os resumos ficaram entre 25\% e 27\% do tamanho do texto original, sem diferenças expressivas de compressão entre os modelos, com leve tendência do DistilBERT a produzir resumos mais concisos e do SBERT-MiniLM a manter textos um pouco maiores.
+
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/compression_ratio.png} % coloque o arquivo na pasta escolhida
+    \caption{Compression ratio médio (resumo/original) por modelo.}
+    \label{fig:compression-ratio}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+
+Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-MiniLM mantiveram cerca de 25\% a 26\% de conteúdo classificado como factual, superando o DistilBERT, que ficou em torno de 22\%. Em termos de retenção de tópicos centrais, medida pelo índice de Jaccard entre as palavras-chave do original e do resumo, o SBERT-MiniLM apresentou o melhor resultado (0,22), seguido muito de perto pelo BERT-base (0,21), enquanto o DistilBERT apresentou desempenho inferior (0,14). Da mesma forma, quando a similaridade textual foi medida por uma métrica de similaridade (TF-IDF/cosseno), o SBERT-MiniLM obteve o maior valor (0,64), superando ligeiramente o BERT-base e o DistilBERT, ambos com 0,61. No entanto, o tempo de processamento mostrou diferenças marcantes: o BERT-base demandou em média mais de 22 segundos por texto, o DistilBERT cerca de 3 segundos e o SBERT-MiniLM pouco mais de 1 segundo, o que torna o último mais adequado a cenários de grande volume.
+
+Uma visualização em radar de cinco dimensões normalizadas (similaridade, Jaccard, factualidade, compressão e velocidade) mostrou que o DistilBERT aparece como o modelo mais equilibrado, ainda que não seja o melhor em factualidade. Assim, a escolha do modelo deve ser orientada pela aplicação: (i) reter termos-chave para indexação e comparação com dicionários de desinformação 
+ightarrow SBERT-MiniLM; (ii) manter afirmações factuais completas 
+ightarrow BERT-base; (iii) processar muitos textos rapidamente com perda controlada 
+ightarrow DistilBERT.
+
+\subsection{Segmentação baseada em conjunções}
+Os resultados da abordagem de segmentação baseada no termo ``que'' demonstraram sua eficácia. Nas 29 amostras de notícias provenientes de agências de checagem de fatos, a segmentação baseada no termo ``que'' resultou em textos altamente relevantes, evidenciando ser uma técnica interessante de segmentação para textos contidos em notícias. Este método apresenta a vantagem de não exigir grande processamento, sendo uma alternativa eficiente para identificar informações relevantes em grandes volumes de texto.
+
+Além disso, a aplicação desse método em \textit{clusters} polarizados mostrou resultados significativos. Para o $cluster_0$, foi possível obter 2.061 tuítes relevantes, em comparação com os 2.056 tuítes obtidos utilizando termos-chave criados manualmente. Já no $cluster_1$, foram extraídos 1.090 tuítes, superando os 781 obtidos com termos-chave definidos manualmente. Exemplos de textos retornados por esse método incluem: ``aponta que apertar `confirma' durante a tela `confira seu voto' anula o voto'' e ``usou o plenário da câmara federal para propagar informações falsas sobre a pandemia, como mostrou uma reportagem publicada pela Lupa em dezembro do ano passado''.
+
+\subsection{Segmentação baseada apenas em aspas}
+Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29 notícias analisadas, demonstrando sua baixa eficácia na identificação de informações relevantes.
+
+\subsection{Classificação de afirmações factuais com XLM-R-Large-ClaimDetection}
+A aplicação do modelo XLM-R-Large-ClaimDetection apresentou acurácia de 0,88 em português, com bom 	extit{recall} para sentenças factuais importantes (0,97), mas menor precisão (0,67), o que indica tendência a recuperar quase tudo o que é relevante, ao custo de trazer alguns itens não essenciais.
+
+\subsection{Comparação com o SVM}
+Apesar da alta acurácia (0,93), o SVM extraiu textos pouco relevantes na prática, indicando necessidade de refazer essa etapa ou combiná-la com filtragem estrutural.
+
+\section{Avaliação}
+Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de desempenho, como acurácia, precisão e revocação (\textit{recall}), possibilitam analisar a proporção de acertos nas classificações textuais em relação a outras classificações já existentes feitas anteriormente, fornecendo uma visão quantitativa sobre a capacidade de cada modelo estudado em classificar textos. Ademais, efetuar comparações com outros métodos ou \textit{benchmarks} é útil para avaliar a eficácia em relação às técnicas estudadas nesta pesquisa, podendo comparar classificações de textos obtidos por esta pesquisa com outras fontes já estabelecidas, como checagem manual presentes em sites de notícias. Além da utilização de métricas, efetuar uma análise de algoritmo para obter o tempo de execução e o consumo de recursos computacionais ajuda a compreender o quão eficaz os métodos utilizados podem ser na prática.
+Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário
+utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de
+desempenhos, como por exemplo, acurácia, precisão das classificações obtidas, revocação que
+possibilita analisar a proporção de acertos nas classificações textuais em relação a outras
+classificações já existentes feitas anteriormente, fornecem uma visão quantitativa sobre a
+capacidade de cada modelo estudado em classificar textos. Ademais, efetuar comparações com
+outros métodos ou benchmarks são úteis para avaliar a eficácia em relação às técnicas
+estudadas nesta pesquisa, podendo comparar classificações de textos obtidos por esta pesquisa
+com outras fontes já estabelecidas, como até mesmo checagem manual presentes em sites de
+notícias. Além da utilização de métricas, efetuar uma análise de algoritmo para obter o tempo de execução, consumo de recursos computacionais pode ajudar a compreender o quão eficaz os métodos utilizados podem ser na prática.
