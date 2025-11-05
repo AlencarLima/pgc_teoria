@@ -4,13 +4,13 @@
 
 O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (Machine Learning – ML) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional e a Inteligência Artificial, fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos-chave e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais.  
 
-\subsection{Processamento de Linguagem Natural}
+\section{Processamento de Linguagem Natural}
 
 O Processamento de Linguagem Natural (PLN) é uma área da Inteligência Artificial dedicada ao desenvolvimento de métodos que possibilitam que computadores compreendam e manipulem a linguagem humana de forma automatizada \cite{jurafsky2023}. O PLN combina aspectos da linguística, estatística e ciência da computação, permitindo o tratamento de dados textuais em larga escala e a extração de informações de maneira sistemática. Entre suas principais tarefas estão a tokenização, remoção de \textit{stopwords}, lematização, \textit{stemming}, análise sintática e semântica, reconhecimento de entidades nomeadas (NER) e análise de sentimentos.  
 
 No contexto desta pesquisa, o PLN é utilizado para o pré-processamento de textos, etapa que inclui a normalização textual, a segmentação de sentenças e a identificação de termos relevantes. Essas técnicas garantem que o texto seja representado de maneira estruturada, possibilitando a aplicação de algoritmos de aprendizado de máquina e aprendizado profundo. A capacidade do PLN de identificar padrões linguísticos e semânticos é essencial para a detecção de desinformação, uma vez que esse fenômeno se manifesta por meio de estruturas discursivas específicas, escolhas lexicais tendenciosas e manipulação intencional de contextos.  
 
-\subsection{Representação de Texto}
+\section{Representação de Texto}
 
 A representação de texto constitui um dos pilares do PLN, pois define a forma como as palavras e sentenças são convertidas em formatos compreensíveis para os algoritmos computacionais. Entre os métodos mais tradicionais, destacam-se o modelo de \textit{Bag of Words} (BoW) e o \textit{Term Frequency–Inverse Document Frequency} (TF-IDF).  
 
@@ -18,7 +18,7 @@ O modelo BoW representa o texto como um conjunto de palavras independentes, desc
 
 Com o avanço da área, surgiram métodos mais sofisticados de representação vetorial, conhecidos como \textit{word embeddings}, que mapeiam palavras em vetores contínuos em um espaço de alta dimensionalidade. Técnicas como Word2Vec \cite{mikolov2013distributed}, GloVe \cite{pennington2014glove} e FastText \cite{bojanowski2017enriching} capturam relações semânticas e contextuais entre palavras com base em sua coocorrência. Mais recentemente, os \textit{embeddings} contextuais, derivados de modelos como BERT e SBERT, passaram a representar o significado das palavras considerando o contexto em que aparecem, oferecendo resultados superiores em tarefas semânticas complexas.  
 
-\subsection{Aprendizado de Máquina na Classificação Textual}
+\section{Aprendizado de Máquina na Classificação Textual}
 
 O Aprendizado de Máquina (ML) é uma subárea da Inteligência Artificial voltada para o desenvolvimento de algoritmos capazes de aprender padrões a partir de dados e realizar previsões ou classificações sem intervenção humana direta \cite{mitchell1997machine}. No contexto do PLN, o ML é amplamente utilizado para classificar textos, identificar tópicos, analisar sentimentos e detectar desinformação.  
 
@@ -26,7 +26,7 @@ Os modelos tradicionais de ML aplicados a textos incluem algoritmos supervisiona
 
 Para a avaliação dos modelos de ML, métricas como precisão, \textit{recall}, F1-score e acurácia são amplamente utilizadas. A precisão mede a proporção de classificações corretas entre as predições positivas; o \textit{recall} avalia a capacidade do modelo em identificar todas as instâncias relevantes; e o F1-score combina ambas as métricas, oferecendo uma medida harmônica de desempenho. Tais métricas são fundamentais para compreender a eficiência dos algoritmos de classificação textual aplicados à detecção de desinformação.  
 
-\subsection{Aprendizado Profundo (Deep Learning)}
+\section{Aprendizado Profundo (Deep Learning)}
 
 O Aprendizado Profundo (Deep Learning – DL) representa uma evolução do ML, caracterizando-se pela utilização de redes neurais artificiais com múltiplas camadas de processamento. Essas redes são capazes de modelar relações complexas e não lineares nos dados, tornando-se particularmente eficazes em tarefas envolvendo linguagem natural.  
 
@@ -43,7 +43,7 @@ A autoatenção calcula, então, para cada posição, coeficientes de ponderaç�
 Essa combinação de atenção global, paralelizável e ligada por conexões residuais explica por que \textit{Transformers} superam RNNs e CNNs em tarefas de processamento de linguagem natural que exigem contexto amplo e comparações cruzadas entre tokens.
 
 
-\subsection{Extração de Termos-Chave}
+\section{Extração de Termos-Chave}
 
 A extração de termos-chave é uma tarefa essencial no PLN, cujo objetivo é identificar automaticamente as palavras ou expressões mais representativas de um texto. Essa atividade permite resumir o conteúdo, facilitar a indexação e apoiar processos de classificação e análise semântica.  
 
@@ -51,14 +51,14 @@ As abordagens tradicionais baseiam-se em métodos estatísticos, como TF-IDF, RA
 
 Em contrapartida, abordagens modernas utilizam \textit{embeddings} semânticos e modelos supervisionados para capturar significados contextuais. Técnicas baseadas em \textit{sentence embeddings}, como as fornecidas pelo SBERT, avaliam a similaridade de cosseno entre frases e palavras, permitindo identificar termos de maior relevância sem depender exclusivamente de frequência estatística. Além disso, modelos supervisionados e híbridos, que combinam \textit{embeddings} com classificadores como SVMs ou redes neurais, vêm apresentando resultados expressivos em tarefas de extração semântica de palavras-chave.  
 
-\subsection{Desinformação e Verificação de Fatos Automatizada}
+\section{Desinformação e Verificação de Fatos Automatizada}
 A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{tandoc2018fake,zhou2020survey}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.  
 
 O processo de verificação de fatos, ou \textit{fact-checking}, é composto por quatro etapas principais: (1) monitoramento de informações, (2) identificação de afirmações verificáveis (\textit{claim detection}), (3) verificação de veracidade e (4) publicação dos resultados \cite{konstantinovskiy2021}. Entre essas etapas, a detecção automatizada de afirmações factuais tem ganhado destaque por reduzir o volume de informações analisadas manualmente e otimizar o trabalho das agências de checagem.  
 
 Modelos como o XLM-R-Large-ClaimDetection, utilizado neste estudo, aplicam técnicas de aprendizado profundo para identificar automaticamente frases que contêm declarações factuais dignas de verificação. Essa abordagem se mostra promissora ao reduzir a sobrecarga humana e aumentar a escalabilidade de sistemas de monitoramento de desinformação.
 
-\subsection{Claim Detection}
+\section{Claim Detection}
 A detecção de afirmações (claim detection) é uma tarefa do Processamento de Linguagem Natural voltada à identificação, em um texto, de declarações que expressam uma posição argumentativa, isto é, sentenças que sustentam ou contestam uma determinada ideia. No caso da detecção de afirmações dependentes de contexto (Context Dependent Claim Detection – CDCD), proposta por Levy et al. \cite{claimDetectionExplicacao}, o objetivo é reconhecer apenas as afirmações que se relacionam diretamente a um tópico específico, como uma questão controversa ou um tema de debate. Essa abordagem requer não apenas o reconhecimento da estrutura linguística de uma afirmação, mas também a compreensão de sua relevância semântica em relação ao contexto, diferenciando-a de simples definições, repetições do tópico ou informações neutras.
 
 Afirmações detectadas podem ser tanto factuais quanto não factuais, abrangendo desde proposições verificáveis, baseadas em dados concretos, até declarações de natureza opinativa, que refletem juízos de valor, crenças ou percepções subjetivas. Essa característica torna o claim detection uma ferramenta essencial para tarefas de mineração de argumentação, análise de debates e suporte à decisão automatizada, pois permite extrair, de grandes volumes de texto, as bases argumentativas que sustentam diferentes pontos de vista, independentemente de sua comprovação empírica.
@@ -69,7 +69,7 @@ Os autores propõem uma abordagem mais objetiva e padronizada, evitando critéri
 
 Assim, o claim detection deixa de ser apenas uma tarefa voltada à análise argumentativa e passa a ocupar um papel central na detecção e combate à desinformação. Ao automatizar a identificação de enunciados verificáveis em discursos políticos, notícias ou redes sociais, essa técnica contribui para acelerar o processo de verificação, ampliar a cobertura dos sistemas de fact-checking e reduzir o tempo de exposição pública de informações falsas ou enganosas. Desse modo, o campo evolui de uma abordagem semântico-argumentativa para uma função prática e social, a de servir como ponte entre o processamento de linguagem natural e a integridade informacional no espaço público.
 
-\subsubsection{Modelo XLM-R-Large-ClaimDetection}
+\subsection{Modelo XLM-R-Large-ClaimDetection}
 
 Baseado na arquitetura Transformer de Vaswani et al. \cite{transformer_xlm_r}, o XLM-R adota um processo de pré-treinamento não supervisionado fundamentado na tarefa de Masked Language Modeling (MLM), em que determinados tokens de uma sequência são mascarados e o modelo deve prever as palavras originais com base no contexto. \cite{xlm_r} Essa abordagem permite o aprendizado de representações contextuais profundas, que capturam relações sintáticas e semânticas compartilhadas entre diferentes idiomas. Para alcançar tal desempenho, foram desenvolvidas duas configurações de arquitetura: o XLM-R Base, com 12 camadas e cerca de 270 milhões de parâmetros, e o XLM-R Large, com 24 camadas e aproximadamente 550 milhões de parâmetros, ambas empregando 16 cabeças de atenção e uma dimensão de embedding de 1024 unidades.
 
@@ -87,7 +87,61 @@ O processo de adaptação seguiu uma estratégia semi-supervisionada (weakly-sup
 
 O modelo resultante foi então avaliado em dois contextos distintos. Em um conjunto de mensagens do Telegram anotadas por quatro codificadores humanos, atingiu uma acurácia de 0,90, demonstrando alta consistência com o julgamento humano. Já no conjunto de teste do dataset retirado do Facebook alcançou 0,79 de acurácia, o que demonstra sua capacidade de generalização para outros domínios de texto. Embora o treinamento tenha sido realizado exclusivamente com dados em alemão, o modelo mantém o caráter multilíngue herdado do XLM-R, que foi originalmente treinado em cem idiomas.
 
-\subsection{Considerações Finais}
+\section{Métricas de desempenho}
+
+\subsection{Acurácia}
+
+A acurácia é uma métrica amplamente utilizada para avaliar o desempenho de modelos de classificação. Ela é definida como a proporção de previsões corretas em relação ao total de previsões realizadas. A fórmula para calcular a acurácia é dada por:
+\begin{equation}
+    \text{Acurácia} = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(TP\) (True Positives): número de verdadeiros positivos, ou seja, casos em que o modelo previu corretamente a classe positiva.
+    \item \(TN\) (True Negatives): número de verdadeiros negativos, ou seja, casos em que o modelo previu corretamente a classe negativa.
+    \item \(FP\) (False Positives): número de falsos positivos, ou seja, casos em que o modelo previu incorretamente a classe positiva.
+    \item \(FN\) (False Negatives): número de falsos negativos, ou seja, casos em que o modelo previu incorretamente a classe negativa.
+\end{itemize}
+
+\subsection{Precisão}
+A precisão é uma métrica que avalia a qualidade das previsões positivas feitas por um modelo de classificação. Ela é definida como a proporção de verdadeiros positivos em relação ao total de previsões positivas. A fórmula para calcular a precisão é dada por:
+\begin{equation}
+    \text{Precisão} = \frac{TP}{TP + FP}
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(TP\) (True Positives): número de verdadeiros positivos.
+    \item \(FP\) (False Positives): número de falsos positivos.
+\end{itemize}
+
+\subsection{Recall}
+O recall, ou sensibilidade, é uma métrica que avalia a capacidade de um modelo de classificação em identificar corretamente todas as instâncias positivas. É definido como a proporção de verdadeiros positivos em relação ao total de instâncias positivas reais. A fórmula para calcular o recall é dada por:
+\begin{equation}
+    \text{Recall} = \frac{TP}{TP + FN}
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(TP\) (True Positives): número de verdadeiros positivos.
+    \item \(FN\) (False Negatives): número de falsos negativos.
+\end{itemize}
+
+\subsection{F1-Score}
+O F1-score é uma métrica que combina a precisão e o recall em uma única medida, proporcionando um equilíbrio entre essas duas métricas. Especialmente útil quando há um desequilíbrio entre as classes positivas e negativas. A fórmula para calcular o F1-score é dada por:
+\begin{equation}
+    \text{F1-Score} = 2 \cdot \frac{\text{Precisão} \cdot \text{Recall}}{\text{Precisão} + \text{Recall}}
+\end{equation}
+
+\subsection{Índice de Jaccard}
+O índice de Jaccard, também conhecido como coeficiente de Jaccard, é uma métrica que avalia a similaridade entre dois conjuntos. É definido como a razão entre a interseção e a união dos conjuntos. A fórmula para calcular o índice de Jaccard é dada por:
+\begin{equation}
+    \text{Jaccard} = \frac{|A \cap B|}{|A \cup B|}
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(A\) e \(B\) são os conjuntos a serem comparados.
+\end{itemize}
+
+\section{Considerações Finais}
 
 A fundamentação teórica apresentada fornece os alicerces conceituais que sustentam a metodologia deste trabalho. A integração entre técnicas de pré-processamento linguístico, representações vetoriais, aprendizado de máquina e aprendizado profundo permite a análise automatizada de textos em larga escala. Além disso, o estudo das abordagens de extração de termos-chave e de detecção de afirmações factuais estabelece a base teórica necessária para a proposta de avaliação comparativa entre tecnologias.  
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  2 NOV 2025 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  4 NOV 2025 21:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1102,7 +1102,7 @@ LaTeX Warning: Citation `mitchell1997machine' on page 8 undefined on input line 
 
 LaTeX Warning: Citation `vaswani2017attention' on page 9 undefined on input line 35.
 
-[9{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[9{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 LaTeX Warning: Citation `mihalcea2004textrank' on page 10 undefined on input line 50.
 
@@ -1115,242 +1115,261 @@ LaTeX Warning: Citation `zhou2020survey' on page 10 undefined on input line 55.
 
 LaTeX Warning: Citation `konstantinovskiy2021' on page 10 undefined on input line 57.
 
-[10] [11] [12] [13]) [14]
+[10{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [11] [12] [13] [14]) [15] [16]
 \openout2 = `capitulos/trabalhos_relacionados.aux'.
 
  (./capitulos/trabalhos_relacionados.tex
 Cap\'{\i }tulo 3.
-[15
-
-
-
-
-]) [16]
-\openout2 = `capitulos/metodologia.aux'.
-
- (./capitulos/metodologia.tex
-Cap\'{\i }tulo 4.
 [17
 
 
 
 
-] [18] [19] [20] [21] [22] [23] [24] [25]) [26]
+]) [18]
+\openout2 = `capitulos/metodologia.aux'.
+
+ (./capitulos/metodologia.tex
+Cap\'{\i }tulo 4.
+[19
+
+
+
+
+] [20] [21] [22] [23] [24] [25] [26] [27]) [28]
 \openout2 = `capitulos/resultados.aux'.
 
  (./capitulos/resultados.tex
 Cap\'{\i }tulo 5.
-<figs/compression_ratio.png, id=367, 468.24937pt x 283.0575pt>
+<figs/compression_ratio.png, id=392, 578.16pt x 361.35pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 21.
-(pdftex.def)             Requested size: 409.49722pt x 247.55376pt.
-[27
+(pdftex.def)             Requested size: 409.49722pt x 255.93173pt.
+[29
 
 
 
 
-] [28 <./figs/compression_ratio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+]
+<figs/factual_graph.png, id=397, 578.16pt x 361.35pt>
+File: figs/factual_graph.png Graphic file (type png)
+<use figs/factual_graph.png>
+Package pdftex.def Info: figs/factual_graph.png  used on input line 31.
+(pdftex.def)             Requested size: 409.49722pt x 255.93173pt.
+ [30 <./figs/compression_ratio.png>]
+<figs/radar_modelos.png, id=404, 505.89pt x 505.89pt>
+File: figs/radar_modelos.png Graphic file (type png)
+<use figs/radar_modelos.png>
+Package pdftex.def Info: figs/radar_modelos.png  used on input line 44.
+(pdftex.def)             Requested size: 409.49722pt x 409.5062pt.
+ [31 <./figs/factual_graph.png>] [32 <./figs/radar_modelos.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/bx/n/12 (+20) Termos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/bx/n/12 (+20) Termos
  []
 
 
-Overfull \hbox (14.95746pt too wide) in paragraph at lines 79--79
+Overfull \hbox (14.95746pt too wide) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (-20) Vulnerabilidades 
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 79--79
+Underfull \hbox (badness 8132) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) fraudar ur-nas,
  []
 
 
-Underfull \hbox (badness 5417) in paragraph at lines 79--79
+Underfull \hbox (badness 5417) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) tou as ur-nas,
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 79--79
+Underfull \hbox (badness 1424) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) como fis-ca-li-zar
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 79--79
+Underfull \hbox (badness 6995) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) as ur-nas, Vi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) fo-ram cor-ri-gi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) são ^^Pelei-ções
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) 2014^^Q apa-rece
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 79--79
+Underfull \hbox (badness 3884) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) aos 35'' (veja
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 79--79
+Underfull \hbox (badness 1502) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) su-pe-rior elei-to-
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 79--79
+Underfull \hbox (badness 1939) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ur-nas para as
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 79--79
+Underfull \hbox (badness 4713) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ur-nas, frau-dar
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 79--79
+Underfull \hbox (badness 4108) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) casso elei-to-ral,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ur-nas ele-trô-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ni-cas, muito
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) mais vo-tos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) as pes-soas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) o voto será
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) apertar ^^Pcon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) a tela em
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ques-tão não
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) tem qual-quer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) re-la-ção com
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 79--79
+Underfull \hbox (badness 2564) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) seu voto, per-
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 79--79
+Underfull \hbox (badness 1983) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) derá voto, vo-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 79--79
+Underfull \hbox (badness 2753) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) tes de men-sa-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 79--79
+Underfull \hbox (badness 1609) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) gens no what-
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 79--79
+Underfull \hbox (badness 1490) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) se-mi-nam in-for-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 79--79
+Underfull \hbox (badness 2753) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) tes de men-sa-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 79--79
+Underfull \hbox (badness 1609) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) gens no what-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) FRAUD3 NA
  []
 
 
-Overfull \hbox (23.2381pt too wide) in paragraph at lines 79--79
+Overfull \hbox (23.2381pt too wide) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (-20) ELE1ÇÃ0,Bolsonaro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ha-ver, Bol-so-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) ter se-gundo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) turno, Fraude
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 79--79
+Underfull \hbox (badness 5802) in paragraph at lines 144--144
 []|\T1/lmr/m/n/12 (+20) a im-plan-ta-ção
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 79--79
+Underfull \hbox (badness 1990) in paragraph at lines 144--144
 \T1/lmr/m/n/12 (+20) trô-nico de vo-
  []
 
-[29]) [30] [31]
+[35]) [36] [37]
 \openout2 = `capitulos/conclusao.aux'.
 
  (./capitulos/conclusao.tex
 Cap\'{\i }tulo 6.
-) [32
+) [38
 
 
 
@@ -1361,11 +1380,11 @@ Cap\'{\i }tulo 6.
 
 
 bibitemlist
-[33
+[39
 
 
 
-] [34]) [35]
+] [40]) [41]
 \tf@toc=\write6
 \openout6 = `dissertacao.toc'.
 
@@ -1381,21 +1400,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: CD04265D230FCE586578535977269DF7;2915.
+(rerunfilecheck)             Checksum: F188338169A9D0D36D26150C8482C097;2848.
  ) 
 Here is how much of TeX's memory you used:
- 22943 strings out of 467578
- 380091 string characters out of 5424739
- 972077 words of memory out of 5000000
- 51050 multiletter control sequences out of 15000+600000
- 697981 words of font info for 183 fonts, out of 8000000 for 9000
+ 22998 strings out of 467578
+ 380981 string characters out of 5424739
+ 972414 words of memory out of 5000000
+ 51079 multiletter control sequences out of 15000+600000
+ 701315 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,1270b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out/dissertacao.pdf (41 pages, 671707 bytes).
+<d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on out/dissertacao.pdf (47 pages, 885717 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 641 compressed objects within 7 object streams
- 122 named destinations out of 1000 (max. 500000)
- 41331 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 43437 words of extra memory for PDF output out of 51595 (max. 10000000)
 
