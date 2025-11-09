@@ -50,10 +50,7 @@ ightarrow DistilBERT.
 \subsection{Segmentação baseada em conjunções}
 Os resultados da abordagem de segmentação baseada no termo ``que'' demonstraram sua eficácia. Nas 29 amostras de notícias provenientes de agências de checagem de fatos, a segmentação baseada no termo ``que'' resultou em textos altamente relevantes, evidenciando ser uma técnica interessante de segmentação para textos contidos em notícias. Este método apresenta a vantagem de não exigir grande processamento, sendo uma alternativa eficiente para identificar informações relevantes em grandes volumes de texto.
 
-Além disso, a aplicação desse método em \textit{clusters} polarizados mostrou resultados significativos. Para o $cluster_0$, foi possível obter 2.061 tuítes relevantes, em comparação com os 2.056 tuítes obtidos utilizando termos-chave criados manualmente. Já no $cluster_1$, foram extraídos 1.090 tuítes, superando os 781 obtidos com termos-chave definidos manualmente. Exemplos de textos retornados por esse método incluem: ``aponta que apertar `confirma' durante a tela `confira seu voto' anula o voto'' e ``usou o plenário da câmara federal para propagar informações falsas sobre a pandemia, como mostrou uma reportagem publicada pela Lupa em dezembro do ano passado''.  Esses resultados demonstram que a segmentação baseada em conjunções, como o termo ``que'', pode ser mais eficaz do que abordagens manuais tradicionais, ampliando a abrangência e precisão na identificação de conteúdos relevantes para análise de desinformação.
-
-Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29
-notícias analisadas, demonstrando sua baixa eficácia na identificação de informações relevantes. Entre os textos retornados estavam exemplos como: ``Outro exemplo citado por ele é no caso de a totalização envolver, hipoteticamente, apenas duas cidades'', além de termos como ``banco nacional do brasil'', ``sala escura'' e ``vão para as nuvens''. Embora algumas frases tenham relevância contextual, o método não foi consistente o suficiente para ser amplamente aplicado, destacando a necessidade de estratégias mais eficazes para análise desse tipo de dado.
+Além disso, a aplicação desse método em \textit{clusters} polarizados mostrou resultados significativos. Para o $cluster_0$, foi possível obter 2.060 tuítes relevantes, em comparação com os 2.056 tuítes obtidos utilizando termos-chave criados manualmente. Já no $cluster_1$, foram extraídos 1.089 tuítes, superando os 781 obtidos com termos-chave definidos manualmente. Exemplos de textos retornados por esse método incluem: ``aponta que apertar `confirma' durante a tela `confira seu voto' anula o voto'' e ``usou o plenário da câmara federal para propagar informações falsas sobre a pandemia, como mostrou uma reportagem publicada pela Lupa em dezembro do ano passado''.  Esses resultados demonstram que a segmentação baseada em conjunções, como o termo ``que'', pode ser mais eficaz do que abordagens manuais tradicionais, ampliando a abrangência e precisão na identificação de conteúdos relevantes para análise de desinformação.
 
 A aplicação do modelo XLM-R-Large-ClaimDetection nos dados de debates presidenciais dos EUA ~\cite{dbClaim}, adaptados ao contexto português, apresentou resultados promissores na tarefa de classificação de afirmações factuais. O modelo alcançou uma acurácia de 0.88, mostrando boa performance mesmo considerando as diferenças linguísticas entre os dados testados em português e o treinamento original em inglês.
 
@@ -97,18 +94,115 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
 
 O baixo rendimento em encontrar sentenças factuais importantes (IFS) pode ser atribuído ao fato de o treinamento não ter sido realizado de forma ideal, devido a limitações de hardware. A performance alcançada, ainda assim, destaca a utilidade do modelo XLM-R-Large como ferramenta para filtragem e segmentação de grandes volumes de texto, facilitando a identificação de informações relevantes para análises de desinformação e processos de verificação de fatos.
 
-Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes de todas as 29 notícias analisadas. Para o $cluster_0$, houve o retorno de 2.504 tuítes, enquanto para o $cluster_1$, o modelo retornou 1.366 tuítes. Entre as frases relevantes extraídas, destacam-se exemplos como: ``o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022''. No entanto, o modelo também retornou frases menos relevantes, como: ``no Telegram disseminam informações falsas sobre o'', ``estão registrados na seção'' e ``circulam nas redes sociais (veja aqui)''. Esse comportamento destaca a necessidade de aprimorar a precisão do modelo na filtragem de conteúdo, evitando a extração de dados que não são essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
+Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas. Com textos resumidos pelo BERT, foram retornados 2.391 tuítes no $cluster_0$ e 1.333 no $cluster_1$; com o DistilBERT (dBERT), 1.670 e 928, respectivamente; e com o SBERT, 2.040 e 1.234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
 
 Apesar da alta acurácia apresentada pelo modelo SVM, com uma acurácia de 0.93, que inclusive superou o desempenho do modelo XLM no treinamento em inglês, na prática não foi possível verificar a mesma eficiência. Isso resultou na extração de textos que não eram relevantes, o que impactou negativamente a eficácia do modelo. Portanto, será necessário refazer essa parte do processo.
 
 \subsection{Segmentação baseada apenas em aspas}
-Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29 notícias analisadas, demonstrando sua baixa eficácia na identificação de informações relevantes.
+Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29
+notícias analisadas, demonstrando sua baixa eficácia na identificação de informações relevantes. Entre os textos retornados estavam exemplos como: ``Outro exemplo citado por ele é no caso de a totalização envolver, hipoteticamente, apenas duas cidades'', além de termos como ``banco nacional do brasil'', ``sala escura'' e ``vão para as nuvens''. Embora algumas frases tenham relevância contextual, o método não foi consistente o suficiente para ser amplamente aplicado, destacando a necessidade de estratégias mais eficazes para análise desse tipo de dado.
 
 \subsection{Classificação de afirmações factuais com XLM-R-Large-ClaimDetection}
 A aplicação do modelo XLM-R-Large-ClaimDetection apresentou acurácia de 0,88 em português, com bom 	extit{recall} para sentenças factuais importantes (0,97), mas menor precisão (0,67), o que indica tendência a recuperar quase tudo o que é relevante, ao custo de trazer alguns itens não essenciais.
 
 \subsection{Comparação com o SVM}
 Apesar da alta acurácia (0,93), o SVM extraiu textos pouco relevantes na prática, indicando necessidade de refazer essa etapa ou combiná-la com filtragem estrutural.
+
+\section{Comparação de Classificação}
+Os gráficos de \textit{tweets}, obtidos no processo com termos-chave obtidos manualmente, mostram que ambos os \textit{clusters} são dominados por itens não rotulados (C0: 60{,}5\%; C1: 63{,}0\%), com desinformação mais presente no Cluster 0 (33{,}4\%) do que no Cluster 1 (8{,}4\%). Já a classe sem desinformação é minoritária no C0 (6{,}0\%) e relativamente mais frequente no C1 (28{,}6\%). Esse é o retrato de referência: o C0 concentra uma fração relevante de \textit{tweets} com desinformação, enquanto o C1 reúne mais \textit{tweets} sem desinformação, ainda que em ambos haja grande massa não rotulada.
+
+Todos os modelos preservam esse contraste estrutural (C0 com maior proporção ``com desinformação''; C1 com maior proporção ``sem desinformação''), porém reduzem fortemente a classe ``não rotulado'' e inflam as classes rotuladas. No Cluster 0, BERT, sBERT e a segmentação por ``que'' deslocam muitos exemplos para com desinformação (na faixa de 55--61\%), enquanto o DistilBERT é o menos agressivo (47{,}5\%), ainda assim acima do manual (33{,}4\%). A classe sem desinformação também cresce em todos (9--13\% vs.\ 6{,}0\%). No Cluster 1, o padrão se repete: sem desinformação sobe para 42--54\% (vs.\ 28{,}6\%) e com desinformação para 15--17\% (vs.\ 8{,}4\%), comprimindo ``não rotulado'' para 29--43\% (bem abaixo dos 63\% do manual).
+
+Em termos de aderência relativa ao manual, o DistilBERT tende a ficar mais próximo pois menos esvazia a classe ``não rotulado'' (C0: 43{,}3\%; C1: 43{,}2\%). BERT, sBERT e ``que'' tornam as classes rotuladas mais assertivas---principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Se o objetivo é aproximação fiel ao manual, recomenda-se calibrar \textit{thresholds} e custos de classe (ou reforçar anotações) para reduzir a super-rotulagem; entre as opções atuais, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave manuais - Mês de outubro/2022}
+    \label{fig:tweets-graph-manual}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_bert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave BERT - Mês de outubro/2022}
+    \label{fig:tweets-graph-bert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_dbert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
+    \label{fig:tweets-graph-dbert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_sbert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
+    \label{fig:tweets-graph-sbert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_que.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
+    \label{fig:tweets-graph-que}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+
+A leitura dos gráficos de retuítes confirma o contraste estrutural observado no retrato de referência: o Cluster 0 (C0) é o polo de desinformação, enquanto o Cluster 1 (C1) concentra mais conteúdos sem desinformação. No manual, C0 aparece dividido entre desinformação e não rotulados, com “sem desinformação” minoritário; já C1 combina forte presença de “sem desinformação” com uma massa considerável de itens não rotulados e quase nenhuma desinformação. Esse padrão de oposição, C0 mais “com desinformação”, C1 mais “sem desinformação”, permanece quando passamos aos modelos.
+
+A diferença central trazida pelos modelos está menos na hierarquia entre classes e mais na magnitude das proporções. BERT, sBERT e a segmentação por “que” reduzem de forma pronunciada a fatia de “não rotulado”, ao mesmo tempo em que inflam as classes rotuladas. O efeito é nítido em C0, onde essas abordagens deslocam um grande contingente para “com desinformação”, reforçando a vocação do cluster; em C1, o movimento simétrico impulsiona “sem desinformação”. Em termos comunicacionais, esses três métodos tornam os gráficos de retuítes mais assertivos e menos conservadores, produzindo leituras mais “decididas” sobre o conteúdo que circula por meio dos retuítes.
+
+O DistilBERT, por sua vez, atua como um freio nessa tendência. Ele preserva uma parcela maior de “não rotulado” em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe “com desinformação”; em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe “não rotulado”, e, portanto, menor risco de super-rotulagem. Em suma, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual.
+
+Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Se o objetivo é maximizar sinal (identificar com mais clareza, nos retuítes, onde está a desinformação em C0 e a ausência dela em C1), BERT, sBERT e “que” são preferíveis, pois comprimem a incerteza e ampliam o diagnóstico. Se, ao contrário, a meta é reproduzir com maior proximidade o retrato manual e controlar falsos positivos nos retuítes, DistilBERT é o candidato natural. Em ambos os casos, uma calibração adicional, ajuste de limiares (thresholds) e custos de classe, ou o reforço de anotações, tende a melhorar o equilíbrio entre cobertura e precisão, reduzindo a super-rotulagem sem perder o contraste essencial entre os clusters.
+
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_manual.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave manuais - Mês de outubro/2022}
+    \label{fig:retuites-graph-manual}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_bert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave BERT - Mês de outubro/2022}
+    \label{fig:retuites-graph-bert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_dbert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
+    \label{fig:retuites-graph-dbert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_sbert.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
+    \label{fig:retuites-graph-sbert}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_que.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
+    \label{fig:retuites-graph-que}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
 
 \begin{table}[H]
 \centering
@@ -119,7 +213,7 @@ Apesar da alta acurácia (0,93), o SVM extraiu textos pouco relevantes na práti
 \hline
 \textbf{Títulos das notícias} & \textbf{Termos Manuais} & \textbf{Termos BERT} & \textbf{Termos DistilBERT} & \textbf{Termos SBERT} \\
 \hline
-Vulnerabilidades em urnas citadas em vídeo de 2014 já foram corrigidas & fraudar urnas, vídeo de Diego
+Vulnerabilida-des em urnas citadas em vídeo de 2014 já foram corrigidas & fraudar urnas, vídeo de Diego
 Aranha, não testou as urnas, como
 fiscalizar as urnas, Video viralizando
 Sábado, não te como TSE Fraudar as
@@ -136,7 +230,7 @@ voto, votos não computadorizados,
 votos serão anulados, teclar ok ou
 confirma & aos fatosf: compartilhe correntes de mensagens no whatsapp & no telegram disseminam informações falsas sobre o & aos fatosf: compartilhe correntes de mensagens no whatsapp \\
 \hline
-Acusação de fraude eleitoral domina correntes de WhatsApp em grupos monitorados & FRAUD3 NA ELE1ÇÃ0,Bolsonaro
+Acusação de fraude eleitoral domina correntes de WhatsApp em grupos monitorados & FRAUD3 NA ELE1ÇÃ0,Bolso-naro
 não pode deixar haver, Bolsonaro
 não deixa ter segundo turno, Fraude
 na eleição & a implantação do sistema eletrônico de votação no brasil, em 1996 & esta reportagem foi feita numa colaboração entre agência pública, aos fatos & esta reportagem foi feita numa colaboração entre agência pública, aos fatos \\
@@ -145,14 +239,15 @@ na eleição & a implantação do sistema eletrônico de votação no brasil, em
 \end{table}
 
 \section{Avaliação}
-Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de desempenho, como acurácia, precisão e revocação (\textit{recall}), possibilitam analisar a proporção de acertos nas classificações textuais em relação a outras classificações já existentes feitas anteriormente, fornecendo uma visão quantitativa sobre a capacidade de cada modelo estudado em classificar textos. Ademais, efetuar comparações com outros métodos ou \textit{benchmarks} é útil para avaliar a eficácia em relação às técnicas estudadas nesta pesquisa, podendo comparar classificações de textos obtidos por esta pesquisa com outras fontes já estabelecidas, como checagem manual presentes em sites de notícias. Além da utilização de métricas, efetuar uma análise de algoritmo para obter o tempo de execução e o consumo de recursos computacionais ajuda a compreender o quão eficaz os métodos utilizados podem ser na prática.
 Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário
 utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de
-desempenhos, como por exemplo, acurácia, precisão das classificações obtidas, revocação que
-possibilita analisar a proporção de acertos nas classificações textuais em relação a outras
-classificações já existentes feitas anteriormente, fornecem uma visão quantitativa sobre a
-capacidade de cada modelo estudado em classificar textos. Ademais, efetuar comparações com
-outros métodos ou benchmarks são úteis para avaliar a eficácia em relação às técnicas
-estudadas nesta pesquisa, podendo comparar classificações de textos obtidos por esta pesquisa
-com outras fontes já estabelecidas, como até mesmo checagem manual presentes em sites de
-notícias. Além da utilização de métricas, efetuar uma análise de algoritmo para obter o tempo de execução, consumo de recursos computacionais pode ajudar a compreender o quão eficaz os métodos utilizados podem ser na prática.
+desempenhos, como por exemplo, acurácia, precisão das classificações obtidas, revocação
+que possibilita analisar a proporção de acertos nas classificações textuais em relação a
+outras classificações já existentes feitas anteriormente, fornecem uma visão quantitativa
+sobre a capacidade de cada modelo estudado em classificar textos. Ademais, efetuar
+comparações com outros métodos ou benchmarks são úteis para avaliar a eficácia em
+relação às técnicas estudadas nesta pesquisa, podendo comparar classificações de textos
+obtidos por esta pesquisa com outras fontes já estabelecidas, como até mesmo checagem
+manual presentes em sites de notícias. Além da utilização de métricas, efetuar uma análise
+de algoritmo para obter o tempo de execução, consumo de recursos computacionais pode
+ajudar a compreender o quão eficaz os métodos utilizados podem ser na prática.

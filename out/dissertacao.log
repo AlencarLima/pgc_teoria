@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  4 NOV 2025 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  6 NOV 2025 00:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,7 +1140,7 @@ Cap\'{\i }tulo 4.
 
  (./capitulos/resultados.tex
 Cap\'{\i }tulo 5.
-<figs/compression_ratio.png, id=392, 578.16pt x 361.35pt>
+<figs/compression_ratio.png, id=394, 578.16pt x 361.35pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 21.
@@ -1151,13 +1151,13 @@ Package pdftex.def Info: figs/compression_ratio.png  used on input line 21.
 
 
 ]
-<figs/factual_graph.png, id=397, 578.16pt x 361.35pt>
+<figs/factual_graph.png, id=399, 578.16pt x 361.35pt>
 File: figs/factual_graph.png Graphic file (type png)
 <use figs/factual_graph.png>
 Package pdftex.def Info: figs/factual_graph.png  used on input line 31.
 (pdftex.def)             Requested size: 409.49722pt x 255.93173pt.
  [30 <./figs/compression_ratio.png>]
-<figs/radar_modelos.png, id=404, 505.89pt x 505.89pt>
+<figs/radar_modelos.png, id=406, 505.89pt x 505.89pt>
 File: figs/radar_modelos.png Graphic file (type png)
 <use figs/radar_modelos.png>
 Package pdftex.def Info: figs/radar_modelos.png  used on input line 44.
@@ -1166,225 +1166,281 @@ Package pdftex.def Info: figs/radar_modelos.png  used on input line 44.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+<figs/tweets_graph_manual.png, id=434, 1145.4795pt x 457.4691pt>
+File: figs/tweets_graph_manual.png Graphic file (type png)
+<use figs/tweets_graph_manual.png>
+Package pdftex.def Info: figs/tweets_graph_manual.png  used on input line 119.
+(pdftex.def)             Requested size: 409.49722pt x 163.53699pt.
+<figs/tweets_graph_bert.png, id=435, 1146.2022pt x 470.4777pt>
+File: figs/tweets_graph_bert.png Graphic file (type png)
+<use figs/tweets_graph_bert.png>
+Package pdftex.def Info: figs/tweets_graph_bert.png  used on input line 127.
+(pdftex.def)             Requested size: 409.49722pt x 168.07964pt.
+ [35]
+<figs/tweets_graph_dbert.png, id=440, 1198.2366pt x 452.4102pt>
+File: figs/tweets_graph_dbert.png Graphic file (type png)
+<use figs/tweets_graph_dbert.png>
+Package pdftex.def Info: figs/tweets_graph_dbert.png  used on input line 135.
+(pdftex.def)             Requested size: 409.49722pt x 154.6113pt.
+<figs/tweets_graph_sbert.png, id=441, 1154.1519pt x 461.8053pt>
+File: figs/tweets_graph_sbert.png Graphic file (type png)
+<use figs/tweets_graph_sbert.png>
+Package pdftex.def Info: figs/tweets_graph_sbert.png  used on input line 143.
+(pdftex.def)             Requested size: 409.49722pt x 163.8469pt.
+<figs/tweets_graph_que.png, id=442, 1154.1519pt x 461.8053pt>
+File: figs/tweets_graph_que.png Graphic file (type png)
+<use figs/tweets_graph_que.png>
+Package pdftex.def Info: figs/tweets_graph_que.png  used on input line 151.
+(pdftex.def)             Requested size: 409.49722pt x 163.8469pt.
+ [36 <./figs/tweets_graph_manual.png> <./figs/tweets_graph_bert.png> <./figs/tweets_graph_dbert.png>] [37 <./figs/tweets_graph_sbert.png> <./figs/tweets_graph_que.png>]
+<figs/retuites_graph_manual.png, id=462, 1193.1777pt x 461.0826pt>
+File: figs/retuites_graph_manual.png Graphic file (type png)
+<use figs/retuites_graph_manual.png>
+Package pdftex.def Info: figs/retuites_graph_manual.png  used on input line 168.
+(pdftex.def)             Requested size: 409.49722pt x 158.24347pt.
+<figs/retuites_graph_bert.png, id=463, 1209.7998pt x 484.209pt>
+File: figs/retuites_graph_bert.png Graphic file (type png)
+<use figs/retuites_graph_bert.png>
+Package pdftex.def Info: figs/retuites_graph_bert.png  used on input line 176.
+(pdftex.def)             Requested size: 409.49722pt x 163.89742pt.
+<figs/retuites_graph_dbert.png, id=464, 1204.7409pt x 469.0323pt>
+File: figs/retuites_graph_dbert.png Graphic file (type png)
+<use figs/retuites_graph_dbert.png>
+Package pdftex.def Info: figs/retuites_graph_dbert.png  used on input line 184.
+(pdftex.def)             Requested size: 409.49722pt x 159.42593pt.
+ [38 <./figs/retuites_graph_manual.png>]
+<figs/retuites_graph_sbert.png, id=471, 1206.1863pt x 472.6458pt>
+File: figs/retuites_graph_sbert.png Graphic file (type png)
+<use figs/retuites_graph_sbert.png>
+Package pdftex.def Info: figs/retuites_graph_sbert.png  used on input line 192.
+(pdftex.def)             Requested size: 409.49722pt x 160.45944pt.
+<figs/retuites_graph_que.png, id=472, 1210.5225pt x 485.6544pt>
+File: figs/retuites_graph_que.png Graphic file (type png)
+<use figs/retuites_graph_que.png>
+Package pdftex.def Info: figs/retuites_graph_que.png  used on input line 200.
+(pdftex.def)             Requested size: 409.49722pt x 164.29033pt.
+ [39 <./figs/retuites_graph_bert.png> <./figs/retuites_graph_dbert.png> <./figs/retuites_graph_sbert.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/bx/n/12 (+20) Termos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/bx/n/12 (+20) Termos
  []
 
 
-Overfull \hbox (14.95746pt too wide) in paragraph at lines 144--144
-[]|\T1/lmr/m/n/12 (-20) Vulnerabilidades 
+Overfull \hbox (0.77663pt too wide) in paragraph at lines 238--238
+[]|\T1/lmr/m/n/12 (-20) Vulnerabilida- 
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 144--144
+Underfull \hbox (badness 8132) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) fraudar ur-nas,
  []
 
 
-Underfull \hbox (badness 5417) in paragraph at lines 144--144
+Underfull \hbox (badness 5417) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) tou as ur-nas,
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 144--144
+Underfull \hbox (badness 1424) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) como fis-ca-li-zar
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 144--144
+Underfull \hbox (badness 6995) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) as ur-nas, Vi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) fo-ram cor-ri-gi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) são ^^Pelei-ções
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) 2014^^Q apa-rece
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 144--144
+Underfull \hbox (badness 3884) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) aos 35'' (veja
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 144--144
+Underfull \hbox (badness 1502) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) su-pe-rior elei-to-
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 144--144
+Underfull \hbox (badness 1939) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) ur-nas para as
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 144--144
+Underfull \hbox (badness 4713) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) ur-nas, frau-dar
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 144--144
+Underfull \hbox (badness 4108) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) casso elei-to-ral,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) ur-nas ele-trô-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) ni-cas, muito
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) mais vo-tos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) as pes-soas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) o voto será
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) apertar ^^Pcon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) a tela em
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) ques-tão não
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) tem qual-quer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) re-la-ção com
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 144--144
+Underfull \hbox (badness 2564) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) seu voto, per-
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 144--144
+Underfull \hbox (badness 1983) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) derá voto, vo-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 144--144
+Underfull \hbox (badness 2753) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) tes de men-sa-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 144--144
+Underfull \hbox (badness 1609) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) gens no what-
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 144--144
+Underfull \hbox (badness 1490) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) se-mi-nam in-for-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 144--144
+Underfull \hbox (badness 2753) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) tes de men-sa-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 144--144
+Underfull \hbox (badness 1609) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) gens no what-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) FRAUD3 NA
  []
 
 
-Overfull \hbox (23.2381pt too wide) in paragraph at lines 144--144
-\T1/lmr/m/n/12 (-20) ELE1ÇÃ0,Bolsonaro
+Overfull \hbox (2.72385pt too wide) in paragraph at lines 238--238
+\T1/lmr/m/n/12 (-20) ELE1ÇÃ0,Bolso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\T1/lmr/m/n/12 (+20) ha-ver, Bol-so-
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+\T1/lmr/m/n/12 (+20) dei-xar ha-ver,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\T1/lmr/m/n/12 (+20) ter se-gundo
+Underfull \hbox (badness 3989) in paragraph at lines 238--238
+\T1/lmr/m/n/12 (+20) Bol-so-naro não
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\T1/lmr/m/n/12 (+20) turno, Fraude
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+\T1/lmr/m/n/12 (+20) deixa ter se-
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+\T1/lmr/m/n/12 (+20) gundo turno,
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 238--238
 []|\T1/lmr/m/n/12 (+20) a im-plan-ta-ção
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 144--144
+Underfull \hbox (badness 1990) in paragraph at lines 238--238
 \T1/lmr/m/n/12 (+20) trô-nico de vo-
  []
 
-[35]) [36] [37]
+[40 <./figs/retuites_graph_que.png>]) [41] [42]
 \openout2 = `capitulos/conclusao.aux'.
 
  (./capitulos/conclusao.tex
 Cap\'{\i }tulo 6.
-) [38
+[43
 
 
 
 
-] (out/dissertacao.bbl (out/dissertacao.brf)
+]) [44] (out/dissertacao.bbl (out/dissertacao.brf)
 \tf@brf=\write5
 \openout5 = `dissertacao.brf'.
 
 
 bibitemlist
-[39
+[45
 
 
 
-] [40]) [41]
+] [46]) [47]
 \tf@toc=\write6
 \openout6 = `dissertacao.toc'.
 
@@ -1403,18 +1459,18 @@ Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
 (rerunfilecheck)             Checksum: F188338169A9D0D36D26150C8482C097;2848.
  ) 
 Here is how much of TeX's memory you used:
- 22998 strings out of 467578
- 380981 string characters out of 5424739
- 972414 words of memory out of 5000000
- 51079 multiletter control sequences out of 15000+600000
- 701315 words of font info for 186 fonts, out of 8000000 for 9000
+ 23106 strings out of 467578
+ 383984 string characters out of 5424739
+ 974185 words of memory out of 5000000
+ 51160 multiletter control sequences out of 15000+600000
+ 701918 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,1270b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out/dissertacao.pdf (47 pages, 885717 bytes).
+Output written on out/dissertacao.pdf (53 pages, 1660098 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 705 compressed objects within 8 object streams
- 143 named destinations out of 1000 (max. 500000)
- 43437 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 43495 words of extra memory for PDF output out of 51595 (max. 10000000)
 
