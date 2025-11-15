@@ -399,6 +399,11 @@ OUTPUT out/capitulos/fundamentacao_teorica.aux
 INPUT ./capitulos/fundamentacao_teorica.tex
 INPUT ./capitulos/fundamentacao_teorica.tex
 INPUT capitulos/fundamentacao_teorica.tex
+INPUT ./figs/transformers.png
+INPUT ./figs/transformers.png
+INPUT ./figs/transformers.png
+INPUT ./figs/transformers.png
+INPUT ./figs/transformers.png
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc

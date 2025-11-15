@@ -8,13 +8,13 @@ O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Apren
 
 O Processamento de Linguagem Natural (PLN) é uma área da Inteligência Artificial dedicada ao desenvolvimento de métodos que possibilitam que computadores compreendam e manipulem a linguagem humana de forma automatizada \cite{jurafsky2023}. O PLN combina aspectos da linguística, estatística e ciência da computação, permitindo o tratamento de dados textuais em larga escala e a extração de informações de maneira sistemática. Entre suas principais tarefas estão a tokenização, remoção de \textit{stopwords}, lematização, \textit{stemming}, análise sintática e semântica, reconhecimento de entidades nomeadas (NER) e análise de sentimentos.  
 
-No contexto desta pesquisa, o PLN é utilizado para o pré-processamento de textos, etapa que inclui a normalização textual, a segmentação de sentenças e a identificação de termos relevantes. Essas técnicas garantem que o texto seja representado de maneira estruturada, possibilitando a aplicação de algoritmos de aprendizado de máquina e aprendizado profundo. A capacidade do PLN de identificar padrões linguísticos e semânticos é essencial para a detecção de desinformação, uma vez que esse fenômeno se manifesta por meio de estruturas discursivas específicas, escolhas lexicais tendenciosas e manipulação intencional de contextos.  
+No contexto desta pesquisa, o PLN é utilizado para o pré-processamento de textos, etapa que inclui a normalização textual, a segmentação de sentenças e a identificação de termos relevantes. Essas técnicas garantem que o texto seja representado de maneira estruturada, possibilitando a aplicação de algoritmos de aprendizado de máquina e aprendizado profundo. A capacidade do PLN de identificar padrões linguísticos e semânticos é essencial para a detecção de desinformação, uma vez que esse fenômeno se manifesta por meio de estruturas discursivas específicas, escolhas lexicais tendenciosas e manipulação intencional de contextos.
 
 \section{Representação de Texto}
 
-A representação de texto constitui um dos pilares do PLN, pois define a forma como as palavras e sentenças são convertidas em formatos compreensíveis para os algoritmos computacionais. Entre os métodos mais tradicionais, destacam-se o modelo de \textit{Bag of Words} (BoW) e o \textit{Term Frequency–Inverse Document Frequency} (TF-IDF).  
+A representação de texto constitui um dos pilares do PLN, pois define a forma como as palavras e sentenças são convertidas em formatos compreensíveis para os algoritmos computacionais. Entre os métodos mais tradicionais, destacam-se o modelo de \textit{Bag of Words} (BoW) e o \textit{Term Frequency–Inverse Document Frequency} (TF-IDF).
 
-O modelo BoW representa o texto como um conjunto de palavras independentes, desconsiderando a ordem e o contexto em que aparecem. Apesar de sua simplicidade, essa abordagem é amplamente utilizada em tarefas de classificação textual devido à sua eficiência. Já o TF-IDF aprimora o modelo BoW ao ponderar a importância de cada termo com base em sua frequência no documento e na raridade no corpus \cite{manning1999foundations}. O TF-IDF foi utilizado neste estudo como uma das primeiras etapas de filtragem e seleção de sentenças relevantes, permitindo identificar palavras mais representativas de cada notícia analisada.  
+O modelo BoW representa o texto como um conjunto de palavras independentes, desconsiderando a ordem e o contexto em que aparecem. Apesar de sua simplicidade, essa abordagem é amplamente utilizada em tarefas de classificação textual devido à sua eficiência. Já o TF-IDF aprimora o modelo BoW ao ponderar a importância de cada termo com base em sua frequência no documento e na raridade no corpus \cite{manning1999foundations}. O TF-IDF foi utilizado neste estudo como uma das primeiras etapas de filtragem e seleção de sentenças relevantes, permitindo identificar palavras mais representativas de cada notícia analisada.
 
 Com o avanço da área, surgiram métodos mais sofisticados de representação vetorial, conhecidos como \textit{word embeddings}, que mapeiam palavras em vetores contínuos em um espaço de alta dimensionalidade. Técnicas como Word2Vec \cite{mikolov2013distributed}, GloVe \cite{pennington2014glove} e FastText \cite{bojanowski2017enriching} capturam relações semânticas e contextuais entre palavras com base em sua coocorrência. Mais recentemente, os \textit{embeddings} contextuais, derivados de modelos como BERT e SBERT, passaram a representar o significado das palavras considerando o contexto em que aparecem, oferecendo resultados superiores em tarefas semânticas complexas.  
 
@@ -32,16 +32,38 @@ O Aprendizado Profundo (Deep Learning – DL) representa uma evolução do ML, c
 
 As Redes Neurais Recorrentes (RNNs), especialmente suas variantes LSTM (\textit{Long Short-Term Memory}) e GRU (\textit{Gated Recurrent Unit}), foram amplamente empregadas para capturar dependências temporais em sequências textuais. No entanto, apesar de seu sucesso, essas arquiteturas apresentam limitações quanto à paralelização e ao tratamento de contextos longos.  
 
-Essas limitações foram superadas com o surgimento dos \textit{Transformers} \cite{vaswani2017attention}, uma arquitetura baseada em mecanismos de atenção que permite o aprendizado bidirecional do contexto textual. Modelos derivados, como BERT (\textit{Bidirectional Encoder Representations from Transformers}), DistilBERT, SBERT (\textit{Sentence-BERT}) e XLM-RoBERTa, revolucionaram o PLN ao oferecer representações contextuais mais ricas e precisas. No presente estudo, esses modelos foram empregados para sumarização e extração de termos-chave, com destaque para o SBERT, que apresentou melhor equilíbrio entre desempenho e tempo de processamento.  
+Essas limitações foram superadas com o surgimento dos \textit{Transformers} \cite{vaswani2017attention}, 
+uma arquitetura baseada em mecanismos de atenção que permite o aprendizado bidirecional do contexto textual, 
+conforme ilustrado na Figura~\ref{fig:diagrama_tranformer}. Modelos derivados, como BERT (\textit{Bidirectional Encoder Representations from Transformers}), 
+DistilBERT, SBERT (\textit{Sentence-BERT}) e XLM-RoBERTa, revolucionaram o PLN ao oferecer representações contextuais mais detalhadas e precisas. 
+No presente estudo, esses modelos foram empregados para sumarização e extração de termos-chave, com destaque para o SBERT, 
+que apresentou melhor equilíbrio entre desempenho e tempo de processamento.
+
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=0.7\textwidth]{figs/transformers.png} % coloque o arquivo na pasta escolhida
+    \caption{The Transformer - Model Architecture}
+    \label{fig:diagrama_tranformer}
+    \legend{\footnotesize Fonte: \cite{vaswani2017attention}} % abnTeX2
+\end{figure}
 
 A capacidade dos modelos baseados em transformers de compreender o contexto global das sentenças e aprender relações semânticas complexas os torna ferramentas fundamentais para o combate à desinformação, especialmente em ambientes multilíngues, como o português.
 
 Além disso, a formulação original dos \textit{Transformers} parte da ideia de que uma sequência pode ser decomposta em um conjunto de tokens sobre os quais se aplica, de forma iterativa, um bloco composto por autoatenção multi-cabeças (MHSA) e uma MLP posicionada por token. Em cada bloco, o mesmo vetor de entrada $x_i$ é projetado em três espaços lineares distintos, gerando $q_i = x_i W_Q$, $k_i = x_i W_K$ e $v_i = x_i W_V$. O \textit{query} passa a representar a demanda informacional do token, o \textit{key} os atributos sob os quais esse token pode ser recuperado pelos demais, e o \textit{value} o conteúdo semântico efetivamente agregável.
 
+MLP posicionada por token, definida por
+\[
+\mathrm{MLP}(x) = \phi(x W_1 + b_1) W_2 + b_2,
+\]
+em que $\phi(\cdot)$ denota uma função de ativação não linear (tipicamente 
+ReLU ou GELU). Explicitando essa operação por token $i$, temos 
+$h_i = \phi(\tilde{x}_i W_1 + b_1)$ e $z_i = h_i W_2 + b_2$, com posterior 
+aplicação da conexão residual e da normalização em camadas, de modo que 
+$x_i' = \mathrm{LayerNorm}(\tilde{x}_i + z_i)$~\cite{vaswani2017attention}.
+
 A autoatenção calcula, então, para cada posição, coeficientes de ponderação assimétricos a partir dos produtos escalares direcionados $q_i k_j^{\top}$, normalizados por \textit{softmax}, o que permite selecionar, de todo o enunciado, justamente os tokens mais relevantes e, assim, modelar dependências de longo alcance sem recorrer à recorrência. Apenas os \textit{values} são combinados $z_i = \sum_j \alpha_{ij} v_j$ e o resultado não substitui a representação original: ele é reinjetado por meio de uma conexão residual e estabilizado por \textit{Layer Normalization}, garantindo que cada camada aprenda apenas um refinamento suave da representação anterior e que o empilhamento profundo não degrade o contexto. \cite{introTransformers}
 
 Essa combinação de atenção global, paralelizável e ligada por conexões residuais explica por que \textit{Transformers} superam RNNs e CNNs em tarefas de processamento de linguagem natural que exigem contexto amplo e comparações cruzadas entre tokens.
-
 
 \section{Extração de Termos-Chave}
 
@@ -52,7 +74,7 @@ As abordagens tradicionais baseiam-se em métodos estatísticos, como TF-IDF, RA
 Em contrapartida, abordagens modernas utilizam \textit{embeddings} semânticos e modelos supervisionados para capturar significados contextuais. Técnicas baseadas em \textit{sentence embeddings}, como as fornecidas pelo SBERT, avaliam a similaridade de cosseno entre frases e palavras, permitindo identificar termos de maior relevância sem depender exclusivamente de frequência estatística. Além disso, modelos supervisionados e híbridos, que combinam \textit{embeddings} com classificadores como SVMs ou redes neurais, vêm apresentando resultados expressivos em tarefas de extração semântica de palavras-chave.  
 
 \section{Desinformação e Verificação de Fatos Automatizada}
-A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{tandoc2018fake,zhou2020survey}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.  
+A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{surveyFakeNews}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.  
 
 O processo de verificação de fatos, ou \textit{fact-checking}, é composto por quatro etapas principais: (1) monitoramento de informações, (2) identificação de afirmações verificáveis (\textit{claim detection}), (3) verificação de veracidade e (4) publicação dos resultados \cite{konstantinovskiy2021}. Entre essas etapas, a detecção automatizada de afirmações factuais tem ganhado destaque por reduzir o volume de informações analisadas manualmente e otimizar o trabalho das agências de checagem.  
 
