@@ -1,16 +1,5 @@
 \chapter{Resultados e Discussões}
 \label{cap:resultados}
-\section{Resultados Esperados}
-Compreender quais são as técnicas mais eficazes para extração de termos-chave em
-ambientes digitais. Junto a isso, descobrir quais são os obstáculos atuais e futuros que devem
-ser superados para obter-se um avanço no processamento de linguagem natural. Os
-conhecimentos gerados com este projeto serão utilizados para facilitar e guiar futuros trabalhos
-da área computacional, jornalística ou até mesmo social, já que o processo linguístico por
-escrita engloba diversos fatores que podem ser analisados por diferentes áreas. Essa revisão
-também será aplicada para contribuir com o combate da geração de informações falsas
-espalhadas em plataformas digitais e evitar os impactos causados pela mesma na esfera social
-e econômica.
-
 \section{Resultados Obtidos}
 
 \subsection{Sumarização}
@@ -18,7 +7,7 @@ Para o primeiro processo de sumarização automática para redução de ruído, 
 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/compression_ratio.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/compression_ratio.png} % coloque o arquivo na pasta escolhida
     \caption{Compression ratio médio (|resumo|/|original|) por modelo.}
     \label{fig:compression-ratio}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
@@ -28,7 +17,7 @@ Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-
 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/factual_graph.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/factual_graph.png} % coloque o arquivo na pasta escolhida
     \caption{Factualidade \% por modelo.}
     \label{fig:factualidade}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
@@ -41,7 +30,7 @@ ightarrow DistilBERT.
 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/radar_modelos.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/radar_modelos.png} % coloque o arquivo na pasta escolhida
     \caption{Radar comparativo dos modelos de sumarização automática.}
     \label{fig:radar-modelos}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
@@ -116,7 +105,7 @@ Todos os modelos preservam esse contraste estrutural (C0 com maior proporção `
 Em termos de aderência relativa ao manual, o DistilBERT tende a ficar mais próximo pois menos esvazia a classe ``não rotulado'' (C0: 43{,}3\%; C1: 43{,}2\%). BERT, sBERT e ``que'' tornam as classes rotuladas mais assertivas---principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Se o objetivo é aproximação fiel ao manual, recomenda-se calibrar \textit{thresholds} e custos de classe (ou reforçar anotações) para reduzir a super-rotulagem; entre as opções atuais, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave manuais - Mês de outubro/2022}
     \label{fig:tweets-graph-manual}
@@ -124,7 +113,7 @@ cluster obtidos com termos-chave manuais - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_bert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_bert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave BERT - Mês de outubro/2022}
     \label{fig:tweets-graph-bert}
@@ -132,7 +121,7 @@ cluster obtidos com termos-chave BERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_dbert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_dbert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
     \label{fig:tweets-graph-dbert}
@@ -140,7 +129,7 @@ cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_sbert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_sbert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
     \label{fig:tweets-graph-sbert}
@@ -148,7 +137,7 @@ cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/tweets_graph_que.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_que.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
     \label{fig:tweets-graph-que}
@@ -162,10 +151,10 @@ A diferença central trazida pelos modelos está menos na hierarquia entre class
 O DistilBERT, por sua vez, atua como um freio nessa tendência. Ele preserva uma parcela maior de “não rotulado” em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe “com desinformação”; em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe “não rotulado”, e, portanto, menor risco de super-rotulagem. Em suma, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual.
 
 Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Se o objetivo é maximizar sinal (identificar com mais clareza, nos retuítes, onde está a desinformação em C0 e a ausência dela em C1), BERT, sBERT e “que” são preferíveis, pois comprimem a incerteza e ampliam o diagnóstico. Se, ao contrário, a meta é reproduzir com maior proximidade o retrato manual e controlar falsos positivos nos retuítes, DistilBERT é o candidato natural. Em ambos os casos, uma calibração adicional, ajuste de limiares (thresholds) e custos de classe, ou o reforço de anotações, tende a melhorar o equilíbrio entre cobertura e precisão, reduzindo a super-rotulagem sem perder o contraste essencial entre os clusters.
-
+ 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_manual.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_manual.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave manuais - Mês de outubro/2022}
     \label{fig:retuites-graph-manual}
@@ -173,7 +162,7 @@ cluster obtidos com termos-chave manuais - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_bert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_bert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave BERT - Mês de outubro/2022}
     \label{fig:retuites-graph-bert}
@@ -181,7 +170,7 @@ cluster obtidos com termos-chave BERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_dbert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_dbert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
     \label{fig:retuites-graph-dbert}
@@ -189,7 +178,7 @@ cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_sbert.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_sbert.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
     \label{fig:retuites-graph-sbert}
@@ -197,7 +186,7 @@ cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=0.9\textwidth]{figs/retuites_graph_que.png} % coloque o arquivo na pasta escolhida
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_que.png} % coloque o arquivo na pasta escolhida
     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
 cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
     \label{fig:retuites-graph-que}

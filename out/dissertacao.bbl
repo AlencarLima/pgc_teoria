@@ -39,10 +39,21 @@ Dispon{\'\i}vel em: \url{https://aclanthology.org/2020.acl-main.747.pdf}.}
 \emph{ResearchGate}, 2015.
 Dispon{\'\i}vel em: \url{https://www.researchgate.net/publication/281818865\_Automatic\_Deception\_Detection\_Methods\_for\_Finding\_Fake\_News}.}
 
+\bibitem[Domenico et al. 2020]{dedomenico2020}
+\abntrefinfo{Domenico et al.}{DOMENICO et al.}{2020}
+{DOMENICO, M.~D. et al. \emph{Covid19 Infodemic Observatory}. 2020. \url{http://dx.doi.org/10.17605/OSF.IO/N6UPX}.
+Disponível em: OSF (Open Science Framework).}
+
 \bibitem[Franzese 2017]{prnews}
 \abntrefinfo{Franzese}{FRANZESE}{2017}
 {FRANZESE, A. \emph{Gen Z and Millennials now more likely to communicate with each other digitally than in person}. 2017.
 Dispon{\'\i}vel em: \url{https://www.prnewswire.com/news-releases/gen-z-and-millennials-now-more-likely-to-communicate-with-each-other-digitally-than-in-person-300537770.html}.}
+
+\bibitem[Garc{\'i}a-Sais{\'o} et al. 2021]{garciasaiso2021}
+\abntrefinfo{Garc{\'i}a-Sais{\'o} et al.}{GARC{\'I}A-SAIS{\'O} et al.}{2021}
+{GARC{\'I}A-SAIS{\'O}, S. et al. Infodemia en tiempos de covid-19.
+\emph{Revista Panamericana de Salud P{\'u}blica}, Organizaci{\'o}n Panamericana de la Salud, v.~45, p.~e89, 2021.
+Dispon{\'\i}vel em: \url{https://doi.org/10.26633/RPSP.2021.89}.}
 
 \bibitem[Han 2018]{han2018}
 \abntrefinfo{Han}{HAN}{2018}
@@ -61,10 +72,15 @@ ISBN 978-92-3-100281-6. Dispon{\'\i}vel em: \url{https://unesdoc.unesco.org/ark:
 Dispon{\'\i}vel em: \url{https://www.itu.int/itu-d/reports/statistics/2022/11/24/ff22-internet-use/}.}
 
 \bibitem[Konstantinovskiy et al. 2021]{claimDetection}
-\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021}
+\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021a}
 {KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
 \emph{ACL Anthology}, 2021.
 Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.acl-long.14/}.}
+
+\bibitem[Konstantinovskiy et al. 2021]{konstantinovskiy2021towards}
+\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021b}
+{KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
+\emph{Digital Threats: Research and Practice}, v.~2, n.~2, p. 1--16, 2021.}
 
 \bibitem[Krell et al. 2022]{padding}
 \abntrefinfo{Krell et al.}{KRELL et al.}{2022}
@@ -93,6 +109,10 @@ Dispon{\'\i}vel em: \url{https://revista.ibict.br/ciinf/article/view/962}.}
 \abntrefinfo{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{2020}
 {{Organização Pan-Americana da Saúde (OPAS/OMS)}. \emph{Entenda a infodemia e a desinformação na luta contra a COVID-19}.
 Brasília, 2020. Dispon{\'\i}vel em: \url{https://iris.paho.org/handle/10665.2/52054}.}
+
+\bibitem[Oshikawa, Qian e Wang 2020]{oshikawa2020survey}
+\abntrefinfo{Oshikawa, Qian e Wang}{OSHIKAWA; QIAN; WANG}{2020}
+{OSHIKAWA, R.; QIAN, J.; WANG, W.~Y. A survey on natural language processing for fake news detection. In:  \emph{Proceedings of The 12th Language Resources and Evaluation Conference}. Marseille, France: European Language Resources Association, 2020. p. 6086--6093.}
 
 \bibitem[Pennycook e Rand 2021]{pennycook2021}
 \abntrefinfo{Pennycook e Rand}{PENNYCOOK; RAND}{2021}
