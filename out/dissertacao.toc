@@ -35,16 +35,16 @@
 \contentsline {subsection}{\numberline {4.1.3}Registro dos Dados Processados}{23}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Obtenção dos Termos-chave}{24}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}Classificação Textual}{26}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Análise da eficácia obtida por cada tecnologia}{26}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.6}Análise da eficácia obtida por cada tecnologia}{27}{subsection.4.1.6}%
 \contentsline {subsection}{\numberline {4.1.7}Comparação da eficácia entre as tecnologias estudadas durante o projeto}{28}{subsection.4.1.7}%
-\contentsline {section}{\numberline {4.2}Cronograma}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Cronograma}{30}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussões}}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Resultados Obtidos}{31}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Sumarização}{31}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Segmentação baseada em conjunções}{33}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Segmentação baseada em conjunções}{32}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Segmentação baseada apenas em aspas}{35}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Classificação de afirmações factuais com XLM-R-Large-ClaimDetection}{36}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Classificação de afirmações factuais com XLM-R-Large-ClaimDetection}{35}{subsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.1.5}Comparação com o SVM}{36}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}Comparação de Classificação}{36}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Avaliação}{43}{section.5.3}%

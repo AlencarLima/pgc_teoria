@@ -3,9 +3,9 @@
 \section{Resultados Obtidos}
 
 \subsection{Sumarização}
-Para o primeiro processo de sumarização automática para redução de ruído, três modelos foram avaliados: BERT-base, DistilBERT e SBERT-MiniLM. Em todos os casos, os resumos ficaram entre 25\% e 27\% do tamanho do texto original, sem diferenças expressivas de compressão entre os modelos, com leve tendência do DistilBERT a produzir resumos mais concisos e do SBERT-MiniLM a manter textos um pouco maiores.
+Para o primeiro processo de sumarização automática para redução de ruído, três modelos foram avaliados: BERT-base, DistilBERT e SBERT-MiniLM. Em todos os casos, os resumos ficaram entre 25\% e 27\% do tamanho do texto original conforme mostrado na Figura~\ref{fig:compression-ratio}, sem diferenças expressivas de compressão entre os modelos, com leve tendência do DistilBERT a produzir resumos mais concisos e do SBERT-MiniLM a manter textos um pouco maiores.
 
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+\begin{figure}[ht] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
     \includegraphics[width=1\textwidth]{figs/compression_ratio.png} % coloque o arquivo na pasta escolhida
     \caption{Compression ratio médio (|resumo|/|original|) por modelo.}
@@ -13,9 +13,9 @@ Para o primeiro processo de sumarização automática para redução de ruído, 
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
 
-Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-MiniLM mantiveram cerca de 25\% a 26\% de conteúdo classificado como factual, superando o DistilBERT, que ficou em torno de 22\%. Em termos de retenção de tópicos centrais, medida pelo índice de Jaccard entre as palavras-chave do original e do resumo, o SBERT-MiniLM apresentou o melhor resultado (0,22), seguido muito de perto pelo BERT-base (0,21), enquanto o DistilBERT apresentou desempenho inferior (0,14). Da mesma forma, quando a similaridade textual foi medida por uma métrica de similaridade (TF-IDF/cosseno), o SBERT-MiniLM obteve o maior valor (0,64), superando ligeiramente o BERT-base e o DistilBERT, ambos com 0,61. No entanto, o tempo de processamento mostrou diferenças marcantes: o BERT-base demandou em média mais de 22 segundos por texto, o DistilBERT cerca de 3 segundos e o SBERT-MiniLM pouco mais de 1 segundo, o que torna o último mais adequado a cenários de grande volume.
+Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-MiniLM mantiveram cerca de 25\% a 26\% de conteúdo classificado como factual, superando o DistilBERT, que ficou em torno de 22\% conforme mostrado na Figura~\ref{fig:factualidade}. Em termos de retenção de tópicos centrais, medida pelo índice de Jaccard entre as palavras-chave do original e do resumo, o SBERT-MiniLM apresentou o melhor resultado (0,22), seguido muito de perto pelo BERT-base (0,21), enquanto o DistilBERT apresentou desempenho inferior (0,14). Da mesma forma, quando a similaridade textual foi medida por uma métrica de similaridade (TF-IDF/cosseno), o SBERT-MiniLM obteve o maior valor (0,64), superando ligeiramente o BERT-base e o DistilBERT, ambos com 0,61. No entanto, o tempo de processamento mostrou diferenças marcantes: o BERT-base demandou em média mais de 22 segundos por texto, o DistilBERT cerca de 3 segundos e o SBERT-MiniLM pouco mais de 1 segundo, o que torna o último mais adequado a cenários de grande volume.
 
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+\begin{figure}[ht] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
     \includegraphics[width=1\textwidth]{figs/factual_graph.png} % coloque o arquivo na pasta escolhida
     \caption{Factualidade \% por modelo.}
@@ -28,7 +28,7 @@ ightarrow SBERT-MiniLM; (ii) manter afirmações factuais completas
 ightarrow BERT-base; (iii) processar muitos textos rapidamente com perda controlada 
 ightarrow DistilBERT.
 
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+\begin{figure}[ht] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
     \includegraphics[width=1\textwidth]{figs/radar_modelos.png} % coloque o arquivo na pasta escolhida
     \caption{Radar comparativo dos modelos de sumarização automática.}
@@ -49,7 +49,7 @@ Esses resultados são demonstrados no relatório de classificação, que apresen
 
 Em comparação com o modelo original treinado em inglês, que obteve uma acurácia de 0.90, os resultados em português apresentaram uma leve queda. No estudo original, o modelo foi capaz de classificar afirmações factuais e não factuais com equilíbrio entre precisão e recall, alcançando valores de 0.90 em ambas as métricas, conforme apresentado na Tabela 2.
 
-\begin{table}[h!]
+\begin{table}[ht]
     \centering
     \caption{Resultados do modelo XLM-R-Large-ClaimDetection em português}
     \label{tab:resultados_pt}
@@ -65,7 +65,7 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
     \end{tabular}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}[ht]
     \centering
     \caption{Resultados originais do modelo XLM-R-Large-ClaimDetection em inglês}
     \label{tab:resultados_en}

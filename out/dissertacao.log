@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  15 NOV 2025 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  15 NOV 2025 19:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1108,7 +1108,7 @@ Cap\'{\i }tulo 4.
 
  (./capitulos/resultados.tex
 Cap\'{\i }tulo 5.
-<figs/compression_ratio.png, id=465, 578.16pt x 361.35pt>
+<figs/compression_ratio.png, id=466, 578.16pt x 361.35pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 10.
@@ -1119,71 +1119,67 @@ Package pdftex.def Info: figs/compression_ratio.png  used on input line 10.
 
 
  <./figs/compression_ratio.png>]
-<figs/factual_graph.png, id=473, 578.16pt x 361.35pt>
+<figs/factual_graph.png, id=476, 578.16pt x 361.35pt>
 File: figs/factual_graph.png Graphic file (type png)
 <use figs/factual_graph.png>
 Package pdftex.def Info: figs/factual_graph.png  used on input line 20.
 (pdftex.def)             Requested size: 455.0pt x 284.37164pt.
-<figs/radar_modelos.png, id=474, 505.89pt x 505.89pt>
+<figs/radar_modelos.png, id=477, 505.89pt x 505.89pt>
 File: figs/radar_modelos.png Graphic file (type png)
 <use figs/radar_modelos.png>
 Package pdftex.def Info: figs/radar_modelos.png  used on input line 33.
 (pdftex.def)             Requested size: 455.0pt x 455.01117pt.
- [32 <./figs/factual_graph.png>] [33 <./figs/radar_modelos.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[34] [35]
-<figs/tweets_graph_manual.png, id=499, 1145.4795pt x 457.4691pt>
+ [32 <./figs/factual_graph.png>] [33 <./figs/radar_modelos.png>] [34] [35]
+<figs/tweets_graph_manual.png, id=501, 1145.4795pt x 457.4691pt>
 File: figs/tweets_graph_manual.png Graphic file (type png)
 <use figs/tweets_graph_manual.png>
 Package pdftex.def Info: figs/tweets_graph_manual.png  used on input line 108.
 (pdftex.def)             Requested size: 455.0pt x 181.71396pt.
-<figs/tweets_graph_bert.png, id=500, 1146.2022pt x 470.4777pt>
+<figs/tweets_graph_bert.png, id=502, 1146.2022pt x 470.4777pt>
 File: figs/tweets_graph_bert.png Graphic file (type png)
 <use figs/tweets_graph_bert.png>
 Package pdftex.def Info: figs/tweets_graph_bert.png  used on input line 116.
 (pdftex.def)             Requested size: 455.0pt x 186.75914pt.
  [36]
-<figs/tweets_graph_dbert.png, id=505, 1198.2366pt x 452.4102pt>
+<figs/tweets_graph_dbert.png, id=507, 1198.2366pt x 452.4102pt>
 File: figs/tweets_graph_dbert.png Graphic file (type png)
 <use figs/tweets_graph_dbert.png>
 Package pdftex.def Info: figs/tweets_graph_dbert.png  used on input line 124.
 (pdftex.def)             Requested size: 455.0pt x 171.7934pt.
-<figs/tweets_graph_sbert.png, id=506, 1154.1519pt x 461.8053pt>
+<figs/tweets_graph_sbert.png, id=508, 1154.1519pt x 461.8053pt>
 File: figs/tweets_graph_sbert.png Graphic file (type png)
 <use figs/tweets_graph_sbert.png>
 Package pdftex.def Info: figs/tweets_graph_sbert.png  used on input line 132.
 (pdftex.def)             Requested size: 455.0pt x 182.05524pt.
  [37 <./figs/tweets_graph_manual.png> <./figs/tweets_graph_bert.png>]
-<figs/tweets_graph_que.png, id=516, 1154.1519pt x 461.8053pt>
+<figs/tweets_graph_que.png, id=518, 1154.1519pt x 461.8053pt>
 File: figs/tweets_graph_que.png Graphic file (type png)
 <use figs/tweets_graph_que.png>
 Package pdftex.def Info: figs/tweets_graph_que.png  used on input line 140.
 (pdftex.def)             Requested size: 455.0pt x 182.05524pt.
  [38 <./figs/tweets_graph_dbert.png> <./figs/tweets_graph_sbert.png>] [39 <./figs/tweets_graph_que.png>]
-<figs/retuites_graph_manual.png, id=531, 1193.1777pt x 461.0826pt>
+<figs/retuites_graph_manual.png, id=533, 1193.1777pt x 461.0826pt>
 File: figs/retuites_graph_manual.png Graphic file (type png)
 <use figs/retuites_graph_manual.png>
 Package pdftex.def Info: figs/retuites_graph_manual.png  used on input line 157.
 (pdftex.def)             Requested size: 455.0pt x 175.82529pt.
-<figs/retuites_graph_bert.png, id=532, 1209.7998pt x 484.209pt>
+<figs/retuites_graph_bert.png, id=534, 1209.7998pt x 484.209pt>
 File: figs/retuites_graph_bert.png Graphic file (type png)
 <use figs/retuites_graph_bert.png>
 Package pdftex.def Info: figs/retuites_graph_bert.png  used on input line 165.
 (pdftex.def)             Requested size: 455.0pt x 182.1099pt.
-<figs/retuites_graph_dbert.png, id=533, 1204.7409pt x 469.0323pt>
+<figs/retuites_graph_dbert.png, id=535, 1204.7409pt x 469.0323pt>
 File: figs/retuites_graph_dbert.png Graphic file (type png)
 <use figs/retuites_graph_dbert.png>
 Package pdftex.def Info: figs/retuites_graph_dbert.png  used on input line 173.
 (pdftex.def)             Requested size: 455.0pt x 177.13913pt.
-<figs/retuites_graph_sbert.png, id=534, 1206.1863pt x 472.6458pt>
+<figs/retuites_graph_sbert.png, id=536, 1206.1863pt x 472.6458pt>
 File: figs/retuites_graph_sbert.png Graphic file (type png)
 <use figs/retuites_graph_sbert.png>
 Package pdftex.def Info: figs/retuites_graph_sbert.png  used on input line 181.
 (pdftex.def)             Requested size: 455.0pt x 178.29468pt.
  [40 <./figs/retuites_graph_manual.png> <./figs/retuites_graph_bert.png>]
-<figs/retuites_graph_que.png, id=543, 1210.5225pt x 485.6544pt>
+<figs/retuites_graph_que.png, id=545, 1210.5225pt x 485.6544pt>
 File: figs/retuites_graph_que.png Graphic file (type png)
 <use figs/retuites_graph_que.png>
 Package pdftex.def Info: figs/retuites_graph_que.png  used on input line 189.
@@ -1420,21 +1416,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 222E8A54E20F1BD42922C1D720C23301;3166.
+(rerunfilecheck)             Checksum: B9EA8D3A8F2C50FE0820466A018F8C5D;3166.
  ) 
 Here is how much of TeX's memory you used:
- 23185 strings out of 467578
- 385974 string characters out of 5424739
+ 23187 strings out of 467578
+ 386006 string characters out of 5424739
  976413 words of memory out of 5000000
- 51219 multiletter control sequences out of 15000+600000
+ 51221 multiletter control sequences out of 15000+600000
  702143 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,1846b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out/dissertacao.pdf (56 pages, 1777342 bytes).
+Output written on out/dissertacao.pdf (56 pages, 1779465 bytes).
 PDF statistics:
- 964 PDF objects out of 1000 (max. 8388607)
- 831 compressed objects within 9 object streams
+ 966 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
  178 named destinations out of 1000 (max. 500000)
  43497 words of extra memory for PDF output out of 51595 (max. 10000000)
 
