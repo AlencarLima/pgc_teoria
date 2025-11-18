@@ -438,11 +438,6 @@ INPUT ./figs/factual_graph.png
 INPUT ./figs/factual_graph.png
 INPUT ./figs/factual_graph.png
 INPUT ./figs/factual_graph.png
-INPUT ./figs/radar_modelos.png
-INPUT ./figs/radar_modelos.png
-INPUT ./figs/radar_modelos.png
-INPUT ./figs/radar_modelos.png
-INPUT ./figs/radar_modelos.png
 INPUT ./figs/tweets_graph_manual.png
 INPUT ./figs/tweets_graph_manual.png
 INPUT ./figs/tweets_graph_manual.png
@@ -468,6 +463,11 @@ INPUT ./figs/tweets_graph_que.png
 INPUT ./figs/tweets_graph_que.png
 INPUT ./figs/tweets_graph_que.png
 INPUT ./figs/tweets_graph_que.png
+INPUT ./figs/tweets_graph_svm.png
+INPUT ./figs/tweets_graph_svm.png
+INPUT ./figs/tweets_graph_svm.png
+INPUT ./figs/tweets_graph_svm.png
+INPUT ./figs/tweets_graph_svm.png
 INPUT ./figs/retuites_graph_manual.png
 INPUT ./figs/retuites_graph_manual.png
 INPUT ./figs/retuites_graph_manual.png
@@ -493,6 +493,11 @@ INPUT ./figs/retuites_graph_que.png
 INPUT ./figs/retuites_graph_que.png
 INPUT ./figs/retuites_graph_que.png
 INPUT ./figs/retuites_graph_que.png
+INPUT ./figs/retuites_graph_svm.png
+INPUT ./figs/retuites_graph_svm.png
+INPUT ./figs/retuites_graph_svm.png
+INPUT ./figs/retuites_graph_svm.png
+INPUT ./figs/retuites_graph_svm.png
 INPUT ./capitulos/conclusao.tex
 INPUT ./capitulos/conclusao.tex
 OUTPUT out/capitulos/conclusao.aux

@@ -23,19 +23,6 @@ Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
 
-Uma visualização em radar de cinco dimensões normalizadas (similaridade, Jaccard, factualidade, compressão e velocidade) mostrou que o DistilBERT aparece como o modelo mais equilibrado, ainda que não seja o melhor em factualidade. Assim, a escolha do modelo deve ser orientada pela aplicação: (i) reter termos-chave para indexação e comparação com dicionários de desinformação 
-ightarrow SBERT-MiniLM; (ii) manter afirmações factuais completas 
-ightarrow BERT-base; (iii) processar muitos textos rapidamente com perda controlada 
-ightarrow DistilBERT.
-
-\begin{figure}[ht] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/radar_modelos.png} % coloque o arquivo na pasta escolhida
-    \caption{Radar comparativo dos modelos de sumarização automática.}
-    \label{fig:radar-modelos}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-
 \subsection{Segmentação baseada em conjunções}
 Os resultados da abordagem de segmentação baseada no termo ``que'' demonstraram sua eficácia. Nas 29 amostras de notícias provenientes de agências de checagem de fatos, a segmentação baseada no termo ``que'' resultou em textos altamente relevantes, evidenciando ser uma técnica interessante de segmentação para textos contidos em notícias. Este método apresenta a vantagem de não exigir grande processamento, sendo uma alternativa eficiente para identificar informações relevantes em grandes volumes de texto.
 
@@ -45,9 +32,9 @@ A aplicação do modelo XLM-R-Large-ClaimDetection nos dados de debates presiden
 
 Por meio da utilização de uma matriz de confusão foi possível verificar que o modelo classificou corretamente a maioria das afirmações factuais e não factuais, com 680 previsões corretas para sentenças factuais não relevantes e 232 para as sentenças factuais importantes. Porém, houve dificuldades de diferenciar categorias factuais não relevantes, sendo classificadas incorretamente 114 sentenças das 1034 presentes no database.
 
-Esses resultados são demonstrados no relatório de classificação, que apresentou um desempenho muito elevado para as sentenças factuais não relevantes, com precisão de 0.99 e recall de 0.86, conforme dados da Tabela 1. Já para as sentenças factuais relevantes, a precisão foi de 0.67, enquanto o recall atingiu um valor consideravelmente alto de 0.97, evidenciando a capacidade do modelo em identificar corretamente a maioria das afirmações importantes, ainda que tenha apresentado menor precisão nessa categoria.
+Esses resultados são demonstrados no relatório de classificação, que apresentou um desempenho muito elevado para as sentenças factuais não relevantes, com \textit{precisão} de 0.99 e \textit{recall} de 0.86, conforme dados \autoref{tab:resultados_pt}. Já para as sentenças factuais relevantes, a \textit{precisão} foi de 0.67, enquanto o \textit{recall} atingiu um valor consideravelmente alto de 0.97, evidenciando a capacidade do modelo em identificar corretamente a maioria das afirmações importantes, ainda que tenha apresentado menor precisão nessa categoria.
 
-Em comparação com o modelo original treinado em inglês, que obteve uma acurácia de 0.90, os resultados em português apresentaram uma leve queda. No estudo original, o modelo foi capaz de classificar afirmações factuais e não factuais com equilíbrio entre precisão e recall, alcançando valores de 0.90 em ambas as métricas, conforme apresentado na Tabela 2.
+Em comparação com o modelo original treinado em inglês, que obteve uma acurácia de 0.90, os resultados em português apresentaram uma leve queda. No estudo original, o modelo foi capaz de classificar afirmações factuais e não factuais com equilíbrio entre \textit{precisão} e \textit{recall}, alcançando valores de 0.90 em ambas as métricas, conforme apresentado na \autoref{tab:resultados_en}.
 
 \begin{table}[ht]
     \centering
@@ -83,11 +70,9 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
 
 O baixo rendimento em encontrar sentenças factuais importantes (IFS) pode ser atribuído ao fato de o treinamento não ter sido realizado de forma ideal, devido a limitações de hardware. A performance alcançada, ainda assim, destaca a utilidade do modelo XLM-R-Large como ferramenta para filtragem e segmentação de grandes volumes de texto, facilitando a identificação de informações relevantes para análises de desinformação e processos de verificação de fatos.
 
-Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas. Com textos resumidos pelo BERT, foram retornados 2.391 tuítes no $cluster_0$ e 1.333 no $cluster_1$; com o DistilBERT (dBERT), 1.670 e 928, respectivamente; e com o SBERT, 2.040 e 1.234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
+Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas conforme pode ser visto na \autoref{tab:exemplo-6x5}. Com textos resumidos pelo BERT, foram retornados 2.391 tuítes no $cluster_0$ e 1.333 no $cluster_1$, já para o DistilBERT (dBERT), 1.670 e 928, respectivamente e com o SBERT, 2.040 e 1.234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
 
-Apesar da alta acurácia apresentada pelo modelo SVM, com uma acurácia de 0.93, que inclusive superou o desempenho do modelo XLM no treinamento em inglês, na prática não foi possível verificar a mesma eficiência. Isso resultou na extração de textos que não eram relevantes, o que impactou negativamente a eficácia do modelo. Portanto, será necessário refazer essa parte do processo.
-
-\subsection{Segmentação baseada apenas em aspas}
+\subsection{Segmentação baseada em aspas}
 Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29
 notícias analisadas, demonstrando sua baixa eficácia na identificação de informações relevantes. Entre os textos retornados estavam exemplos como: ``Outro exemplo citado por ele é no caso de a totalização envolver, hipoteticamente, apenas duas cidades'', além de termos como ``banco nacional do brasil'', ``sala escura'' e ``vão para as nuvens''. Embora algumas frases tenham relevância contextual, o método não foi consistente o suficiente para ser amplamente aplicado, destacando a necessidade de estratégias mais eficazes para análise desse tipo de dado.
 
@@ -95,14 +80,39 @@ notícias analisadas, demonstrando sua baixa eficácia na identificação de inf
 A aplicação do modelo XLM-R-Large-ClaimDetection apresentou acurácia de 0,88 em português, com bom 	extit{recall} para sentenças factuais importantes (0,97), mas menor precisão (0,67), o que indica tendência a recuperar quase tudo o que é relevante, ao custo de trazer alguns itens não essenciais.
 
 \subsection{Comparação com o SVM}
-Apesar da alta acurácia (0,93), o SVM extraiu textos pouco relevantes na prática, indicando necessidade de refazer essa etapa ou combiná-la com filtragem estrutural.
+O modelo SVM apresenta uma acurácia global moderada, em torno de 0,79. A classe 0 obteve \textit{precision} de 0,85 e \textit{recall} de 0,83, enquanto a classe 1, associada às sentenças factuais/relevantes, alcançou \textit{precision} de 0,69 e \textit{f1-score} de 0,71, conforme \autoref{tab:resultados_svm}. Esses valores indicam que o modelo é capaz de capturar uma parcela significativa das sentenças de interesse, embora ainda com ocorrência de falsos positivos e perda de algumas sentenças relevantes. Na prática, isso significa que a filtragem contribui para reduzir o volume de texto a ser analisado. Contudo, a presença de textos menos relevantes entre os resultados sugere que o modelo SVM pode beneficiar-se de ajustes adicionais ou da combinação com outras técnicas de filtragem para melhorar a qualidade do conteúdo extraído.
+
+\begin{table}[ht]
+    \centering
+    \caption{Resultados do SVM em português}
+    \label{tab:resultados_svm}
+    \begin{tabular}{lccc}
+        \toprule
+        Classe        & Precision & Recall & F1-Score \\
+        \midrule
+        Factual      & 0.6903    & 0.7323 & 0.7107 \\
+        Non-Factual  & 0.8538    & 0.8263 & 0.8398 \\
+        \midrule
+        Acurácia geral & \multicolumn{3}{c}{0.7938} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \section{Comparação de Classificação}
-Os gráficos de \textit{tweets}, obtidos no processo com termos-chave obtidos manualmente, mostram que ambos os \textit{clusters} são dominados por itens não rotulados (C0: 60{,}5\%; C1: 63{,}0\%), com desinformação mais presente no Cluster 0 (33{,}4\%) do que no Cluster 1 (8{,}4\%). Já a classe sem desinformação é minoritária no C0 (6{,}0\%) e relativamente mais frequente no C1 (28{,}6\%). Esse é o retrato de referência: o C0 concentra uma fração relevante de \textit{tweets} com desinformação, enquanto o C1 reúne mais \textit{tweets} sem desinformação, ainda que em ambos haja grande massa não rotulada.
+Os gráficos de \textit{tweets} apresentados nas Figuras~\ref{fig:tweets-graph-manual}, \ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert} e \ref{fig:tweets-graph-que}, \ref{fig:tweets-graph-svm}, obtidos no processo com termos-chave definidos manualmente e por modelos, evidenciam que ambos os \textit{clusters} são dominados por itens não rotulados (C0: 60{,}5\% e C1: 63{,}0\% no caso manual), com desinformação mais presente no Cluster 0 (33{,}4\%) do que no Cluster 1 (8{,}4\%). Já a classe sem desinformação é minoritária no C0 (6{,}0\%) e relativamente mais frequente no C1 (28{,}6\%). Esse é o retrato de referência fornecido pela Figura~\ref{fig:tweets-graph-manual}: o C0 concentra uma fração relevante de \textit{tweets} com desinformação, enquanto o C1 reúne mais \textit{tweets} sem desinformação, ainda que em ambos haja grande massa de ``não rotulada''.
 
-Todos os modelos preservam esse contraste estrutural (C0 com maior proporção ``com desinformação''; C1 com maior proporção ``sem desinformação''), porém reduzem fortemente a classe ``não rotulado'' e inflam as classes rotuladas. No Cluster 0, BERT, sBERT e a segmentação por ``que'' deslocam muitos exemplos para com desinformação (na faixa de 55--61\%), enquanto o DistilBERT é o menos agressivo (47{,}5\%), ainda assim acima do manual (33{,}4\%). A classe sem desinformação também cresce em todos (9--13\% vs.\ 6{,}0\%). No Cluster 1, o padrão se repete: sem desinformação sobe para 42--54\% (vs.\ 28{,}6\%) e com desinformação para 15--17\% (vs.\ 8{,}4\%), comprimindo ``não rotulado'' para 29--43\% (bem abaixo dos 63\% do manual).
+Nas Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}, que correspondem às segmentações via BERT, DistilBERT, sBERT, termos baseados em ``que'' e o modelo de SVM, observa-se que todos os modelos preservam esse contraste com relação aos dados retornados pelo formato manual (C0 com maior proporção ``com desinformação'' e C1 com maior proporção ``sem desinformação''), porém reduzem intensamente a classe ``não rotulado''. No Cluster 0, BERT, sBERT, segmentação por ``que'' e SVM (Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}) deslocam muitos exemplos para ``com desinformação'' (na faixa de 55--62\%), enquanto o DistilBERT (Figura~\ref{fig:tweets-graph-dbert}) é o que menos eleva (47{,}5\%), ainda assim acima do manual (33{,}4\%). A classe sem desinformação também cresce em todos (9--13\% vs.\ 6{,}0\%). No Cluster 1, o padrão se repete: sem desinformação sobe para 42--54\% (vs.\ 28{,}6\%) e com desinformação para 15--17\% (vs.\ 8{,}4\%), comprimindo ``não rotulado'' para 29--43\% ficando abaixo dos 63\% do manual.
 
-Em termos de aderência relativa ao manual, o DistilBERT tende a ficar mais próximo pois menos esvazia a classe ``não rotulado'' (C0: 43{,}3\%; C1: 43{,}2\%). BERT, sBERT e ``que'' tornam as classes rotuladas mais assertivas---principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Se o objetivo é aproximação fiel ao manual, recomenda-se calibrar \textit{thresholds} e custos de classe (ou reforçar anotações) para reduzir a super-rotulagem; entre as opções atuais, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
+Em termos de comparação relativa ao manual, o DistilBERT (Figura~\ref{fig:tweets-graph-dbert}) tende a ficar mais próximo, sendo o que menos retira a classe ``não rotulado'' (C0: 43{,}3\% e C1: 43{,}2\%). BERT, sBERT e ``que'' (Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-sbert} e \ref{fig:tweets-graph-que}) tornam as classes rotuladas mais assertivas, principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Entre os resultados, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
+
+Os gráficos de retuítes, exibidos nas Figuras~\ref{fig:retuites-graph-manual}, \ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-dbert}, \ref{fig:retuites-graph-sbert}, \ref{fig:retuites-graph-que} e \ref{fig:retuites-graph-svm}, confirmam o contraste estrutural observado no retrato de referência: o Cluster 0 (C0) é o polo de desinformação, enquanto o Cluster 1 (C1) concentra mais conteúdos sem desinformação. No manual (Figura~\ref{fig:retuites-graph-manual}), C0 aparece dividido entre desinformação e não rotulados, com ``sem desinformação'' minoritário. Já C1 combina forte presença de ``sem desinformação'' com uma massa considerável de itens não rotulados e quase nenhuma desinformação.
+
+Nas Figuras~\ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-sbert} e \ref{fig:retuites-graph-que}, que mostram respectivamente BERT, sBERT e a segmentação por ``que'', a diferença central está menos na hierarquia entre classes e mais na magnitude das proporções. Esses três métodos reduzem de forma significativa a fatia de ``não rotulado'', ao mesmo tempo em que aumentam as classes rotuladas. O efeito é notório em C0, onde essas abordagens deslocam um grande contingente para ``com desinformação'', reforçando a vocação do cluster, Em C1, o movimento simétrico impulsiona ``sem desinformação''. Em termos comunicacionais, esses métodos tornam os gráficos de retuítes mais assertivos e menos conservadores, produzindo leituras mais decididas sobre o conteúdo que circula por meio dos retuítes.
+
+O DistilBERT, ilustrado na Figura~\ref{fig:retuites-graph-dbert}, atua como um freio nessa tendência. Ele preserva uma parcela maior de ``não rotulado'' em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe ``com desinformação''. Em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe ``não rotulado'', e, portanto, menor risco de super-rotulagem. Em resumo, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e ``que'' (Figuras~\ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-sbert} e \ref{fig:retuites-graph-que}) fornecem leituras mais assertivas.
+
+Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Para  reproduzir com maior proximidade o retrato
+manual e controlar falsos positivos nos retuítes, DistilBERT é mais similar e retorna resultados mais conservadores. Para maximizar a rotulagem e obter uma visão mais clara dos polos de desinformação e informação correta, BERT, sBERT e a segmentação por ``que'' são mais eficazes.
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
     \includegraphics[width=1\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
@@ -143,14 +153,15 @@ cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
     \label{fig:tweets-graph-que}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=1\textwidth]{figs/tweets_graph_svm.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave SVM - Mês de outubro/2022}
+    \label{fig:tweets-graph-svm}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
 
-A leitura dos gráficos de retuítes confirma o contraste estrutural observado no retrato de referência: o Cluster 0 (C0) é o polo de desinformação, enquanto o Cluster 1 (C1) concentra mais conteúdos sem desinformação. No manual, C0 aparece dividido entre desinformação e não rotulados, com “sem desinformação” minoritário; já C1 combina forte presença de “sem desinformação” com uma massa considerável de itens não rotulados e quase nenhuma desinformação. Esse padrão de oposição, C0 mais “com desinformação”, C1 mais “sem desinformação”, permanece quando passamos aos modelos.
-
-A diferença central trazida pelos modelos está menos na hierarquia entre classes e mais na magnitude das proporções. BERT, sBERT e a segmentação por “que” reduzem de forma pronunciada a fatia de “não rotulado”, ao mesmo tempo em que inflam as classes rotuladas. O efeito é nítido em C0, onde essas abordagens deslocam um grande contingente para “com desinformação”, reforçando a vocação do cluster; em C1, o movimento simétrico impulsiona “sem desinformação”. Em termos comunicacionais, esses três métodos tornam os gráficos de retuítes mais assertivos e menos conservadores, produzindo leituras mais “decididas” sobre o conteúdo que circula por meio dos retuítes.
-
-O DistilBERT, por sua vez, atua como um freio nessa tendência. Ele preserva uma parcela maior de “não rotulado” em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe “com desinformação”; em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe “não rotulado”, e, portanto, menor risco de super-rotulagem. Em suma, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual.
-
-Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Se o objetivo é maximizar sinal (identificar com mais clareza, nos retuítes, onde está a desinformação em C0 e a ausência dela em C1), BERT, sBERT e “que” são preferíveis, pois comprimem a incerteza e ampliam o diagnóstico. Se, ao contrário, a meta é reproduzir com maior proximidade o retrato manual e controlar falsos positivos nos retuítes, DistilBERT é o candidato natural. Em ambos os casos, uma calibração adicional, ajuste de limiares (thresholds) e custos de classe, ou o reforço de anotações, tende a melhorar o equilíbrio entre cobertura e precisão, reduzindo a super-rotulagem sem perder o contraste essencial entre os clusters.
  
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
@@ -192,6 +203,14 @@ cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
     \label{fig:retuites-graph-que}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=1\textwidth]{figs/retuites_graph_svm.png} % coloque o arquivo na pasta escolhida
+    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+cluster obtidos com termos-chave SVM - Mês de outubro/2022}
+    \label{fig:retuites-graph-svm}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
 
 \begin{table}[H]
 \centering
@@ -200,43 +219,29 @@ cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
 \renewcommand{\arraystretch}{0.9} % um pouco mais de altura nas linhas
 \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.15\linewidth}|X|X|X|X|}
 \hline
-\textbf{Títulos das notícias} & \textbf{Termos Manuais} & \textbf{Termos BERT} & \textbf{Termos DistilBERT} & \textbf{Termos SBERT} \\
+\textbf{Títulos das notícias} & \textbf{Termos Manuais} & \textbf{Termos SVM} & \textbf{Termos DistilBERT} & \textbf{Termos SBERT} \\
 \hline
 Vulnerabilida-des em urnas citadas em vídeo de 2014 já foram corrigidas & fraudar urnas, vídeo de Diego
 Aranha, não testou as urnas, como
 fiscalizar as urnas, Video viralizando
 Sábado, não te como TSE Fraudar as
-urnas & as vulnerabilidades encontradas no sistema em 2012 ainda não foram corrigidas, a gravação foi feita naquela época: a expressão “eleições 2014” aparece aos 35’’ (veja abaixo) & registra aleatoriamente os votos computados pelos eleitores, o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 & o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 \\
+urnas & os problemas citados por ele na gravação já foram sanados pela justiça eleitoral, os problemas citados por ele na gravação já foram sanados pela justiça eleitoral, um vídeo de 2014 em & registra aleatoriamente os votos computados pelos eleitores, o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 & o tse (tribunal superior eleitoral) não testou a segurança das urnas para as eleições de 2022 \\
 \hline
 Apertar “confirma” durante tela “confira seu voto” na urna eletrônica anula voto é boato & TSE fraudar as urnas, fraudar
 eleições, derrota antecipada,
 fracasso eleitoral, Não votar nas
 urnas eletrônicas, muito mais votos
-registrados & as pessoas apertarem “confirma” durante a tela “confira seu voto”, todo o voto será anulado & apertar “confirma” durante a tela “confira seu voto” anula o voto, anulação é falsa & a tela em questão não tem qualquer relação com anulação \\
+registrados & estamos chegando na semana final da campanha eleitoral do primeiro turno, ao contrário, foi possível ver & apertar “confirma” durante a tela “confira seu voto” anula o voto, anulação é falsa & a tela em questão não tem qualquer relação com anulação \\
 \hline
 Correntes no WhatsApp e no Telegram mentem sobre o que eleitor pode ou não fazer no domingo & Apertar confira seu voto, perderá
 voto, votos não computadorizados,
 votos serão anulados, teclar ok ou
-confirma & aos fatosf: compartilhe correntes de mensagens no whatsapp & no telegram disseminam informações falsas sobre o & aos fatosf: compartilhe correntes de mensagens no whatsapp \\
+confirma & mesários mal-intencionados tentariam boicotar o pleito, deixando de entregar comprovantes de votação, de coletar as assinaturas no livro de registro & no telegram disseminam informações falsas sobre o & aos fatosf: compartilhe correntes de mensagens no whatsapp \\
 \hline
 Acusação de fraude eleitoral domina correntes de WhatsApp em grupos monitorados & FRAUD3 NA ELE1ÇÃ0,Bolso-naro
 não pode deixar haver, Bolsonaro
 não deixa ter segundo turno, Fraude
-na eleição & a implantação do sistema eletrônico de votação no brasil, em 1996 & esta reportagem foi feita numa colaboração entre agência pública, aos fatos & esta reportagem foi feita numa colaboração entre agência pública, aos fatos \\
+na eleição & esta reportagem foi feita numa colaboração entre agência pública, aos fatos & esta reportagem foi feita numa colaboração entre agência pública, aos fatos & esta reportagem foi feita numa colaboração entre agência pública, aos fatos \\
 \hline
 \end{tabularx}
 \end{table}
-
-\section{Avaliação}
-Para avaliação da eficácia obtida dos resultados gerados pelo projeto, é necessário
-utilizar métricas e métodos para obter uma análise completa e abrangente. Métricas de
-desempenhos, como por exemplo, acurácia, precisão das classificações obtidas, revocação
-que possibilita analisar a proporção de acertos nas classificações textuais em relação a
-outras classificações já existentes feitas anteriormente, fornecem uma visão quantitativa
-sobre a capacidade de cada modelo estudado em classificar textos. Ademais, efetuar
-comparações com outros métodos ou benchmarks são úteis para avaliar a eficácia em
-relação às técnicas estudadas nesta pesquisa, podendo comparar classificações de textos
-obtidos por esta pesquisa com outras fontes já estabelecidas, como até mesmo checagem
-manual presentes em sites de notícias. Além da utilização de métricas, efetuar uma análise
-de algoritmo para obter o tempo de execução, consumo de recursos computacionais pode
-ajudar a compreender o quão eficaz os métodos utilizados podem ser na prática.

@@ -49,7 +49,7 @@ que apresentou melhor equilíbrio entre desempenho e tempo de processamento.
 
 A capacidade dos modelos baseados em transformers de compreender o contexto global das sentenças e aprender relações semânticas complexas os torna ferramentas fundamentais para o combate à desinformação, especialmente em ambientes multilíngues, como o português.
 
-Além disso, a formulação original dos \textit{Transformers} parte da ideia de que uma sequência pode ser decomposta em um conjunto de tokens sobre os quais se aplica, de forma iterativa, um bloco composto por autoatenção multi-cabeças (MHSA) e uma MLP posicionada por token. Em cada bloco, o mesmo vetor de entrada $x_i$ é projetado em três espaços lineares distintos, gerando $q_i = x_i W_Q$, $k_i = x_i W_K$ e $v_i = x_i W_V$. O \textit{query} passa a representar a demanda informacional do token, o \textit{key} os atributos sob os quais esse token pode ser recuperado pelos demais, e o \textit{value} o conteúdo semântico efetivamente agregável.
+Além disso, a formulação original dos \textit{Transformers} parte da ideia de que uma sequência pode ser decomposta em um conjunto de tokens sobre os quais se aplica, de forma iterativa, um bloco composto por autoatenção multi-cabeças (MHSA) e uma rede neural perceptron multicamada (MLP) posicionada por token. Em cada bloco, o mesmo vetor de entrada $x_i$ é projetado em três espaços lineares distintos, gerando $q_i = x_i W_Q$, $k_i = x_i W_K$ e $v_i = x_i W_V$. O \textit{query} passa a representar a demanda informacional do token, o \textit{key} os atributos sob os quais esse token pode ser recuperado pelos demais, e o \textit{value} o conteúdo semântico efetivamente agregável.
 
 MLP posicionada por token, definida por
 \[
