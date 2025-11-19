@@ -374,10 +374,12 @@ INPUT ./pretextual/resumos.tex
 INPUT ./pretextual/resumos.tex
 INPUT pretextual/resumos.tex
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
+INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT out/dissertacao.toc
 INPUT out/dissertacao.toc
 INPUT out/dissertacao.toc
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbo10.tfm
+INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT ./capitulos/introducao.tex
 INPUT ./capitulos/introducao.tex
 OUTPUT out/capitulos/introducao.aux
@@ -392,7 +394,6 @@ INPUT ./figs/desordem_informacional.png
 INPUT ./figs/desordem_informacional.png
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT ./capitulos/fundamentacao_teorica.tex
 INPUT ./capitulos/fundamentacao_teorica.tex
@@ -410,6 +411,7 @@ INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT ./capitulos/trabalhos_relacionados.tex
@@ -516,6 +518,7 @@ INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
+INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb

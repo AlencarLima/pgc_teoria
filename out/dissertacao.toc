@@ -16,13 +16,13 @@
 \contentsline {section}{\numberline {2.5}Aprendizado Profundo (\textit {Deep Learning})}{10}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Extração de Termos-Chave}{12}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Desinformação e Verificação de Fatos Automatizada}{13}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Claim Detection}{13}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Modelo XLM-R-Large-ClaimDetection}{14}{subsection.2.8.1}%
+\contentsline {section}{\numberline {2.8}\textit {Claim Detection}}{13}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Modelo \textit {XLM-R-Large-ClaimDetection}}{14}{subsection.2.8.1}%
 \contentsline {section}{\numberline {2.9}Métricas de desempenho}{16}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Acurácia}{16}{subsection.2.9.1}%
 \contentsline {subsection}{\numberline {2.9.2}Precisão}{17}{subsection.2.9.2}%
-\contentsline {subsection}{\numberline {2.9.3}Recall}{17}{subsection.2.9.3}%
-\contentsline {subsection}{\numberline {2.9.4}F1-Score}{17}{subsection.2.9.4}%
+\contentsline {subsection}{\numberline {2.9.3}\textit {Recall}}{17}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}\textit {F1-Score}}{17}{subsection.2.9.4}%
 \contentsline {subsection}{\numberline {2.9.5}Índice de Jaccard}{17}{subsection.2.9.5}%
 \contentsline {section}{\numberline {2.10}Considerações Finais}{18}{section.2.10}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Sumarização}{31}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Segmentação baseada em conjunções}{32}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Segmentação baseada em aspas}{34}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Classificação de afirmações factuais com XLM-R-Large-ClaimDetection}{34}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Classificação de afirmações factuais com XLM-R-Large-\textit {ClaimDetection}}{34}{subsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.1.5}Comparação com o SVM}{35}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}Comparação de Classificação}{35}{section.5.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
