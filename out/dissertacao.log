@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  18 NOV 2025 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  18 NOV 2025 22:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1039,39 +1039,39 @@ Cap\'{\i }tulo 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.17 
       [1
 
 
 
 ]
-<figs/desordem_informacional.png, id=149, 338.01282pt x 182.93344pt>
+<figs/desordem_informacional.png, id=148, 338.01282pt x 182.93344pt>
 File: figs/desordem_informacional.png Graphic file (type png)
 <use figs/desordem_informacional.png>
-Package pdftex.def Info: figs/desordem_informacional.png  used on input line 26.
+Package pdftex.def Info: figs/desordem_informacional.png  used on input line 23.
 (pdftex.def)             Requested size: 455.0pt x 246.25443pt.
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 35.
+(babel)             Reported on input line 31.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35     \item \textit
-                      {Dis-information}: quando há intenção deliberada de... [2 <./figs/desordem_informacional.png>]
+l.31     \item
+               \textit{Mis-information}: quando informações falsas são co... [2 <./figs/desordem_informacional.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 
-      [3]
+l.44 D
+      urante a pandemia, o \textit{Covid19 Infodemic Observatory}~\cite{dedo... [3]
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62 
+l.59 
       [4]
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 
+l.76 
       [5] [6]) [7]
 \openout2 = `capitulos/fundamentacao_teorica.aux'.
 
@@ -1408,18 +1408,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: AB959A980BC291C2666E5E853BB1701E;3303.
+(rerunfilecheck)             Checksum: 71A5E1C96FAD71EEC321B629CFA6B50F;3303.
  ) 
 Here is how much of TeX's memory you used:
  23156 strings out of 467578
  384568 string characters out of 5424739
- 976987 words of memory out of 5000000
+ 975987 words of memory out of 5000000
  51165 multiletter control sequences out of 15000+600000
  715851 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,2570b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out/dissertacao.pdf (54 pages, 1077170 bytes).
+Output written on out/dissertacao.pdf (54 pages, 1077454 bytes).
 PDF statistics:
  938 PDF objects out of 1000 (max. 8388607)
  815 compressed objects within 9 object streams
