@@ -2,6 +2,9 @@
 \label{cap:resultados}
 \section{Resultados Obtidos}
 
+Este capítulo apresenta e discute os principais resultados empíricos obtidos ao longo do estudo. Inicialmente, são analisados os efeitos dos diferentes modelos de sumarização automática na redução de ruído e na preservação de trechos factuais dos textos. Em seguida, são avaliadas as abordagens de segmentação baseadas em conjunções e em aspas, com ênfase na capacidade de recuperar trechos relevantes em notícias e em \textit{clusters} de \textit{tweets}. Na sequência, discute-se o desempenho do modelo \textit{XLM-R-Large-ClaimDetection} e do classificador SVM na identificação de afirmações factuais, comparando seus resultados com o modelo original em inglês e com o método manual de referência. Por fim, são comparadas as diferentes estratégias de classificação de desinformação em \textit{tweets} e retuítes, destacando os compromissos entre assertividade, conservadorismo e risco de super-rotulagem.
+
+
 \subsection{Sumarização}
 Para o primeiro processo de sumarização automática para redução de ruído, três modelos foram avaliados: BERT-base, DistilBERT e SBERT-MiniLM. Em todos os casos, os resumos ficaram entre 25\% e 27\% do tamanho do texto original conforme mostrado na Figura~\ref{fig:compression-ratio}, sem diferenças expressivas de compressão entre os modelos, com leve tendência do DistilBERT a produzir resumos mais concisos e do SBERT-MiniLM a manter textos um pouco maiores.
 

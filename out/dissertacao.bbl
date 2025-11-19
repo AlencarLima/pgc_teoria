@@ -10,12 +10,6 @@
 {ARSLAN, F. et al. A benchmark dataset of check-worthy factual claims.
 \emph{AAAI}, v.~53, 2020.}
 
-\bibitem[Barbosa et al. 2017]{barbosa2017}
-\abntrefinfo{Barbosa et al.}{BARBOSA et al.}{2017}
-{BARBOSA, J. et al. Introdução ao processamento de linguagem natural usando python.
-\emph{Tutorial NLTK}, p.~3--4, 2017.
-Dispon{\'\i}vel em: \url{https://www.facom.ufu.br/~wendelmelo/terceiros/tutorial\_nltk.pdf}.}
-
 \bibitem[Bojanowski et al. 2017]{bojanowski2017enriching}
 \abntrefinfo{Bojanowski et al.}{BOJANOWSKI et al.}{2017}
 {BOJANOWSKI, P. et al. Enriching word vectors with subword information.
@@ -108,11 +102,11 @@ Dispon{\'\i}vel em: \url{https://arxiv.org/abs/2107.02027}.}
 {LEVY, R. et al. Context dependent claim detection.
 \emph{ACM}, 2014.}
 
-\bibitem[Lucca e Nunes 2002]{lemaVSStemming}
-\abntrefinfo{Lucca e Nunes}{LUCCA; NUNES}{2002}
-{LUCCA, J. L.~D.; NUNES, M. das G.~V. Lematização versus stemming.
-\emph{NILC}, p.~9, 2002.
-Dispon{\'\i}vel em: \url{http://www.nilc.icmc.usp.br/nilc/download/lematizacao\_versus\_steming.pdf}.}
+\bibitem[Lupa 2023]{lupa2023twitterapi}
+\abntrefinfo{Lupa}{LUPA}{2023}
+{LUPA, A. \emph{Acesso pago a dados do Twitter pode prejudicar projetos que monitoram desinforma{\c c}{\~a}o}. 2023.
+Acesso em: 18 nov. 2025.
+Dispon{\'\i}vel em: \url{https://lupa.uol.com.br/jornalismo/2023/02/03/api-twitter-projetos}.}
 
 \bibitem[Manning e Sch{\"u}tze 1999]{manning1999foundations}
 \abntrefinfo{Manning e Sch{\"u}tze}{MANNING; SCH{\"U}TZE}{1999}
