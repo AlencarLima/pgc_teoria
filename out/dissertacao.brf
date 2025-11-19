@@ -43,6 +43,8 @@
 \backcite {xlm_r}{{14}{2.8.1}{subsection.2.8.1}}
 \backcite {xlm_r_claim_detection}{{15}{2.8.1}{subsection.2.8.1}}
 \backcite {raphaelIC}{{19}{3}{chapter.3}}
+\backcite {raphaelIC}{{19}{3}{chapter.3}}
+\backcite {automaticDetection}{{19}{3}{chapter.3}}
 \backcite {automaticDetection}{{20}{3}{chapter.3}}
 \backcite {raphaelIC}{{21}{4.1.1}{subsection.4.1.1}}
 \backcite {raphaelIC}{{21}{4.1.1}{subsection.4.1.1}}
@@ -59,4 +61,4 @@
 \backcite {yacouby2020}{{27}{4.1.6}{subsection.4.1.6}}
 \backcite {raphaelIC}{{28}{4.1.6}{subsection.4.1.6}}
 \backcite {dbClaim}{{33}{5.1.2}{subsection.5.1.2}}
-\backcite {ADDConroy}{{45}{6}{chapter.6}}
+\backcite {ADDConroy}{{43}{6}{chapter.6}}

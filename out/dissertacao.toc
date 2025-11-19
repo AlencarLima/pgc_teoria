@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.2}Processamento de Linguagem Natural}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Representação de Texto}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Aprendizado de Máquina na Classificação Textual}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Aprendizado Profundo (Deep Learning)}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Aprendizado Profundo (\textit {Deep Learning})}{10}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Extração de Termos-Chave}{12}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Desinformação e Verificação de Fatos Automatizada}{13}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Claim Detection}{13}{section.2.8}%
@@ -37,7 +37,6 @@
 \contentsline {subsection}{\numberline {4.1.5}Classificação Textual}{26}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Análise da eficácia obtida por cada tecnologia}{27}{subsection.4.1.6}%
 \contentsline {subsection}{\numberline {4.1.7}Comparação da eficácia entre as tecnologias estudadas durante o projeto}{28}{subsection.4.1.7}%
-\contentsline {section}{\numberline {4.2}Cronograma}{30}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussões}}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Resultados Obtidos}{31}{section.5.1}%
@@ -48,7 +47,7 @@
 \contentsline {subsection}{\numberline {5.1.5}Comparação com o SVM}{35}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}Comparação de Classificação}{35}{section.5.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{44}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{42}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{46}{section*.29}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.21}%

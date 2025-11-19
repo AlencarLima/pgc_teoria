@@ -99,118 +99,153 @@ O modelo SVM apresenta uma acurácia global moderada, em torno de 0,79. A classe
 \end{table}
 
 \section{Comparação de Classificação}
-Os gráficos de \textit{tweets} apresentados nas Figuras~\ref{fig:tweets-graph-manual}, \ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert} e \ref{fig:tweets-graph-que}, \ref{fig:tweets-graph-svm}, obtidos no processo com termos-chave definidos manualmente e por modelos, evidenciam que ambos os \textit{clusters} são dominados por itens não rotulados (C0: 60{,}5\% e C1: 63{,}0\% no caso manual), com desinformação mais presente no Cluster 0 (33{,}4\%) do que no Cluster 1 (8{,}4\%). Já a classe sem desinformação é minoritária no C0 (6{,}0\%) e relativamente mais frequente no C1 (28{,}6\%). Esse é o retrato de referência fornecido pela Figura~\ref{fig:tweets-graph-manual}: o C0 concentra uma fração relevante de \textit{tweets} com desinformação, enquanto o C1 reúne mais \textit{tweets} sem desinformação, ainda que em ambos haja grande massa de ``não rotulada''.
+Pode-se notar que pelo gráfico de Distribuição de Desinformação em tweets presentes no Cluster 0 (Figura~\ref{fig:tweets_cluster_0}), no método manual de referência o C0 apresenta 33{,}4\% de tweets classificados como com desinformação, 6{,}0\% como sem desinformação e 60{,}5\% como não rotulados. Com a aplicação dos modelos, todos os métodos de segmentação e classificação aumentaram a proporção de tweets classificados como com desinformação em relação ao método manual: no DistilBERT, essa proporção sobe para 47{,}5\%, enquanto SBERT, segmentação por ``que'', BERT e SVM deslocam a classe com desinformação'' para a faixa de 55--62\%, com a classe sem desinformação avançando para cerca de 9--13\%. O DistilBERT foi o que apresentou o menor aumento, seguido pelo SBERT, segmentação por ``que'', BERT e SVM, que tiveram aumentos mais expressivos. Isso indica que esses métodos são mais agressivos na identificação de tweets com desinformação, o que pode ser benéfico para capturar mais conteúdo relevante, mas também pode aumentar o risco de falsos positivos.
 
-Nas Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}, que correspondem às segmentações via BERT, DistilBERT, sBERT, termos baseados em ``que'' e o modelo de SVM, observa-se que todos os modelos preservam esse contraste com relação aos dados retornados pelo formato manual (C0 com maior proporção ``com desinformação'' e C1 com maior proporção ``sem desinformação''), porém reduzem intensamente a classe ``não rotulado''. No Cluster 0, BERT, sBERT, segmentação por ``que'' e SVM (Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}) deslocam muitos exemplos para ``com desinformação'' (na faixa de 55--62\%), enquanto o DistilBERT (Figura~\ref{fig:tweets-graph-dbert}) é o que menos eleva (47{,}5\%), ainda assim acima do manual (33{,}4\%). A classe sem desinformação também cresce em todos (9--13\% vs.\ 6{,}0\%). No Cluster 1, o padrão se repete: sem desinformação sobe para 42--54\% (vs.\ 28{,}6\%) e com desinformação para 15--17\% (vs.\ 8{,}4\%), comprimindo ``não rotulado'' para 29--43\% ficando abaixo dos 63\% do manual.
+Já para o Cluster 1 (Figura~\ref{fig:tweets_cluster_1}), no método manual de referência 8{,}4\% dos tweets são classificados como com desinformação, 28{,}6\% como sem desinformação e 63{,}0\% permanecem não rotulados''. Com os modelos, todos os métodos também aumentaram a proporção de tweets classificados como sem desinformação em comparação com o método manual, elevando essa classe para a faixa de 42--54\% e a classe com desinformação para 15--17\%, ao mesmo tempo em que comprimem a fração não rotulado para aproximadamente 29--43\%, abaixo dos 63{,}0\% do cenário manual. Novamente, o DistilBERT apresentou o menor aumento, seguido pela segmentação por ``que'', SBERT, BERT e SVM. Isso sugere que esses métodos são eficazes na identificação de tweets sem desinformação.
+% Os gráficos de \textit{tweets} apresentados nas Figuras~\ref{fig:tweets-graph-manual}, \ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert} e \ref{fig:tweets-graph-que}, \ref{fig:tweets-graph-svm}, obtidos no processo com termos-chave definidos manualmente e por modelos, evidenciam que ambos os \textit{clusters} são dominados por itens não rotulados (C0: 60{,}5\% e C1: 63{,}0\% no caso manual), com desinformação mais presente no Cluster 0 (33{,}4\%) do que no Cluster 1 (8{,}4\%). Já a classe sem desinformação é minoritária no C0 (6{,}0\%) e relativamente mais frequente no C1 (28{,}6\%). Esse é o retrato de referência fornecido pela Figura~\ref{fig:tweets-graph-manual}: o C0 concentra uma fração relevante de \textit{tweets} com desinformação, enquanto o C1 reúne mais \textit{tweets} sem desinformação, ainda que em ambos haja grande massa de ``não rotulada''.
 
-Em termos de comparação relativa ao manual, o DistilBERT (Figura~\ref{fig:tweets-graph-dbert}) tende a ficar mais próximo, sendo o que menos retira a classe ``não rotulado'' (C0: 43{,}3\% e C1: 43{,}2\%). BERT, sBERT e ``que'' (Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-sbert} e \ref{fig:tweets-graph-que}) tornam as classes rotuladas mais assertivas, principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Entre os resultados, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
+% Nas Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-dbert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}, que correspondem às segmentações via BERT, DistilBERT, sBERT, termos baseados em ``que'' e o modelo de SVM, observa-se que todos os modelos preservam esse contraste com relação aos dados retornados pelo formato manual (C0 com maior proporção ``com desinformação'' e C1 com maior proporção ``sem desinformação''), porém reduzem intensamente a classe ``não rotulado''. No Cluster 0, BERT, sBERT, segmentação por ``que'' e SVM (Figuras~\ref{fig:tweets-graph-bert}, \ref{fig:tweets-graph-sbert}, \ref{fig:tweets-graph-que} e \ref{fig:tweets-graph-svm}) deslocam muitos exemplos para ``com desinformação'' (na faixa de 55--62\%), enquanto o DistilBERT (Figura~\ref{fig:tweets-graph-dbert}) é o que menos eleva (47{,}5\%), ainda assim acima do manual (33{,}4\%). A classe sem desinformação também cresce em todos (9--13\% vs.\ 6{,}0\%). No Cluster 1, o padrão se repete: sem desinformação sobe para 42--54\% (vs.\ 28{,}6\%) e com desinformação para 15--17\% (vs.\ 8{,}4\%), comprimindo ``não rotulado'' para 29--43\% ficando abaixo dos 63\% do manual.
 
-Os gráficos de retuítes, exibidos nas Figuras~\ref{fig:retuites-graph-manual}, \ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-dbert}, \ref{fig:retuites-graph-sbert}, \ref{fig:retuites-graph-que} e \ref{fig:retuites-graph-svm}, confirmam o contraste estrutural observado no retrato de referência: o Cluster 0 (C0) é o polo de desinformação, enquanto o Cluster 1 (C1) concentra mais conteúdos sem desinformação. No manual (Figura~\ref{fig:retuites-graph-manual}), C0 aparece dividido entre desinformação e não rotulados, com ``sem desinformação'' minoritário. Já C1 combina forte presença de ``sem desinformação'' com uma massa considerável de itens não rotulados e quase nenhuma desinformação.
+Em termos de comparação relativa ao manual, o DistilBERT tende a ficar mais próximo, sendo o que menos retira a classe ``não rotulado'' (C0: 43{,}3\% e C1: 43{,}2\%). BERT, sBERT e ``que'' tornam as classes rotuladas mais assertivas, principalmente \textit{com desinformação} no C0 e \textit{sem desinformação} no C1. Entre os resultados, o DistilBERT apresenta o desvio mais contido, enquanto BERT/sBERT/``que'' oferecem maior assertividade com menor conservadorismo.
 
-Nas Figuras~\ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-sbert} e \ref{fig:retuites-graph-que}, que mostram respectivamente BERT, sBERT e a segmentação por ``que'', a diferença central está menos na hierarquia entre classes e mais na magnitude das proporções. Esses três métodos reduzem de forma significativa a fatia de ``não rotulado'', ao mesmo tempo em que aumentam as classes rotuladas. O efeito é notório em C0, onde essas abordagens deslocam um grande contingente para ``com desinformação'', reforçando a vocação do cluster, Em C1, o movimento simétrico impulsiona ``sem desinformação''. Em termos comunicacionais, esses métodos tornam os gráficos de retuítes mais assertivos e menos conservadores, produzindo leituras mais decididas sobre o conteúdo que circula por meio dos retuítes.
+Os gráficos de retuítes, exibidos nas Figuras~\ref{fig:retuites_cluster_0} e \ref{fig:retuites_cluster_1}, mostram padrões semelhantes aos observados nos gráficos de tweets. No método manual de referência, o Cluster 0 (C0) apresenta 44{,}0\% de retuítes classificados como ``com desinformação'', 11{,}2\% como ``sem desinformação'' e 44{,}9\% como ``não rotulados''. Com a aplicação dos modelos, todos os métodos de segmentação e classificação aumentaram a proporção de retuítes classificados como ``com desinformação'' em relação ao método manual: no DistilBERT, essa proporção sobe para 57{,}0\%, para SBERT, segmentação por ``que'', BERT e SVM deslocam a classe ``com desinformação'' para a faixa de 57--63\%, com a classe ``sem desinformação'' avançando para cerca de 5--13\%. O DistilBERT foi o único que apresentou um decréscimo na classe ``sem desinformação'', onde houve apenas 2154 retuítes para ``sem desinformação'' em comparação aos 4493 no método manual. Os outros métodos aumentaram essa classe em relação ao manual mas de forma pouco significativa.
 
-O DistilBERT, ilustrado na Figura~\ref{fig:retuites-graph-dbert}, atua como um freio nessa tendência. Ele preserva uma parcela maior de ``não rotulado'' em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe ``com desinformação''. Em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe ``não rotulado'', e, portanto, menor risco de super-rotulagem. Em resumo, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e ``que'' (Figuras~\ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-sbert} e \ref{fig:retuites-graph-que}) fornecem leituras mais assertivas.
+Já para o Cluster 1 (Figura~\ref{fig:retuites_cluster_1}), no método manual de referência 1{,}3\% dos retuítes são classificados como ``com desinformação'', 44{,}5\% como ``sem desinformação'' e 54{,}3\% permanecem ``não rotulados''. Com os modelos, todos os métodos também aumentaram a proporção de retuítes classificados como ``sem desinformação'' em comparação com o método manual, elevando essa classe para a faixa de 51--72\%, ao mesmo tempo em que comprimem a fração ``não rotulado'' para aproximadamente 24--54\%, abaixo dos 62{,}6\% do cenário manual. Novamente, o DistilBERT apresentou o menor aumento, seguido pela segmentação por ``que'', SBERT, BERT e SVM. Já a classe ``com desinformação'' apresentou um aumento porcentual menos significativo em relação ao manual, ficando na faixa de 1{,}6--2{,}3\%, tendo o DistilBERT e SBERT bem próximos ao obtido manualmente (1{,}6 e 1{,}7\% respectivamente).
+
+% Os gráficos de retuítes, exibidos nas Figuras~\ref{fig:retuites-graph-manual}, \ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-dbert}, \ref{fig:retuites-graph-sbert}, \ref{fig:retuites-graph-que} e \ref{fig:retuites-graph-svm}, confirmam o contraste estrutural observado no retrato de referência: o Cluster 0 (C0) é o polo de desinformação, enquanto o Cluster 1 (C1) concentra mais conteúdos sem desinformação. No manual (Figura~\ref{fig:retuites-graph-manual}), C0 aparece dividido entre desinformação e não rotulados, com ``sem desinformação'' minoritário. Já C1 combina forte presença de ``sem desinformação'' com uma massa considerável de itens não rotulados e quase nenhuma desinformação.
+
+% Nas Figuras~\ref{fig:retuites-graph-bert}, \ref{fig:retuites-graph-sbert} e \ref{fig:retuites-graph-que}, que mostram respectivamente BERT, sBERT e a segmentação por ``que'', a diferença central está menos na hierarquia entre classes e mais na magnitude das proporções. Esses três métodos reduzem de forma significativa a fatia de ``não rotulado'', ao mesmo tempo em que aumentam as classes rotuladas. O efeito é notório em C0, onde essas abordagens deslocam um grande contingente para ``com desinformação'', reforçando a vocação do cluster, Em C1, o movimento simétrico impulsiona ``sem desinformação''. Em termos comunicacionais, esses métodos tornam os gráficos de retuítes mais assertivos e menos conservadores, produzindo leituras mais decididas sobre o conteúdo que circula por meio dos retuítes.
+
+O DistilBERT atua como um freio nessa tendência. Ele preserva uma parcela maior de ``não rotulado'' em ambos os clusters, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe ``com desinformação''. Em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe ``não rotulado'', e, portanto, menor risco de super-rotulagem. Em resumo, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e ``que'' fornecem leituras mais assertivas.
 
 Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Para  reproduzir com maior proximidade o retrato
 manual e controlar falsos positivos nos retuítes, DistilBERT é mais similar e retorna resultados mais conservadores. Para maximizar a rotulagem e obter uma visão mais clara dos polos de desinformação e informação correta, BERT, sBERT e a segmentação por ``que'' são mais eficazes.
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave manuais - Mês de outubro/2022}
-    \label{fig:tweets-graph-manual}
+    \includegraphics[width=1\textwidth]{figs/cluster_0_tweets.png} % coloque o arquivo na pasta escolhida
+    \caption{Distribuição de Desinformação em tweets por abordagem para o Cluster 0 - Mês de outubro/2022}
+    \label{fig:tweets_cluster_0}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_bert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave BERT - Mês de outubro/2022}
-    \label{fig:tweets-graph-bert}
+    \includegraphics[width=1\textwidth]{figs/cluster_1_tweets.png} % coloque o arquivo na pasta escolhida
+    \caption{Distribuição de Desinformação em tweets por abordagem para o Cluster 1 - Mês de outubro/2022}
+    \label{fig:tweets_cluster_1}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_dbert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
-    \label{fig:tweets-graph-dbert}
+    \includegraphics[width=1\textwidth]{figs/cluster_0_retuites.png} % coloque o arquivo na pasta escolhida
+    \caption{Distribuição de Desinformação em retuítes por abordagem para o Cluster 0 - Mês de outubro/2022}
+    \label{fig:retuites_cluster_0}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_sbert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
-    \label{fig:tweets-graph-sbert}
+    \includegraphics[width=1\textwidth]{figs/cluster_1_retuites.png} % coloque o arquivo na pasta escolhida
+    \caption{Distribuição de Desinformação em retuítes por abordagem para o Cluster 1 - Mês de outubro/2022}
+    \label{fig:retuites_cluster_1}
     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
 \end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_que.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
-    \label{fig:tweets-graph-que}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/tweets_graph_svm.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave SVM - Mês de outubro/2022}
-    \label{fig:tweets-graph-svm}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_manual.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave manuais - Mês de outubro/2022}
+%     \label{fig:tweets-graph-manual}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_bert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave BERT - Mês de outubro/2022}
+%     \label{fig:tweets-graph-bert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_dbert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
+%     \label{fig:tweets-graph-dbert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_sbert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
+%     \label{fig:tweets-graph-sbert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_que.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
+%     \label{fig:tweets-graph-que}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/tweets_graph_svm.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave SVM - Mês de outubro/2022}
+%     \label{fig:tweets-graph-svm}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
 
  
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_manual.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave manuais - Mês de outubro/2022}
-    \label{fig:retuites-graph-manual}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_bert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave BERT - Mês de outubro/2022}
-    \label{fig:retuites-graph-bert}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_dbert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
-    \label{fig:retuites-graph-dbert}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_sbert.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
-    \label{fig:retuites-graph-sbert}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_que.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
-    \label{fig:retuites-graph-que}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/retuites_graph_svm.png} % coloque o arquivo na pasta escolhida
-    \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
-cluster obtidos com termos-chave SVM - Mês de outubro/2022}
-    \label{fig:retuites-graph-svm}
-    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
-\end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_manual.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave manuais - Mês de outubro/2022}
+%     \label{fig:retuites-graph-manual}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_bert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave BERT - Mês de outubro/2022}
+%     \label{fig:retuites-graph-bert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_dbert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave DistilBERT - Mês de outubro/2022}
+%     \label{fig:retuites-graph-dbert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_sbert.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave sBERT - Mês de outubro/2022}
+%     \label{fig:retuites-graph-sbert}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_que.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave baseados em ``que'' - Mês de outubro/2022}
+%     \label{fig:retuites-graph-que}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
+% \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+%     \centering
+%     \includegraphics[width=1\textwidth]{figs/retuites_graph_svm.png} % coloque o arquivo na pasta escolhida
+%     \caption{Gráfico dos retuítes de tweets com desinformação em relação aos retuítes de cada
+% cluster obtidos com termos-chave SVM - Mês de outubro/2022}
+%     \label{fig:retuites-graph-svm}
+%     \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+% \end{figure}
 
 \begin{table}[H]
 \centering

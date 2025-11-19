@@ -2,7 +2,7 @@
 \label{cap:fundamentacao_teorica}
 \section{Fundamentação Teórica}
 
-O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (Machine Learning – ML) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional e a Inteligência Artificial, fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos-chave e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais.  
+O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (\textit{Machine Learning – ML}) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional e a Inteligência Artificial, fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos-chave e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais.  
 
 \section{Processamento de Linguagem Natural}
 
@@ -16,7 +16,7 @@ A representação de texto constitui um dos pilares do PLN, pois define a forma 
 
 O modelo BoW representa o texto como um conjunto de palavras independentes, desconsiderando a ordem e o contexto em que aparecem. Apesar de sua simplicidade, essa abordagem é amplamente utilizada em tarefas de classificação textual devido à sua eficiência. Já o TF-IDF aprimora o modelo BoW ao ponderar a importância de cada termo com base em sua frequência no documento e na raridade no corpus \cite{manning1999foundations}. O TF-IDF foi utilizado neste estudo como uma das primeiras etapas de filtragem e seleção de sentenças relevantes, permitindo identificar palavras mais representativas de cada notícia analisada.
 
-Com o avanço da área, surgiram métodos mais sofisticados de representação vetorial, conhecidos como \textit{word embeddings}, que mapeiam palavras em vetores contínuos em um espaço de alta dimensionalidade. Técnicas como Word2Vec \cite{mikolov2013distributed}, GloVe \cite{pennington2014glove} e FastText \cite{bojanowski2017enriching} capturam relações semânticas e contextuais entre palavras com base em sua coocorrência. Mais recentemente, os \textit{embeddings} contextuais, derivados de modelos como BERT e SBERT, passaram a representar o significado das palavras considerando o contexto em que aparecem, oferecendo resultados superiores em tarefas semânticas complexas.  
+Com o avanço da área, surgiram métodos mais sofisticados de representação vetorial, conhecidos como \textit{word embeddings}, que mapeiam palavras em vetores contínuos em um espaço de alta dimensionalidade. Técnicas como Word2Vec \cite{mikolov2013distributed}, GloVe \cite{pennington2014glove} e FastText \cite{bojanowski2017enriching} capturam relações semânticas e contextuais entre palavras com base em sua coocorrência. Os \textit{embeddings} contextuais, derivados de modelos mais complexos como BERT e SBERT, passaram a representar o significado das palavras considerando o contexto em que aparecem, oferecendo resultados superiores em tarefas semânticas complexas.  
 
 \section{Aprendizado de Máquina na Classificação Textual}
 
@@ -26,16 +26,16 @@ Os modelos tradicionais de ML aplicados a textos incluem algoritmos supervisiona
 
 Para a avaliação dos modelos de ML, métricas como precisão, \textit{recall}, F1-score e acurácia são amplamente utilizadas. A precisão mede a proporção de classificações corretas entre as predições positivas. O \textit{recall} avalia a capacidade do modelo em identificar todas as instâncias relevantes. O F1-score combina ambas as métricas, oferecendo uma medida harmônica de desempenho. Tais métricas são fundamentais para compreender a eficiência dos algoritmos de classificação textual aplicados à detecção de desinformação.  
 
-\section{Aprendizado Profundo (Deep Learning)}
+\section{Aprendizado Profundo (\textit{Deep Learning})}
 
-O Aprendizado Profundo (Deep Learning – DL) representa uma evolução do ML, caracterizando-se pela utilização de redes neurais artificiais com múltiplas camadas de processamento. Essas redes são capazes de modelar relações complexas e não lineares nos dados, tornando-se particularmente eficazes em tarefas envolvendo linguagem natural.  
+O Aprendizado Profundo (\textit{Deep Learning – DL}) representa uma evolução do ML, caracterizando-se pela utilização de redes neurais artificiais com múltiplas camadas de processamento. Essas redes são capazes de modelar relações complexas e não lineares nos dados, tornando-se particularmente eficazes em tarefas envolvendo linguagem natural.  
 
 As Redes Neurais Recorrentes (RNNs), especialmente suas variantes LSTM (\textit{Long Short-Term Memory}) e GRU (\textit{Gated Recurrent Unit}), foram amplamente empregadas para capturar dependências temporais em sequências textuais. No entanto, apesar de seu sucesso, essas arquiteturas apresentam limitações quanto à paralelização e ao tratamento de contextos longos.  
 
 Essas limitações foram superadas com o surgimento dos \textit{Transformers} \cite{vaswani2017attention}, 
 uma arquitetura baseada em mecanismos de atenção que permite o aprendizado bidirecional do contexto textual, 
 conforme ilustrado na Figura~\ref{fig:diagrama_tranformer}. Modelos derivados, como BERT (\textit{Bidirectional Encoder Representations from Transformers}), 
-DistilBERT, SBERT (\textit{Sentence-BERT}) e XLM-RoBERTa, revolucionaram o PLN ao oferecer representações contextuais mais detalhadas e precisas. 
+DistilBERT, SBERT (\textit{Sentence-BERT}) e XLM-RoBERTa, aprimoraram o PLN ao oferecer representações contextuais mais detalhadas e precisas. 
 No presente estudo, esses modelos foram empregados para sumarização e extração de termos-chave, com destaque para o SBERT, 
 que apresentou melhor equilíbrio entre desempenho e tempo de processamento.
 
