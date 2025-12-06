@@ -27,17 +27,17 @@ Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-
 \end{figure}
 
 \subsection{Segmentação baseada em conjunções}
-Os resultados da abordagem de segmentação baseada no termo ``que'' demonstraram sua eficácia. Nas 29 amostras de notícias provenientes de agências de checagem de fatos, a segmentação baseada no termo ``que'' resultou em textos altamente relevantes, evidenciando ser uma técnica interessante de segmentação para textos contidos em notícias. Este método apresenta a vantagem de não exigir grande processamento, sendo uma alternativa eficiente para identificar informações relevantes em grandes volumes de texto.
+Os resultados da abordagem de segmentação baseada no termo ``que'' demonstraram sua eficácia. Nas 29 amostras de notícias provenientes de ``agências'' de checagem de fatos, a segmentação baseada no termo ``que'' resultou em textos altamente relevantes, evidenciando ser uma técnica interessante de segmentação para textos contidos em notícias. Este método apresenta a vantagem de não exigir grande processamento, sendo uma alternativa eficiente para identificar informações relevantes em grandes volumes de texto.
 
-Além disso, a aplicação desse método em \textit{clusters} polarizados mostrou resultados significativos. Para o $cluster_0$, foi possível obter 2.060 \textit{tuítes} relevantes, em comparação com os 2.056 \textit{tuítes} obtidos utilizando termos-chave criados manualmente. Já no $cluster_1$, foram extraídos 1.089 \textit{tuítes}, superando os 781 obtidos com termos-chave definidos manualmente. Exemplos de textos retornados por esse método incluem: ``aponta que apertar `confirma' durante a tela `confira seu voto' anula o voto'' e ``usou o plenário da câmara federal para propagar informações falsas sobre a pandemia, como mostrou uma reportagem publicada pela Lupa em dezembro do ano passado''. Esses resultados demonstram que a segmentação baseada em conjunções, como o termo ``que'', pode ser mais eficaz do que abordagens manuais tradicionais, ampliando a abrangência e precisão na identificação de conteúdos relevantes para análise de desinformação.
+Além disso, a aplicação desse método em \textit{clusters} polarizados mostrou resultados significativos. Para o $cluster_0$, foi possível obter 2,060 \textit{tuítes} relevantes, em comparação com os 2,056 \textit{tuítes} obtidos utilizando termos-chave criados manualmente. Já no $cluster_1$, foram extraídos 1,089 \textit{tuítes}, superando os 781 obtidos com termos-chave definidos manualmente. Exemplos de textos retornados por esse método incluem: ``aponta que apertar `confirma' durante a tela `confira seu voto' anula o voto'' e ``usou o plenário da câmara federal para propagar informações falsas sobre a pandemia, como mostrou uma reportagem publicada pela Lupa em dezembro do ano passado''. Esses resultados demonstram que a segmentação baseada em conjunções, como o termo ``que'', pode ser mais eficaz do que abordagens manuais tradicionais, ampliando a abrangência e precisão na identificação de conteúdos relevantes para análise de desinformação.
 
-A aplicação do modelo XLM-R-Large-\textit{ClaimDetection} nos dados de debates presidenciais dos EUA ~\cite{dbClaim}, adaptados ao contexto português, apresentou resultados promissores na tarefa de classificação de afirmações factuais. O modelo alcançou uma acurácia de 0.88, mostrando boa performance mesmo considerando as diferenças linguísticas entre os dados testados em português e o treinamento original em inglês.
+A aplicação do modelo XLM-R-Large-\textit{ClaimDetection} nos dados de debates presidenciais dos EUA ~\cite{dbClaim}, adaptados ao contexto português, apresentou resultados promissores na tarefa de classificação de afirmações factuais. O modelo alcançou uma acurácia de 0,88, mostrando bom desempenho mesmo considerando as diferenças linguísticas entre os dados testados em português e o treinamento original em inglês.
 
 Por meio da utilização de uma matriz de confusão foi possível verificar que o modelo classificou corretamente a maioria das afirmações factuais e não factuais, com 680 previsões corretas para sentenças factuais não relevantes e 232 para as sentenças factuais importantes. Porém, houve dificuldades de diferenciar categorias factuais não relevantes, sendo classificadas incorretamente 114 sentenças das 1034 presentes no \textit{database}.
 
-Esses resultados são demonstrados no relatório de classificação, que apresentou um desempenho muito elevado para as sentenças factuais não relevantes, com \textit{precisão} de 0.99 e \textit{recall} de 0.86, conforme dados \autoref{tab:resultados_pt}. Já para as sentenças factuais relevantes, a \textit{precisão} foi de 0.67, enquanto o \textit{recall} atingiu um valor consideravelmente alto de 0.97, evidenciando a capacidade do modelo em identificar corretamente a maioria das afirmações importantes, ainda que tenha apresentado menor precisão nessa categoria.
+Esses resultados são demonstrados no relatório de classificação, que apresentou um desempenho muito elevado para as sentenças factuais não relevantes, com \textit{precisão} de 0,99 e \textit{recall} de 0,86, conforme dados \autoref{tab:resultados_pt}. Já para as sentenças factuais relevantes, a \textit{precisão} foi de 0,67, enquanto o \textit{recall} atingiu um valor consideravelmente alto de 0,97, evidenciando a capacidade do modelo em identificar corretamente a maioria das afirmações importantes, ainda que tenha apresentado menor precisão nessa categoria.
 
-Em comparação com o modelo original treinado em inglês, que obteve uma acurácia de 0.90, os resultados em português apresentaram uma leve queda. No estudo original, o modelo foi capaz de classificar afirmações factuais e não factuais com equilíbrio entre \textit{precisão} e \textit{recall}, alcançando valores de 0.90 em ambas as métricas, conforme apresentado na \autoref{tab:resultados_en}.
+Em comparação com o modelo original treinado em inglês, que obteve uma acurácia de 0,90, os resultados em português apresentaram uma leve queda. No estudo original, o modelo foi capaz de classificar afirmações factuais e não factuais com equilíbrio entre \textit{precisão} e \textit{recall}, alcançando valores de 0,90 em ambas as métricas, conforme apresentado na \autoref{tab:resultados_en}.
 
 \begin{table}[ht]
     \centering
@@ -47,10 +47,10 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
         \toprule
         Classe & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Unimportant Factual Sentence (UFS)} & 0.99 & 0.86 & 0.92 \\
-        \textit{Important Factual Sentence (IFS)}   & 0.67 & 0.97 & 0.79 \\
+        \textit{Unimportant Factual Sentence (UFS)} & 0,99 & 0,86 & 0,92 \\
+        \textit{Important Factual Sentence (IFS)}   & 0,67 & 0,97 & 0,79 \\
         \midrule
-        Acurácia Geral & \multicolumn{3}{c}{0.88} \\
+        Acurácia Geral & \multicolumn{3}{c}{0,88} \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -63,17 +63,17 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
         \toprule
         Classe       & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Factual}      & 0.88      & 0.92   & 0.90     \\
-        \textit{Non-Factual}  & 0.92      & 0.88   & 0.90     \\
+        \textit{Factual}      & 0,88      & 0,92   & 0,90     \\
+        \textit{Non-Factual}  & 0,92      & 0,88   & 0,90     \\
         \midrule
-        Acurácia Geral & \multicolumn{3}{c}{0.90} \\
+        Acurácia Geral & \multicolumn{3}{c}{0,90} \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-O baixo rendimento em encontrar sentenças factuais importantes (IFS) pode ser atribuído ao fato de o treinamento não ter sido realizado de forma ideal, devido a limitações de \textit{hardware}. A performance alcançada, ainda assim, destaca a utilidade do modelo XLM-R-Large como ferramenta para filtragem e segmentação de grandes volumes de texto, facilitando a identificação de informações relevantes para análises de desinformação e processos de verificação de fatos.
+O baixo rendimento em encontrar sentenças factuais importantes (IFS) pode ser atribuído ao fato de o treinamento não ter sido realizado de forma ideal, devido a limitações de \textit{hardware}. O desempenho alcançada, ainda assim, destaca a utilidade do modelo XLM-R-Large como ferramenta para filtragem e segmentação de grandes volumes de texto, facilitando a identificação de informações relevantes para análises de desinformação e processos de verificação de fatos.
 
-Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas conforme pode ser visto na \autoref{tab:exemplo-6x5}. Com textos resumidos pelo BERT, foram retornados 2.391 \textit{tuítes} no $cluster_0$ e 1.333 no $cluster_1$, já para o DistilBERT (dBERT), 1.670 e 928, respectivamente e com o SBERT, 2.040 e 1.234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
+Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas conforme pode ser visto na \autoref{tab:exemplo-6x5}. Com textos resumidos pelo BERT, foram retornados 2,391 \textit{tuítes} no $cluster_0$ e 1,333 no $cluster_1$, já para o DistilBERT (dBERT), 1,670 e 928, respectivamente e com o SBERT, 2,040 e 1,234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
 
 \subsection{Segmentação baseada em aspas}
 Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29
@@ -93,10 +93,10 @@ O modelo SVM apresenta uma acurácia global moderada, em torno de 0,79. A classe
         \toprule
         Classe        & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Factual}      & 0.6903    & 0.7323 & 0.7107 \\
-        \textit{Non-Factual}  & 0.8538    & 0.8263 & 0.8398 \\
+        \textit{Factual}      & 0,6903    & 0,7323 & 0,7107 \\
+        \textit{Non-Factual}  & 0,8538    & 0,8263 & 0,8398 \\
         \midrule
-        Acurácia geral & \multicolumn{3}{c}{0.7938} \\
+        Acurácia geral & \multicolumn{3}{c}{0,7938} \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -150,8 +150,8 @@ manual e controlar falsos positivos nos retuítes, DistilBERT é mais similar e 
 \centering
 \caption{Termos-chave resultantes}
 \label{tab:exemplo-6x5}
-\renewcommand{\arraystretch}{0.9} % um pouco mais de altura nas linhas
-\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.15\linewidth}|X|X|X|X|}
+\renewcommand{\arraystretch}{0,9} % um pouco mais de altura nas linhas
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0,15\linewidth}|X|X|X|X|}
 \hline
 \textbf{Títulos das notícias} & \textbf{Termos Manuais} & \textbf{Termos SVM} & \textbf{Termos DistilBERT} & \textbf{Termos SBERT} \\
 \hline
