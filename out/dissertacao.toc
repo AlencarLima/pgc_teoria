@@ -5,7 +5,7 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objetivos}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{5}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{6}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Justificativa}{6}{section.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{8}{chapter.2}%
@@ -50,4 +50,4 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{42}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.21}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.22}%

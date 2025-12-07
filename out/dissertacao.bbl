@@ -65,31 +65,21 @@ ISBN 9788532658517.}
 {IRETON, C.; POSETTI, J. (Ed.). \emph{Journalism, `Fake News' \& Disinformation: Handbook for Journalism Education and Training}. Paris: UNESCO Publishing, 2018.
 ISBN 978-92-3-100281-6. Dispon{\'\i}vel em: \url{https://unesdoc.unesco.org/ark:/48223/pf0000265552}.}
 
-\bibitem[{ITU} 2022]{itu2022}
-\abntrefinfo{{ITU}}{{ITU}}{2022}
-{{ITU}. Two-thirds of the world’s population uses the internet, but 2.7 billion people remain offline.
-\emph{ITU Statistics}, 2022.
-Dispon{\'\i}vel em: \url{https://www.itu.int/itu-d/reports/statistics/2022/11/24/ff22-internet-use/}.}
+\bibitem[{ITU} 2025]{itu2025}
+\abntrefinfo{{ITU}}{{ITU}}{2025}
+{{ITU}. Almost three-quarters of the population are online.
+\emph{ITU Statistics}, 2025.
+Dispon{\'\i}vel em: \url{https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-internet-use/}.}
 
 \bibitem[Jurafsky e Martin 2025]{jurafsky2023}
 \abntrefinfo{Jurafsky e Martin}{JURAFSKY; MARTIN}{2025}
 {JURAFSKY, D.; MARTIN, J.~H. \emph{Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition}. 3rd edition, online draft. ed. [s.n.], 2025. Online manuscript, 3rd edition draft, released August 24, 2025. Dispon{\'\i}vel em: \url{https://web.stanford.edu/~jurafsky/slp3/}.}
 
 \bibitem[Konstantinovskiy et al. 2021]{claimDetection}
-\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021a}
+\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021}
 {KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
 \emph{ACL Anthology}, 2021.
 Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.acl-long.14/}.}
-
-\bibitem[Konstantinovskiy et al. 2021]{konstantinovskiy2021towards}
-\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021b}
-{KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
-\emph{Digital Threats: Research and Practice}, v.~2, n.~2, p. 1--16, 2021.}
-
-\bibitem[Konstantinovskiy et al. 2021]{konstantinovskiy2021}
-\abntrefinfo{Konstantinovskiy et al.}{KONSTANTINOVSKIY et al.}{2021c}
-{KONSTANTINOVSKIY, L. et al. Toward automated factchecking: Developing an annotation schema and benchmark for consistent automated claim detection.
-\emph{Digital Threats: Research and Practice}, ACM, v.~2, n.~2, p. 1--16, 2021.}
 
 \bibitem[Krell et al. 2022]{padding}
 \abntrefinfo{Krell et al.}{KRELL et al.}{2022}

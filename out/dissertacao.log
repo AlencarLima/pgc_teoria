@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  6 DEC 2025 20:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  6 DEC 2025 21:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,44 +1035,50 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 
  (./capitulos/introducao.tex
 Cap\'{\i }tulo 1.
+<figs/pessoas_online.png, id=134, 649.67719pt x 416.30531pt>
+File: figs/pessoas_online.png Graphic file (type png)
+<use figs/pessoas_online.png>
+Package pdftex.def Info: figs/pessoas_online.png  used on input line 18.
+(pdftex.def)             Requested size: 455.0pt x 291.56418pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 
+l.23 
       [1
 
 
 
 ]
-<figs/desordem_informacional.png, id=148, 444.91219pt x 266.49562pt>
-File: figs/desordem_informacional.png Graphic file (type png)
-<use figs/desordem_informacional.png>
-Package pdftex.def Info: figs/desordem_informacional.png  used on input line 23.
-(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 28.
+(babel)             Reported on input line 27.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 
-      [2]
+l.27 
+      [2 <./figs/pessoas_online.png>]
+<figs/desordem_informacional.png, id=161, 444.91219pt x 266.49562pt>
+File: figs/desordem_informacional.png Graphic file (type png)
+<use figs/desordem_informacional.png>
+Package pdftex.def Info: figs/desordem_informacional.png  used on input line 31.
+(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 
-      [3 <./figs/desordem_informacional.png>]
+l.46 S
+      ob essa perspectiva, o Tribunal Superior Eleitoral (TSE) passou a adot... [3 <./figs/desordem_informacional.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 
+l.57 
       [4]
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65     \item C
-                oletar, analisar e avaliar os resultados obtidos, utilizando... [5] [6]) [7]
+l.71     \item A
+                nalisar modelos relevantes por meio de revisão dos modelos ... [5] [6]) [7]
 \openout2 = `capitulos/fundamentacao_teorica.aux'.
 
  (./capitulos/fundamentacao_teorica.tex
@@ -1085,12 +1091,16 @@ Cap\'{\i }tulo 2.
 ] [9]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 31.
-<figs/transformers.png, id=278, 268.00125pt x 372.39125pt>
+<figs/transformers.png, id=283, 268.00125pt x 372.39125pt>
 File: figs/transformers.png Graphic file (type png)
 <use figs/transformers.png>
 Package pdftex.def Info: figs/transformers.png  used on input line 46.
 (pdftex.def)             Requested size: 318.49861pt x 442.55444pt.
- [10] [11{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc} <./figs/transformers.png>] [12{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [13]
+ [10] [11{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc} <./figs/transformers.png>] [12{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+LaTeX Warning: Citation `konstantinovskiy2021' on page 13 undefined on input line 82.
+
+[13]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 98.
  [14] [15] [16] [17]) [18]
@@ -1118,12 +1128,12 @@ Cap\'{\i }tulo 4.
 
  (./capitulos/resultados.tex
 Cap\'{\i }tulo 5.
-<figs/compression_ratio.png, id=457, 578.16pt x 361.35pt>
+<figs/compression_ratio.png, id=458, 578.16pt x 361.35pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 13.
 (pdftex.def)             Requested size: 455.0pt x 284.37164pt.
-<figs/factual_graph.png, id=459, 578.16pt x 361.35pt>
+<figs/factual_graph.png, id=460, 578.16pt x 361.35pt>
 File: figs/factual_graph.png Graphic file (type png)
 <use figs/factual_graph.png>
 Package pdftex.def Info: figs/factual_graph.png  used on input line 23.
@@ -1134,24 +1144,24 @@ Package pdftex.def Info: figs/factual_graph.png  used on input line 23.
 
 
 ] [31 <./figs/compression_ratio.png>] [32 <./figs/factual_graph.png>] [33] [34] [35]
-<figs/cluster_0_tweets.png, id=508, 432.8973pt x 500.1084pt>
+<figs/cluster_0_tweets.png, id=509, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_tweets.png Graphic file (type png)
 <use figs/cluster_0_tweets.png>
 Package pdftex.def Info: figs/cluster_0_tweets.png  used on input line 122.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
-<figs/cluster_1_tweets.png, id=509, 432.8973pt x 500.1084pt>
+<figs/cluster_1_tweets.png, id=510, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_tweets.png Graphic file (type png)
 <use figs/cluster_1_tweets.png>
 Package pdftex.def Info: figs/cluster_1_tweets.png  used on input line 129.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
  [36]
-<figs/cluster_0_retuites.png, id=514, 432.8973pt x 500.1084pt>
+<figs/cluster_0_retuites.png, id=515, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_retuites.png Graphic file (type png)
 <use figs/cluster_0_retuites.png>
 Package pdftex.def Info: figs/cluster_0_retuites.png  used on input line 136.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
  [37 <./figs/cluster_0_tweets.png>]
-<figs/cluster_1_retuites.png, id=521, 432.8973pt x 500.1084pt>
+<figs/cluster_1_retuites.png, id=522, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_retuites.png Graphic file (type png)
 <use figs/cluster_1_retuites.png>
 Package pdftex.def Info: figs/cluster_1_retuites.png  used on input line 143.
@@ -1407,22 +1417,26 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: DE22A2B08FAE8C85F3EEB990625A2B09;3303.
+(rerunfilecheck)             Checksum: 6BBC8E63B512CB2DAC380B0874BD26F3;3318.
  ) 
 Here is how much of TeX's memory you used:
- 23157 strings out of 467578
- 384585 string characters out of 5424739
- 975041 words of memory out of 5000000
- 51165 multiletter control sequences out of 15000+600000
+ 23153 strings out of 467578
+ 384434 string characters out of 5424739
+ 976631 words of memory out of 5000000
+ 51162 multiletter control sequences out of 15000+600000
  715980 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,2570b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on out/dissertacao.pdf (53 pages, 1165426 bytes).
+Output written on out/dissertacao.pdf (53 pages, 1182299 bytes).
 PDF statistics:
- 935 PDF objects out of 1000 (max. 8388607)
- 814 compressed objects within 9 object streams
- 163 named destinations out of 1000 (max. 500000)
- 51614 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 803 compressed objects within 9 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 51619 words of extra memory for PDF output out of 61914 (max. 10000000)
 
