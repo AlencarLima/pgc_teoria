@@ -1,28 +1,63 @@
 \chapter{Fundamentação Teórica}
 \label{cap:fundamentacao_teorica}
 
-O avanço das tecnologias de PLN e de Aprendizado de Máquina (\textit{Machine Learning – ML}) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional e a Inteligência Artificial, fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos-chave e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais.  
+O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (\textit{Machine Learning-ML}) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional (LC) e a Inteligência Artificial (IA), fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos factuais e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais. 
 
 \section{Processamento de Linguagem Natural}
 
 O PLN é uma área da Inteligência Artificial dedicada ao desenvolvimento de métodos que possibilitam que computadores compreendam e manipulem a linguagem humana de forma automatizada \cite{jurafsky2023}. O PLN combina aspectos da linguística, estatística e ciência da computação, permitindo o tratamento de dados textuais em larga escala e a extração de informações de maneira sistemática. Entre suas principais tarefas estão a tokenização, remoção de \textit{stopwords}, lematização, \textit{stemming}, análise sintática e semântica, reconhecimento de entidades nomeadas (\textit{NER}) e análise de sentimentos.  
 
-No contexto desta pesquisa, o PLN é utilizado para o pré-processamento de textos, etapa que inclui a normalização textual, a segmentação de sentenças e a identificação de termos relevantes. Essas técnicas garantem que o texto seja representado de maneira estruturada, possibilitando a aplicação de algoritmos de aprendizado de máquina e aprendizado profundo. A capacidade do PLN de identificar padrões linguísticos e semânticos possui grande relevância para a detecção de desinformação, uma vez que esse fenômeno se manifesta por meio de estruturas discursivas específicas, escolhas lexicais tendenciosas e manipulação intencional de contextos.
+No contexto desta pesquisa, o PLN é utilizado para o pré-processamento de textos, etapa que inclui a normalização textual, a segmentação de sentenças e a identificação de termos relevantes. Essas técnicas garantem que o texto seja representado de maneira estruturada, possibilitando a aplicação de algoritmos de \textit{ML} e aprendizado profundo. A capacidade do PLN de identificar padrões linguísticos e semânticos possui grande relevância para a detecção de desinformação, uma vez que esse fenômeno se manifesta por meio de estruturas discursivas específicas, escolhas lexicais tendenciosas e manipulação intencional de contextos.
 
 \section{Representação de Texto}
 
-A representação de texto constitui um dos pilares do PLN, pois define a forma como as palavras e sentenças são convertidas em formatos compreensíveis para os algoritmos computacionais. Entre os métodos mais tradicionais, destacam-se o modelo de \textit{Bag of Words} (\textit{BoW}) e o \textit{Term Frequency–Inverse Document Frequency} (\textit{TF-IDF}).
+A representação de texto constitui um dos pilares do PLN, pois define a forma como as palavras e sentenças são convertidas em formatos compreensíveis para os algoritmos computacionais. Entre os métodos mais tradicionais, destacam-se o modelo de \textit{Bag of Words} (\textit{BoW}) e o \textit{Term Frequency - Inverse Document Frequency} (\textit{TF-IDF}) \cite{salton1975vector}.
 
-O modelo \textit{BoW} representa o texto como um conjunto de palavras independentes, desconsiderando a ordem e o contexto em que aparecem. Apesar de sua simplicidade, essa abordagem é amplamente utilizada em tarefas de classificação textual devido à sua eficiência. Já o \textit{TF-IDF} aprimora o modelo \textit{BoW} ao ponderar a importância de cada termo com base em sua frequência no documento e na raridade no corpus \cite{manning1999foundations}. O \textit{TF-IDF} foi utilizado neste estudo como uma das primeiras etapas de filtragem e seleção de sentenças relevantes, permitindo identificar palavras mais representativas de cada notícia analisada.
+O modelo \textit{BoW} representa cada documento como um vetor em $\mathbb{R}^V$, em que $V$ é o tamanho do vocabulário, e cada componente corresponde tipicamente à frequência (ou presença/ausência) de um termo no documento. Nessa representação, assume-se independência entre termos e ignora-se completamente a ordem das palavras, de modo que dois textos com o mesmo multiconjunto de termos terão a mesma representação vetorial \cite{hacochenkerner2020bow}. 
+
+Já o \textit{TF-IDF} aprimora o modelo \textit{BoW} ao ponderar a importância de cada termo com base em sua frequência no documento e na raridade no corpus \cite{manning1999foundations,salton1975vector}. 
+
+Formalmente, seja $f_{ik}$ a frequência do termo $k$ no documento $i$ (com $i = 1,\dots,n$ documentos e vocabulário indexado por $k$). Seguindo o modelo vetorial clássico de Salton, Wong e Yang \cite{salton1975vector}, a componente de frequência de termo (\textit{term frequency}, TF) é dada por
+\begin{equation}
+    \mathrm{TF}_{ik} = f_{ik}.
+\end{equation}
+
+Seja ainda $d_k$ o número de documentos em que o termo $k$ aparece (\textit{document frequency}) e $n$ o número total de documentos da coleção. A componente de frequência inversa de documento (\textit{inverse document frequency}, IDF) pode ser escrita como
+\begin{equation}
+    \mathrm{IDF}_k = \left\lceil \log_{2}(n) \right\rceil
+                   - \left\lceil \log_{2}(d_k) \right\rceil
+                   + 1,
+\end{equation}
+
+de modo que o peso TF-IDF atribuído ao termo $k$ no documento $i$ é
+\begin{equation}
+    w_{ik} = \mathrm{TF\text{-}IDF}_{ik} = f_{ik} \cdot \mathrm{IDF}_k.
+\end{equation}
 
 Com o avanço da área, surgiram métodos mais sofisticados de representação vetorial, conhecidos como \textit{word embeddings}, que mapeiam palavras em vetores contínuos em um espaço de alta dimensionalidade. Técnicas como \textit{Word2Vec} \cite{mikolov2013distributed}, \textit{GloVe} \cite{pennington2014glove} e \textit{FastText} \cite{bojanowski2017enriching} capturam relações semânticas e contextuais entre palavras com base em sua coocorrência. Os \textit{embeddings} contextuais, derivados de modelos mais complexos como \textit{BERT} e \textit{SBERT}, passaram a representar o significado das palavras considerando o contexto em que aparecem, oferecendo resultados superiores em tarefas semânticas complexas.
 
 \section{Sumarização Extrativa}
-A sumarização extrativa de texto é uma técnica de PLN que visa gerar versões reduzidas de documentos, preservando as informações mais relevantes e essenciais para o entendimento do conteúdo original. Dentro dessa abordagem, as sentenças mais significativas são selecionadas diretamente do texto fonte, sem a necessidade de reformulação ou geração de novas frases, apenas reutilizando trechos originais 
+A sumarização extrativa de texto é uma técnica de PLN que visa gerar versões
+reduzidas de documentos, preservando as informações mais relevantes e essenciais para o entendimento do conteúdo original. Dentro dessa abordagem, as sentenças mais significativas são selecionadas diretamente do texto-fonte, sem a necessidade de reformulação ou geração de novas frases, ou seja, apenas reutiliza trechos existentes no texto original.
+
+A tarefa pode ser vista como um problema de seleção de unidades textuais (tipicamente sentenças) a partir de um documento ou de um conjunto de
+documentos, de modo a maximizar a cobertura do conteúdo informativo e minimizar
+a redundância, produzindo um sumário curto, coerente e informativo. Segundo
+Nenkova e McKeown, a sumarização automática consiste justamente em selecionar
+e integrar o conteúdo-chave de um ou mais textos em uma saída condensada, sendo as abordagens extrativas a forma mais tradicional e amplamente estudada
+\cite{nenkova2011automatic}.
+
+Do ponto de vista metodológico, pesquisas como a de Gupta e Lehal (2010) mostram que as técnicas extrativas podem ser agrupadas em abordagens baseadas em características superficiais do texto (frequência de termos, posição da sentença), em modelos de aprendizado supervisionado que classificam sentenças
+como relevantes ou não e em métodos baseados em grafos, que avaliam a importância de uma sentença pela sua centralidade em uma rede de similaridades
+\cite{gupta2010survey}.
+
+Já para o contexto da língua portuguesa, Costa e Martins (2015) comparam sistematicamente diferentes estratégias de sumarização automática extrativa, incluindo abordagens de frequência, centróides e métodos grafo-baseados, e mostram que, mesmo sem geração de novas frases, essas técnicas são capazes de produzir sumários competitivos, desde que combinadas com boas estratégias de seleção e avaliadas por métricas apropriadas \cite{costa2015comparacao}.
+
+Portanto, a sumarização extrativa representa uma ferramenta valiosa para a redução de textos longos, facilitando a compreensão rápida de conteúdos postados em redes sociais ou de notícias, sem perder a essência informativa. No presente estudo, essa técnica foi empregada para identificar e extrair sentenças factuais de notícias, contribuindo para a análise e classificação de informações relevantes no combate à desinformação.
 
 \section{Aprendizado de Máquina na Classificação Textual}
 
-O Aprendizado de Máquina (\textit{ML}) é uma subárea da Inteligência Artificial voltada para o desenvolvimento de algoritmos capazes de aprender padrões a partir de dados e realizar previsões ou classificações sem intervenção humana direta \cite{mitchell1997machine}. No contexto do PLN, o \textit{ML} é amplamente utilizado para classificar textos, identificar tópicos, analisar sentimentos e detectar desinformação.  
+O Aprendizado de Máquina (\textit{ML}) é uma subárea da IA voltada para o desenvolvimento de algoritmos capazes de aprender padrões a partir de dados e realizar previsões ou classificações sem intervenção humana direta \cite{mitchell1997machine}. No contexto do PLN, o \textit{ML} é amplamente utilizado para classificar textos, identificar tópicos, analisar sentimentos e detectar desinformação.  
 
 Os modelos tradicionais de \textit{ML} aplicados a textos incluem algoritmos supervisionados como \textit{Support Vector Machines} (\textit{SVM}), \textit{Naive Bayes} e \textit{Random Forests}. Esses métodos dependem de representações vetoriais do texto, como \textit{BoW} e \textit{TF-IDF}, para extrair características numéricas. O \textit{SVM}, em particular, tem se mostrado eficiente na separação de classes lineares e foi utilizado neste estudo para a classificação de sentenças factuais e não factuais, alcançando resultados satisfatórios em acurácia, embora com limitações quanto à relevância prática das classificações.  
 
@@ -30,7 +65,7 @@ Para a avaliação dos modelos de \textit{ML}, métricas como precisão, \textit
 
 \section{Aprendizado Profundo (\textit{Deep Learning})}
 
-O Aprendizado Profundo (\textit{Deep Learning – DL}) representa uma evolução do \textit{ML}, caracterizando-se pela utilização de redes neurais artificiais com múltiplas camadas de processamento. Essas redes são capazes de modelar relações complexas e não lineares nos dados, tornando-se particularmente eficazes em tarefas envolvendo linguagem natural.  
+O Aprendizado Profundo (\textit{Deep Learning - DL}) representa uma evolução do \textit{ML}, caracterizando-se pela utilização de redes neurais artificiais com múltiplas camadas de processamento. Essas redes são capazes de modelar relações complexas e não lineares nos dados, tornando-se particularmente eficazes em tarefas envolvendo linguagem natural.  
 
 As Redes Neurais Recorrentes (\textit{RNNs}), especialmente suas variantes \textit{LSTM} (\textit{Long Short-Term Memory}) e \textit{GRU} (\textit{Gated Recurrent Unit}), foram amplamente empregadas para capturar dependências temporais em sequências textuais. No entanto, apesar de seu sucesso, essas arquiteturas apresentam limitações quanto à paralelização e ao tratamento de contextos longos.  
 
@@ -38,7 +73,7 @@ Essas limitações foram superadas com o surgimento dos \textit{Transformers} \c
 uma arquitetura baseada em mecanismos de atenção que permite o aprendizado bidirecional do contexto textual, 
 conforme ilustrado na Figura~\ref{fig:diagrama_tranformer}. Modelos derivados, como \textit{BERT} (\textit{Bidirectional Encoder Representations from Transformers}), 
 \textit{DistilBERT}, \textit{SBERT} (\textit{Sentence-BERT}) e \textit{XLM-RoBERTa}, aprimoraram o PLN ao oferecer representações contextuais mais detalhadas e precisas. 
-No presente estudo, esses modelos foram empregados para sumarização e extração de termos-chave, com destaque para o \textit{SBERT}, 
+No presente estudo, esses modelos foram empregados para sumarização e extração de termos factuais, com destaque para o \textit{SBERT}, 
 que apresentou melhor equilíbrio entre desempenho e tempo de processamento.
 
 \begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
@@ -51,7 +86,7 @@ que apresentou melhor equilíbrio entre desempenho e tempo de processamento.
 
 A capacidade dos modelos baseados em \textit{Transformers} de compreender o contexto global das sentenças e aprender relações semânticas complexas os torna ferramentas fundamentais para o combate à desinformação, especialmente em ambientes multilíngues, como o português.
 
-Além disso, a formulação original dos \textit{Transformers} parte da ideia de que uma sequência pode ser decomposta em um conjunto de \textit{tokens} sobre os quais se aplica, de forma iterativa, um bloco composto por autoatenção \textit{multi-head} (\textit{MHSA}) e uma rede neural \textit{perceptron} multicamada (\textit{MLP}) posicionada por \textit{token}. Em cada bloco, o mesmo vetor de entrada $x_i$ é projetado em três espaços lineares distintos, gerando $q_i = x_i W_Q$, $k_i = x_i W_K$ e $v_i = x_i W_V$. O \textit{query} passa a representar a demanda informacional do \textit{token}, o \textit{key} os atributos sob os quais esse \textit{token} pode ser recuperado pelos demais, e o \textit{value} o conteúdo semântico efetivamente agregável.
+Além disso, a formulação original dos \textit{Transformers} parte da ideia de que uma sequência pode ser decomposta em um conjunto de \textit{tokens} sobre os quais se aplica, de forma iterativa, um bloco composto por autoatenção \textit{multi-head} (\textit{MHSA}) e uma rede neural \textit{perceptron} multicamada (\textit{MLP}) posicionada por \textit{token}. Em cada bloco, o mesmo vetor de entrada $x_i$ é projetado em três espaços lineares distintos, gerando $q_i = x_i W_Q$, $k_i = x_i W_K$ e $v_i = x_i W_V$. O parâmetro $q_i$ passa a representar a demanda informacional do \textit{token}, o parâmetro $k_i$ os atributos sob os quais esse \textit{token} pode ser recuperado pelos demais, e o parâmetro $v_i$ o conteúdo semântico efetivamente agregável.
 
 A \textit{MLP} posicionada por \textit{token}, definida por
 \[
@@ -63,7 +98,7 @@ $h_i = \phi(\tilde{x}_i W_1 + b_1)$ e $z_i = h_i W_2 + b_2$, com posterior
 aplicação da conexão residual e da normalização em camadas (\textit{Layer Normalization}), de modo que 
 $x_i' = \mathrm{LayerNorm}(\tilde{x}_i + z_i)$~\cite{vaswani2017attention}.
 
-A autoatenção calcula, então, para cada posição, coeficientes de ponderação assimétricos a partir dos produtos escalares direcionados $q_i k_j^{\top}$, normalizados por \textit{softmax}, o que permite selecionar, de todo o enunciado, justamente os \textit{tokens} mais relevantes e, assim, modelar dependências de longo alcance sem recorrer à recorrência. Apenas os valores são combinados $z_i = \sum_j \alpha_{ij} v_j$ e o resultado não substitui a representação original: ele é reinjetado por meio de uma conexão residual e estabilizado por \textit{Layer Normalization}, garantindo que cada camada aprenda apenas um refinamento suave da representação anterior e que o empilhamento profundo não degrade o contexto \cite{introTransformers}. 
+A autoatenção calcula, então, para cada posição, coeficientes de ponderação assimétricos a partir dos produtos escalares direcionados $q_i k_j^{\top}$, o que permite selecionar, de todo o enunciado, justamente os \textit{tokens} mais relevantes e, assim, modelar dependências de longo alcance sem recorrer à recorrência. Apenas os valores são combinados $z_i = \sum_j \alpha_{ij} v_j$ e o resultado não substitui a representação original: ele é reinjetado por meio de uma conexão residual e estabilizado por \textit{Layer Normalization}, garantindo que cada camada aprenda apenas um refinamento suave da representação anterior e que o empilhamento profundo não degrade o contexto \cite{introTransformers}. 
 
 Essa combinação de atenção global, paralelizável e ligada por conexões residuais explica por que \textit{Transformers} superam \textit{RNNs} e \textit{CNNs} em tarefas de PLN que exigem contexto amplo e comparações cruzadas entre \textit{tokens}.
 
@@ -79,7 +114,7 @@ Em contrapartida, abordagens modernas utilizam \textit{embeddings} semânticos e
 
 A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{surveyFakeNews}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.  
 
-O processo de verificação de fatos, ou \textit{fact-checking}, é composto por quatro etapas principais: (1) monitoramento de informações, (2) identificação de afirmações verificáveis (\textit{claim detection}), (3) verificação de veracidade e (4) publicação dos resultados \cite{konstantinovskiy2021}. Entre essas etapas, a detecção automatizada de afirmações factuais tem ganhado destaque por reduzir o volume de informações analisadas manualmente e otimizar o trabalho das ``agências'' de checagem.  
+O processo de verificação de fatos, ou \textit{fact-checking}, é composto por quatro etapas principais: (1) monitoramento de informações, (2) identificação de afirmações verificáveis (\textit{claim detection}), (3) verificação de veracidade e (4) publicação dos resultados \cite{claimDetection}. Entre essas etapas, a detecção automatizada de afirmações factuais tem ganhado destaque por reduzir o volume de informações analisadas manualmente e otimizar o trabalho das ``agências'' de checagem.  
 
 Modelos como o \textit{XLM-R-Large-ClaimDetection}, utilizado neste estudo, aplicam técnicas de aprendizado profundo para identificar automaticamente frases que contêm declarações factuais dignas de verificação. Essa abordagem se mostra promissora ao reduzir a sobrecarga humana e aumentar a escalabilidade de sistemas de monitoramento de desinformação.
 
@@ -111,7 +146,7 @@ Tecnicamente, o \textit{fine-tuning} envolve a reutilização dos pesos e \texti
 
 O processo de adaptação seguiu uma estratégia semi-supervisionada (\textit{weakly-supervised}) em duas etapas. Na primeira, o modelo foi treinado com um conjunto de dados fraco, isto é, um \textit{corpus} de mensagens do \textit{Telegram} anotado automaticamente com o auxílio do modelo \textit{GPT-4o}, que produziu rótulos aproximados de factualidade com base em um \textit{prompt} de classificação. Essa etapa forneceu uma ampla base de exemplos. Em seguida, na segunda etapa, foi realizado um \textit{fine-tuning} mais preciso utilizando o conjunto de dados manualmente anotado proveniente de comentários do \textit{Facebook}. Essa combinação de dados fracos e fortes possibilitou ao modelo consolidar o aprendizado.
 
-O modelo resultante foi então avaliado em dois contextos distintos. Em um conjunto de mensagens do \textit{Telegram} anotadas por quatro codificadores humanos, atingiu uma acurácia de 0,90, demonstrando alta consistência com o julgamento humano. Já no conjunto de teste do \textit{dataset} retirado do \textit{Facebook} alcançou 0,79 de acurácia, o que demonstra sua capacidade de generalização para outros domínios de texto. Embora o treinamento tenha sido realizado exclusivamente com dados em alemão, o modelo mantém o caráter multilíngue herdado do \textit{XLM-R}, que foi originalmente treinado em cem idiomas.
+O modelo resultante foi então avaliado em dois contextos distintos. Em um conjunto de mensagens do \textit{Telegram} anotadas por quatro codificadores humanos, atingiu uma acurácia de 0,90, demonstrando alta consistência com o julgamento humano. No conjunto de teste com dados extraídos do \textit{Facebook}, obteve-se uma acurácia de 0,79, o que evidencia a capacidade do modelo de se generalizar para diferentes domínios de texto. Embora o treinamento tenha sido realizado exclusivamente com dados em alemão, o modelo mantém o caráter multilíngue herdado do \textit{XLM-R}, que foi originalmente treinado em cem idiomas.
 
 \section{Métricas de desempenho}
 

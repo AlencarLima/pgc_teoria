@@ -39,6 +39,11 @@ Dispon{\'\i}vel em: \url{https://aclanthology.org/2020.acl-main.747.pdf}.}
 \emph{ResearchGate}, 2015.
 Dispon{\'\i}vel em: \url{https://www.researchgate.net/publication/281818865\_Automatic\_Deception\_Detection\_Methods\_for\_Finding\_Fake\_News}.}
 
+\bibitem[Costa e Martins 2015]{costa2015comparacao}
+\abntrefinfo{Costa e Martins}{COSTA; MARTINS}{2015}
+{COSTA, M. Ângelo A.; MARTINS, B. Uma comparação sistemática de diferentes abordagens para a sumarização automática extrativa de textos em português.
+\emph{Linguamática}, v.~7, n.~1, p. 23--40, 2015.}
+
 \bibitem[Domenico et al. 2020]{dedomenico2020}
 \abntrefinfo{Domenico et al.}{DOMENICO et al.}{2020}
 {DOMENICO, M.~D. et al. \emph{Covid19 Infodemic Observatory}. 2020. \url{http://dx.doi.org/10.17605/OSF.IO/N6UPX}.
@@ -54,6 +59,16 @@ Dispon{\'\i}vel em: \url{https://www.prnewswire.com/news-releases/gen-z-and-mill
 {GARC{\'I}A-SAIS{\'O}, S. et al. Infodemia en tiempos de covid-19.
 \emph{Revista Panamericana de Salud P{\'u}blica}, Organizaci{\'o}n Panamericana de la Salud, v.~45, p.~e89, 2021.
 Dispon{\'\i}vel em: \url{https://doi.org/10.26633/RPSP.2021.89}.}
+
+\bibitem[Gupta e Lehal 2010]{gupta2010survey}
+\abntrefinfo{Gupta e Lehal}{GUPTA; LEHAL}{2010}
+{GUPTA, V.; LEHAL, G.~S. A survey of text summarization extractive techniques.
+\emph{Journal of Emerging Technologies in Web Intelligence}, Academy Publisher, v.~2, n.~3, p. 258--268, 2010.}
+
+\bibitem[HaCohen-Kerner, Miller e Yigal 2020]{hacochenkerner2020bow}
+\abntrefinfo{HaCohen-Kerner, Miller e Yigal}{HACOHEN-KERNER; MILLER; YIGAL}{2020}
+{HACOHEN-KERNER, Y.; MILLER, D.; YIGAL, Y. The influence of preprocessing on text classification using a bag-of-words representation.
+\emph{PLOS ONE}, v.~15, n.~5, p. e0232525, 2020.}
 
 \bibitem[Han 2018]{han2018}
 \abntrefinfo{Han}{HAN}{2018}
@@ -120,6 +135,11 @@ Dispon{\'\i}vel em: \url{https://revista.ibict.br/ciinf/article/view/962}.}
 \abntrefinfo{Mitchell}{MITCHELL}{1997}
 {MITCHELL, T.~M. \emph{Machine Learning}. New York: McGraw-Hill, 1997.}
 
+\bibitem[Nenkova e McKeown 2011]{nenkova2011automatic}
+\abntrefinfo{Nenkova e McKeown}{NENKOVA; MCKEOWN}{2011}
+{NENKOVA, A.; MCKEOWN, K. Automatic summarization.
+\emph{Foundations and Trends in Information Retrieval}, Now Publishers Inc., v.~5, n.~2--3, p. 103--233, 2011.}
+
 \bibitem[{Organização Pan-Americana da Saúde (OPAS/OMS)} 2020]{opas2020}
 \abntrefinfo{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{{Organização Pan-Americana da Saúde (OPAS/OMS)}}{2020}
 {{Organização Pan-Americana da Saúde (OPAS/OMS)}. \emph{Entenda a infodemia e a desinformação na luta contra a COVID-19}.
@@ -146,6 +166,11 @@ Brasília, 2020. Dispon{\'\i}vel em: \url{https://iris.paho.org/handle/10665.2/5
 \bibitem[Risch et al. 2021]{overviewClaim}
 \abntrefinfo{Risch et al.}{RISCH et al.}{2021}
 {RISCH, J. et al. Overview of the germeval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments. In:  \emph{Proceedings of the GermEval 2021 Shared Task on the Identification of Toxic, Engaging, and Fact-Claiming Comments}. Duesseldorf, Germany: Association for Computational Linguistics, 2021. Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.germeval-1.1}.}
+
+\bibitem[Salton, Wong e Yang 1975]{salton1975vector}
+\abntrefinfo{Salton, Wong e Yang}{SALTON; WONG; YANG}{1975}
+{SALTON, G.; WONG, A.; YANG, C.~S. A vector space model for automatic indexing.
+\emph{Communications of the ACM}, v.~18, n.~11, p. 613--620, 1975.}
 
 \bibitem[Sami 2024]{xlm_r_claim_detection}
 \abntrefinfo{Sami}{SAMI}{2024}
