@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  7 DEC 2025 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  8 DEC 2025 00:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -875,7 +875,7 @@ Writing index file dissertacao.idx
 (out/dissertacao.aux (out/pretextual/capa.aux)
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 13.
- (out/pretextual/resumos.aux) (out/capitulos/introducao.aux) (out/capitulos/fundamentacao_teorica.aux) (out/capitulos/trabalhos_relacionados.aux) (out/capitulos/metodologia.aux) (out/capitulos/resultados.aux) (out/capitulos/conclusao.aux))
+ (out/pretextual/resumos.aux) (out/capitulos/introducao.aux) (out/capitulos/fundamentacao_teorica.aux) (out/capitulos/metodologia.aux) (out/capitulos/resultados.aux) (out/capitulos/conclusao.aux))
 \openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
@@ -1025,7 +1025,7 @@ l.99
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 20.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 23.
  [4
 
 
@@ -1035,7 +1035,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 
  (./capitulos/introducao.tex
 Cap\'{\i }tulo 1.
-<figs/pessoas_online.png, id=138, 649.67719pt x 416.30531pt>
+<figs/pessoas_online.png, id=134, 649.67719pt x 416.30531pt>
 File: figs/pessoas_online.png Graphic file (type png)
 <use figs/pessoas_online.png>
 Package pdftex.def Info: figs/pessoas_online.png  used on input line 18.
@@ -1058,7 +1058,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
                    \relax 
 l.27 
       [2 <./figs/pessoas_online.png>]
-<figs/desordem_informacional.png, id=165, 444.91219pt x 266.49562pt>
+<figs/desordem_informacional.png, id=161, 444.91219pt x 266.49562pt>
 File: figs/desordem_informacional.png Graphic file (type png)
 <use figs/desordem_informacional.png>
 Package pdftex.def Info: figs/desordem_informacional.png  used on input line 31.
@@ -1091,29 +1091,19 @@ Cap\'{\i }tulo 2.
 ] [9{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [10]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 66.
-<figs/transformers.png, id=321, 268.00125pt x 372.39125pt>
+<figs/transformers.png, id=317, 268.00125pt x 372.39125pt>
 File: figs/transformers.png Graphic file (type png)
 <use figs/transformers.png>
 Package pdftex.def Info: figs/transformers.png  used on input line 81.
 (pdftex.def)             Requested size: 318.49861pt x 442.55444pt.
- [11] [12 <./figs/transformers.png>] [13{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [14]
+ [11] [12 <./figs/transformers.png>] [13{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [14] [15] [16] [17]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
- [15] [16] [17] [18]) [19]
-\openout2 = `capitulos/trabalhos_relacionados.aux'.
-
- (./capitulos/trabalhos_relacionados.tex
-Cap\'{\i }tulo 3.
-) [20
-
-
-
-
-] [21]
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 177.
+ [18] [19]) [20] [21]
 \openout2 = `capitulos/metodologia.aux'.
 
  (./capitulos/metodologia.tex
-Cap\'{\i }tulo 4.
+Cap\'{\i }tulo 3.
 [22
 
 
@@ -1123,13 +1113,13 @@ Cap\'{\i }tulo 4.
 \openout2 = `capitulos/resultados.aux'.
 
  (./capitulos/resultados.tex
-Cap\'{\i }tulo 5.
-<figs/compression_ratio.png, id=504, 496.10344pt x 287.57437pt>
+Cap\'{\i }tulo 4.
+<figs/compression_ratio.png, id=506, 496.10344pt x 287.57437pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 13.
 (pdftex.def)             Requested size: 455.0pt x 263.75107pt.
-<figs/factual_graph.png, id=506, 578.16pt x 361.35pt>
+<figs/factual_graph.png, id=508, 578.16pt x 361.35pt>
 File: figs/factual_graph.png Graphic file (type png)
 <use figs/factual_graph.png>
 Package pdftex.def Info: figs/factual_graph.png  used on input line 23.
@@ -1140,24 +1130,24 @@ Package pdftex.def Info: figs/factual_graph.png  used on input line 23.
 
 
 ] [33 <./figs/compression_ratio.png>] [34 <./figs/factual_graph.png>] [35] [36] [37]
-<figs/cluster_0_tweets.png, id=556, 432.8973pt x 500.1084pt>
+<figs/cluster_0_tweets.png, id=558, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_tweets.png Graphic file (type png)
 <use figs/cluster_0_tweets.png>
 Package pdftex.def Info: figs/cluster_0_tweets.png  used on input line 122.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
-<figs/cluster_1_tweets.png, id=557, 432.8973pt x 500.1084pt>
+<figs/cluster_1_tweets.png, id=559, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_tweets.png Graphic file (type png)
 <use figs/cluster_1_tweets.png>
 Package pdftex.def Info: figs/cluster_1_tweets.png  used on input line 129.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
  [38]
-<figs/cluster_0_retuites.png, id=562, 432.8973pt x 500.1084pt>
+<figs/cluster_0_retuites.png, id=564, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_retuites.png Graphic file (type png)
 <use figs/cluster_0_retuites.png>
 Package pdftex.def Info: figs/cluster_0_retuites.png  used on input line 136.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
  [39 <./figs/cluster_0_tweets.png>]
-<figs/cluster_1_retuites.png, id=568, 432.8973pt x 500.1084pt>
+<figs/cluster_1_retuites.png, id=570, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_retuites.png Graphic file (type png)
 <use figs/cluster_1_retuites.png>
 Package pdftex.def Info: figs/cluster_1_retuites.png  used on input line 143.
@@ -1386,7 +1376,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--180
 \openout2 = `capitulos/conclusao.aux'.
 
  (./capitulos/conclusao.tex
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 5.
 [44
 
 
@@ -1408,27 +1398,27 @@ bibitemlist
 
  
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(out/dissertacao.aux (out/pretextual/capa.aux) (out/pretextual/resumos.aux) (out/capitulos/introducao.aux) (out/capitulos/fundamentacao_teorica.aux) (out/capitulos/trabalhos_relacionados.aux) (out/capitulos/metodologia.aux) (out/capitulos/resultados.aux) (out/capitulos/conclusao.aux))
+(out/dissertacao.aux (out/pretextual/capa.aux) (out/pretextual/resumos.aux) (out/capitulos/introducao.aux) (out/capitulos/fundamentacao_teorica.aux) (out/capitulos/metodologia.aux) (out/capitulos/resultados.aux) (out/capitulos/conclusao.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: B3B2660062A3C82E4C1CEAC0DD428C95;3738.
+(rerunfilecheck)             Checksum: E67E8507061F54C2BB95E328DC665322;3879.
  ) 
 Here is how much of TeX's memory you used:
- 23205 strings out of 467578
- 385498 string characters out of 5424739
- 972719 words of memory out of 5000000
- 51201 multiletter control sequences out of 15000+600000
- 715951 words of font info for 215 fonts, out of 8000000 for 9000
+ 23173 strings out of 467578
+ 384237 string characters out of 5424739
+ 970411 words of memory out of 5000000
+ 51180 multiletter control sequences out of 15000+600000
+ 715864 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,2570b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on out/dissertacao.pdf (56 pages, 1177741 bytes).
+Output written on out/dissertacao.pdf (56 pages, 1177201 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
- 867 compressed objects within 9 object streams
- 175 named destinations out of 1000 (max. 500000)
- 51635 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 994 PDF objects out of 1000 (max. 8388607)
+ 864 compressed objects within 9 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 51619 words of extra memory for PDF output out of 61914 (max. 10000000)
 

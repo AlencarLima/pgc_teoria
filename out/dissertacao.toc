@@ -17,39 +17,36 @@
 \contentsline {section}{\numberline {2.6}Extração de Termos-Chave}{13}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Desinformação e Verificação de Fatos Automatizada}{14}{section.2.7}%
 \contentsline {section}{\numberline {2.8}\textit {Claim Detection}}{14}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Modelo \textit {XLM-R-Large-ClaimDetection}}{15}{subsection.2.8.1}%
 \contentsline {section}{\numberline {2.9}Métricas de desempenho}{17}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Acurácia}{17}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Precisão}{18}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.2}Precisão}{17}{subsection.2.9.2}%
 \contentsline {subsection}{\numberline {2.9.3}\textit {Recall}}{18}{subsection.2.9.3}%
 \contentsline {subsection}{\numberline {2.9.4}\textit {F1-Score}}{18}{subsection.2.9.4}%
 \contentsline {subsection}{\numberline {2.9.5}Índice de Jaccard}{18}{subsection.2.9.5}%
-\contentsline {section}{\numberline {2.10}Considerações Finais}{19}{section.2.10}%
+\contentsline {section}{\numberline {2.10}Trabalhos Relacionados}{19}{section.2.10}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Trabalhos Relacionados}}{20}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Etapas Realizadas Neste Projeto}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Extração e seleção de produções textuais}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Pré-processamento e mapeamento de textos}{23}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Registro dos Dados Processados}{24}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Obtenção dos Termos-chave}{24}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Classificação Textual}{27}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Análise da eficácia obtida por cada tecnologia}{28}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Comparação da eficácia entre as tecnologias estudadas durante o projeto}{29}{subsection.3.1.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Metodologia}}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Etapas Realizadas Neste Projeto}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Extração e seleção de produções textuais}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Pré-processamento e mapeamento de textos}{23}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Registro dos Dados Processados}{24}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Obtenção dos Termos-chave}{24}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Classificação Textual}{27}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Análise da eficácia obtida por cada tecnologia}{28}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Comparação da eficácia entre as tecnologias estudadas durante o projeto}{29}{subsection.4.1.7}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e Discussões}}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resultados Obtidos}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Sumarização}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Segmentação baseada em conjunções}{33}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Segmentação baseada em aspas}{35}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Classificação de afirmações factuais com XLM-R-Large-\textit {ClaimDetection}}{36}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Comparação com o SVM}{36}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Comparação de Classificação}{36}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussões}}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Resultados Obtidos}{32}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Sumarização}{32}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Segmentação baseada em conjunções}{33}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Segmentação baseada em aspas}{35}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Classificação de afirmações factuais com XLM-R-Large-\textit {ClaimDetection}}{36}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Comparação com o SVM}{36}{subsection.5.1.5}%
-\contentsline {section}{\numberline {5.2}Comparação de Classificação}{36}{section.5.2}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{44}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Limitações}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{45}{section.6.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Considerações Finais}}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{45}{section.5.2}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{47}{section*.22}%

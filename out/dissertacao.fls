@@ -267,9 +267,6 @@ INPUT out/capitulos/introducao.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
 INPUT out/capitulos/metodologia.aux
 INPUT out/capitulos/metodologia.aux
 INPUT out/capitulos/metodologia.aux
@@ -419,12 +416,6 @@ INPUT ./figs/transformers.png
 INPUT ./figs/transformers.png
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
-INPUT ./capitulos/trabalhos_relacionados.tex
-INPUT ./capitulos/trabalhos_relacionados.tex
-OUTPUT out/capitulos/trabalhos_relacionados.aux
-INPUT ./capitulos/trabalhos_relacionados.tex
-INPUT ./capitulos/trabalhos_relacionados.tex
-INPUT capitulos/trabalhos_relacionados.tex
 INPUT ./capitulos/metodologia.tex
 INPUT ./capitulos/metodologia.tex
 OUTPUT out/capitulos/metodologia.aux
@@ -496,9 +487,6 @@ INPUT out/capitulos/introducao.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
 INPUT out/capitulos/fundamentacao_teorica.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
-INPUT out/capitulos/trabalhos_relacionados.aux
 INPUT out/capitulos/metodologia.aux
 INPUT out/capitulos/metodologia.aux
 INPUT out/capitulos/metodologia.aux

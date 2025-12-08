@@ -5,7 +5,6 @@ A level-1 auxiliary file: pretextual/capa.aux
 A level-1 auxiliary file: pretextual/resumos.aux
 A level-1 auxiliary file: capitulos/introducao.aux
 A level-1 auxiliary file: capitulos/fundamentacao_teorica.aux
-A level-1 auxiliary file: capitulos/trabalhos_relacionados.aux
 A level-1 auxiliary file: capitulos/metodologia.aux
 A level-1 auxiliary file: capitulos/resultados.aux
 A level-1 auxiliary file: capitulos/conclusao.aux
@@ -38,7 +37,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 48 entries,
             6714 wiz_defined-function locations,
-            1489 strings with 19593 characters,
+            1488 strings with 19557 characters,
 and the built_in function-call counts, 71314 in all, are:
 = -- 8160
 > -- 1471
