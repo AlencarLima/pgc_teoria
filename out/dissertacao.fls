@@ -398,9 +398,14 @@ OUTPUT out/capitulos/fundamentacao_teorica.aux
 INPUT ./capitulos/fundamentacao_teorica.tex
 INPUT ./capitulos/fundamentacao_teorica.tex
 INPUT capitulos/fundamentacao_teorica.tex
+INPUT ./figs/desordem_informacional.png
+INPUT ./figs/desordem_informacional.png
+INPUT ./figs/desordem_informacional.png
+INPUT ./figs/desordem_informacional.png
+INPUT ./figs/desordem_informacional.png
+INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso17.tfm
@@ -410,11 +415,6 @@ INPUT ./figs/transformers.png
 INPUT ./figs/transformers.png
 INPUT ./figs/transformers.png
 INPUT d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT ./figs/desordem_informacional.png
-INPUT ./figs/desordem_informacional.png
-INPUT ./figs/desordem_informacional.png
-INPUT ./figs/desordem_informacional.png
-INPUT ./figs/desordem_informacional.png
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT ./capitulos/metodologia.tex
 INPUT ./capitulos/metodologia.tex

@@ -9,13 +9,13 @@
 \contentsline {section}{\numberline {1.2}Justificativa}{4}{section.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Processamento de Linguagem Natural}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Representação de Texto}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Sumarização Extrativa}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Aprendizado de Máquina na Classificação Textual}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Aprendizado Profundo (\textit {Deep Learning})}{10}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Extração de Termos-Chave}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Desinformação}{13}{section.2.7}%
+\contentsline {section}{\numberline {2.1}Desinformação}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Processamento de Linguagem Natural}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Representação de Texto}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Sumarização Extrativa}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Aprendizado de Máquina na Classificação Textual}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Aprendizado Profundo (\textit {Deep Learning})}{13}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Extração de Termos-Chave}{15}{section.2.7}%
 \contentsline {section}{\numberline {2.8}\textit {Claim Detection} e Verificação de Fatos Automatizada}{16}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Métricas de desempenho}{19}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Acurácia}{19}{subsection.2.9.1}%

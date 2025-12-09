@@ -1,7 +1,45 @@
 \chapter{Fundamentação Teórica}
 \label{cap:fundamentacao_teorica}
 
-O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (\textit{Machine Learning-ML}) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional (LC) e a Inteligência Artificial (IA), fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase nas metodologias de extração de termos factuais e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais. 
+O avanço das tecnologias de Processamento de Linguagem Natural (PLN) e de Aprendizado de Máquina (\textit{Machine Learning-ML}) tem transformado profundamente a forma como se compreende, organiza e interpreta grandes volumes de informação textual. Essas áreas, situadas na intersecção entre a Linguística Computacional (LC) e a Inteligência Artificial (IA), fornecem as bases para o desenvolvimento de sistemas capazes de compreender o conteúdo semântico de textos, extrair padrões linguísticos e realizar tarefas de classificação, sumarização e detecção de desinformação. Neste capítulo, são abordados os principais conceitos e fundamentos teóricos que sustentam as técnicas utilizadas nesta pesquisa, com ênfase em conceitos utilizados no projeto, como nas metodologias de extração de termos factuais e nos modelos de classificação textual aplicados ao combate à disseminação de desinformação nos meios digitais.
+
+\section{Desinformação}
+
+A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{surveyFakeNews}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.
+
+É importante ter em mente o tipo específico de informação que será tratado neste trabalho, uma vez que o fenômeno da desordem informacional representa uma das expressões mais complexas da crise contemporânea da comunicação. Conforme analisa Silva~\cite{silva2020}, a desordem informacional manifesta-se no ambiente digital como um caos comunicacional, em que conteúdos verdadeiros, falsos e distorcidos se misturam em alta velocidade, especialmente nas redes sociais como o \textit{Twitter}. Essa dinâmica, acelerada pela pandemia de COVID-19, caracteriza a chamada infodemia, marcada pelo excesso de informações, algumas corretas, outras enganosas, que dificultam a distinção entre fontes confiáveis e conteúdos manipulados e, ao mesmo tempo, oferecem um campo fértil para a identificação de termos e expressões que sinalizam diferentes tipos de distorção. Como sintetizado na Figura~\ref{fig:desordem_informacional}, essas categorias se sobrepõem e ajudam a diferenciar situações em que há apenas circulação de informação incorreta daquelas em que há uso estratégico da informação para produzir dano.
+
+% Colocar imagem ilustrativa da desordem informacional
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=1\textwidth]{figs/desordem_informacional.png} % coloque o arquivo na pasta escolhida
+    \caption{"Desordem da informação".}
+    \label{fig:desordem_informacional}
+    \legend{\footnotesize Fonte: \cite{unesco2018}} % abnTeX2
+\end{figure}
+
+De acordo com a tipologia proposta por Wardle e Derakhshan~\cite{wardle2017}, a desordem informacional se estrutura em três dimensões complementares:
+\begin{itemize}
+    \item Informação Incorreta: quando informações falsas são compartilhadas sem intenção de causar dano;
+    \item Desinformação: quando há intenção deliberada de enganar ou prejudicar;
+    \item Má-informação: quando informações verdadeiras são utilizadas com o objetivo de causar dano.
+\end{itemize}
+
+Esses três eixos foram incorporados e ampliados no manual da UNESCO~\cite{unesco2018}, intitulado \textit{Journalism, “Fake News” \& Disinformation}, que trata a desordem informacional como um fenômeno sistêmico, envolvendo dimensões políticas, tecnológicas e cognitivas.
+
+Sob essa perspectiva, o Tribunal Superior Eleitoral (TSE) passou a adotar “desinformação” como conceito guarda-chuva para abarcar diferentes formas de manipulação e distorção de conteúdo em contextos de desordem informacional~\cite{tse2022}. Materiais do TRE-SP explicitam que “\textit{fake news}” é uma subcategoria específica, ligada à falsificação da forma notícia e à aparência jornalística, enquanto “desinformação” cobre um escopo mais amplo, incluindo postagens, conteúdos audiovisuais, memes e narrativas distorcidas que circulam nas redes~\cite{tresp2023}. Assim, para estudos sobre circulação de informações \textit{online} e mais especificamente, para este trabalho, o uso do termo “desinformação” mostra-se conceitualmente mais preciso e metodologicamente consistente~\cite{tse2022,tresp2023}.
+
+A literatura especializada reforça essa ampliação conceitual. Marchiori~\cite{marchiori2002} já identificava o paradoxo do excesso informacional, no qual o volume de dados não se converte em conhecimento. Han~\cite{han2018}, por sua vez, descreve o ambiente digital como um “enxame de ruídos”, no qual indivíduos isolados produzem e compartilham incessantemente fragmentos de informação sem coordenação nem filtro, gerando ruído cognitivo coletivo.
+
+Estudos empíricos comprovam os efeitos dessa desordem. Vosoughi, Roy e Aral~\cite{vosoughi2018} mostram que, no \textit{Twitter}, boatos falsos difundem-se mais longe, mais rápido e mais profundamente do que notícias verdadeiras, chegando a 1,500 pessoas cerca de seis vezes mais rápido, em grande parte associados à novidade da informação e a um perfil emocional distinto nas respostas (mais surpresa e nojo), e não ao efeito de \textit{bots}. Cinelli et al.~\cite{cinelli2020} analisam várias plataformas e encontram padrões de difusão semelhantes para conteúdos de fontes confiáveis e questionáveis. No \textit{Twitter}, as estimativas de amplificação indicam que a arquitetura não discrimina a veracidade no ato da difusão, favorecendo a circulação indiscriminada de conteúdo.
+
+Durante a pandemia, o \textit{Covid19 Infodemic Observatory}~\cite{dedomenico2020} verificou que cerca de 28,9\% das publicações sobre COVID-19 continham informações questionáveis. Já a Organização Pan-Americana da Saúde (OPAS)~\cite{opas2020} conceituou a infodemia como uma ``superabundância de informações, precisas e imprecisas, que dificulta a identificação de orientações confiáveis'', destacando o papel das redes sociais como amplificadoras desse processo.
+
+Diante desse cenário, García-Saisó et al.~\cite{garciasaiso2021} enfatizam que a desordem informacional deve ser tratada como questão de saúde pública e de governança democrática, demandando estratégias de comunicação de risco, fortalecimento da checagem de fatos e políticas de alfabetização midiática.
+
+Em síntese, a desordem informacional e, dentro dela, a desinformação, traduz a crise da racionalidade comunicacional contemporânea. Mais do que um problema semântico, trata-se de uma reconfiguração estrutural do ecossistema informativo, em que a abundância de conteúdo, a ausência de filtros e o incentivo algorítmico à polarização substituem a busca pela verdade pela simples viralização. Dessa forma, o presente trabalho se concentra especificamente no estudo da desinformação.
+
+Modelos como o \textit{XLM-R-Large-ClaimDetection}, utilizado neste estudo, aplicam técnicas de aprendizado profundo para identificar automaticamente frases que contêm declarações factuais dignas de verificação. Essa abordagem se mostra promissora ao reduzir a sobrecarga humana e aumentar a escalabilidade de sistemas de monitoramento de desinformação.
 
 \section{Processamento de Linguagem Natural}
 
@@ -109,44 +147,6 @@ A extração de termos-chave é um processo com potencial significativo de otimi
 As abordagens tradicionais baseiam-se em métodos estatísticos, como \textit{TF-IDF}, \textit{RAKE} (\textit{Rapid Automatic Keyword Extraction}), \textit{TextRank} \cite{mihalcea2004textrank} e \textit{YAKE} (\textit{Yet Another Keyword Extractor}). Tais métodos consideram a frequência e coocorrência de termos, oferecendo soluções rápidas e interpretáveis, embora limitadas no entendimento de contexto.  
 
 Em contrapartida, abordagens modernas utilizam embeddings semânticos e modelos supervisionados para capturar significados contextuais. Técnicas baseadas em \textit{sentence embeddings}, como as fornecidas pelo SBERT~\cite{reimers2019sentencebert}, avaliam a similaridade de cosseno entre frases e palavras, permitindo identificar termos de maior relevância sem depender exclusivamente de frequência estatística. Além disso, modelos supervisionados e híbridos, que combinam embeddings com classificadores como SVMs ou redes neurais, apresentam resultados expressivos em tarefas de extração semântica de palavras-chave~\cite{umair2024plmkeyphrase}.
-
-\section{Desinformação}
-
-A desinformação é um fenômeno multifacetado que se refere à disseminação intencional de informações falsas ou enganosas com o objetivo de manipular percepções e comportamentos \cite{surveyFakeNews}. No ambiente digital, sua propagação é potencializada pela velocidade das redes sociais e pela personalização algorítmica, que cria bolhas informacionais e amplia o impacto de narrativas falsas.
-
-É importante ter em mente o tipo específico de informação que será tratado neste trabalho, uma vez que o fenômeno da desordem informacional representa uma das expressões mais complexas da crise contemporânea da comunicação. Conforme analisa Silva~\cite{silva2020}, a desordem informacional manifesta-se no ambiente digital como um caos comunicacional, em que conteúdos verdadeiros, falsos e distorcidos se misturam em alta velocidade, especialmente nas redes sociais como o \textit{Twitter}. Essa dinâmica, acelerada pela pandemia de COVID-19, caracteriza a chamada infodemia, marcada pelo excesso de informações, algumas corretas, outras enganosas, que dificultam a distinção entre fontes confiáveis e conteúdos manipulados e, ao mesmo tempo, oferecem um campo fértil para a identificação de termos e expressões que sinalizam diferentes tipos de distorção. Como sintetizado na Figura~\ref{fig:desordem_informacional}, essas categorias se sobrepõem e ajudam a diferenciar situações em que há apenas circulação de informação incorreta daquelas em que há uso estratégico da informação para produzir dano.
-
-% Colocar imagem ilustrativa da desordem informacional
-\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
-    \centering
-    \includegraphics[width=1\textwidth]{figs/desordem_informacional.png} % coloque o arquivo na pasta escolhida
-    \caption{"Desordem da informação".}
-    \label{fig:desordem_informacional}
-    \legend{\footnotesize Fonte: \cite{unesco2018}} % abnTeX2
-\end{figure}
-
-De acordo com a tipologia proposta por Wardle e Derakhshan~\cite{wardle2017}, a desordem informacional se estrutura em três dimensões complementares:
-\begin{itemize}
-    \item Informação Incorreta: quando informações falsas são compartilhadas sem intenção de causar dano;
-    \item Desinformação: quando há intenção deliberada de enganar ou prejudicar;
-    \item Má-informação: quando informações verdadeiras são utilizadas com o objetivo de causar dano.
-\end{itemize}
-
-Esses três eixos foram incorporados e ampliados no manual da UNESCO~\cite{unesco2018}, intitulado \textit{Journalism, “Fake News” \& Disinformation}, que trata a desordem informacional como um fenômeno sistêmico, envolvendo dimensões políticas, tecnológicas e cognitivas.
-
-Sob essa perspectiva, o Tribunal Superior Eleitoral (TSE) passou a adotar “desinformação” como conceito guarda-chuva para abarcar diferentes formas de manipulação e distorção de conteúdo em contextos de desordem informacional~\cite{tse2022}. Materiais do TRE-SP explicitam que “\textit{fake news}” é uma subcategoria específica, ligada à falsificação da forma notícia e à aparência jornalística, enquanto “desinformação” cobre um escopo mais amplo, incluindo postagens, conteúdos audiovisuais, memes e narrativas distorcidas que circulam nas redes~\cite{tresp2023}. Assim, para estudos sobre circulação de informações \textit{online} e mais especificamente, para este trabalho, o uso do termo “desinformação” mostra-se conceitualmente mais preciso e metodologicamente consistente~\cite{tse2022,tresp2023}.
-
-A literatura especializada reforça essa ampliação conceitual. Marchiori~\cite{marchiori2002} já identificava o paradoxo do excesso informacional, no qual o volume de dados não se converte em conhecimento. Han~\cite{han2018}, por sua vez, descreve o ambiente digital como um “enxame de ruídos”, no qual indivíduos isolados produzem e compartilham incessantemente fragmentos de informação sem coordenação nem filtro, gerando ruído cognitivo coletivo.
-
-Estudos empíricos comprovam os efeitos dessa desordem. Vosoughi, Roy e Aral~\cite{vosoughi2018} mostram que, no \textit{Twitter}, boatos falsos difundem-se mais longe, mais rápido e mais profundamente do que notícias verdadeiras, chegando a 1,500 pessoas cerca de seis vezes mais rápido, em grande parte associados à novidade da informação e a um perfil emocional distinto nas respostas (mais surpresa e nojo), e não ao efeito de \textit{bots}. Cinelli et al.~\cite{cinelli2020} analisam várias plataformas e encontram padrões de difusão semelhantes para conteúdos de fontes confiáveis e questionáveis. No \textit{Twitter}, as estimativas de amplificação indicam que a arquitetura não discrimina a veracidade no ato da difusão, favorecendo a circulação indiscriminada de conteúdo.
-
-Durante a pandemia, o \textit{Covid19 Infodemic Observatory}~\cite{dedomenico2020} verificou que cerca de 28,9\% das publicações sobre COVID-19 continham informações questionáveis. Já a Organização Pan-Americana da Saúde (OPAS)~\cite{opas2020} conceituou a infodemia como uma ``superabundância de informações, precisas e imprecisas, que dificulta a identificação de orientações confiáveis'', destacando o papel das redes sociais como amplificadoras desse processo.
-
-Diante desse cenário, García-Saisó et al.~\cite{garciasaiso2021} enfatizam que a desordem informacional deve ser tratada como questão de saúde pública e de governança democrática, demandando estratégias de comunicação de risco, fortalecimento da checagem de fatos e políticas de alfabetização midiática.
-
-Em síntese, a desordem informacional e, dentro dela, a desinformação, traduz a crise da racionalidade comunicacional contemporânea. Mais do que um problema semântico, trata-se de uma reconfiguração estrutural do ecossistema informativo, em que a abundância de conteúdo, a ausência de filtros e o incentivo algorítmico à polarização substituem a busca pela verdade pela simples viralização. Dessa forma, o presente trabalho se concentra especificamente no estudo da desinformação.
-
-Modelos como o \textit{XLM-R-Large-ClaimDetection}, utilizado neste estudo, aplicam técnicas de aprendizado profundo para identificar automaticamente frases que contêm declarações factuais dignas de verificação. Essa abordagem se mostra promissora ao reduzir a sobrecarga humana e aumentar a escalabilidade de sistemas de monitoramento de desinformação.
 
 \section{\textit{Claim Detection} e Verificação de Fatos Automatizada}
 

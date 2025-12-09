@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  8 DEC 2025 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  8 DEC 2025 21:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1023,7 +1023,7 @@ l.99
 
 ]) (out/dissertacao.toc
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 16.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 23.
  [4
@@ -1077,26 +1077,26 @@ l.66
 
  (./capitulos/fundamentacao_teorica.tex
 Cap\'{\i }tulo 2.
+<figs/desordem_informacional.png, id=223, 444.91219pt x 266.49562pt>
+File: figs/desordem_informacional.png Graphic file (type png)
+<use figs/desordem_informacional.png>
+Package pdftex.def Info: figs/desordem_informacional.png  used on input line 15.
+(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
 [7
 
 
 
 
-] [8{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [9]
+] [8 <./figs/desordem_informacional.png>] [9] [10{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [11{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 66.
-<figs/transformers.png, id=282, 268.00125pt x 372.39125pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 104.
+ [12]
+<figs/transformers.png, id=344, 268.00125pt x 372.39125pt>
 File: figs/transformers.png Graphic file (type png)
 <use figs/transformers.png>
-Package pdftex.def Info: figs/transformers.png  used on input line 81.
+Package pdftex.def Info: figs/transformers.png  used on input line 119.
 (pdftex.def)             Requested size: 318.49861pt x 442.55444pt.
- [10] [11 <./figs/transformers.png>] [12{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-<figs/desordem_informacional.png, id=324, 444.91219pt x 266.49562pt>
-File: figs/desordem_informacional.png Graphic file (type png)
-<use figs/desordem_informacional.png>
-Package pdftex.def Info: figs/desordem_informacional.png  used on input line 122.
-(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
- [13] [14 <./figs/desordem_informacional.png>] [15] [16] [17] [18]
+ [13] [14 <./figs/transformers.png>] [15{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [16] [17] [18]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 209.
  [19] [20] [21]) [22]
@@ -1409,21 +1409,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 2DB000C0E341311C68C09A90354C5682;4455.
+(rerunfilecheck)             Checksum: 82FFB950ED4F5CF142DAC2751BA33733;4452.
  ) 
 Here is how much of TeX's memory you used:
  23191 strings out of 467578
  384842 string characters out of 5424739
- 973329 words of memory out of 5000000
+ 973328 words of memory out of 5000000
  51197 multiletter control sequences out of 15000+600000
  715763 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,2570b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,2570b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on out/dissertacao.pdf (57 pages, 1216083 bytes).
+Output written on out/dissertacao.pdf (57 pages, 1216260 bytes).
 PDF statistics:
- 1040 PDF objects out of 1200 (max. 8388607)
- 906 compressed objects within 10 object streams
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 907 compressed objects within 10 object streams
  176 named destinations out of 1000 (max. 500000)
  51624 words of extra memory for PDF output out of 61914 (max. 10000000)
 
