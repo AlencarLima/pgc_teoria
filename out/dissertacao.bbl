@@ -163,6 +163,10 @@ Brasília, 2020. Dispon{\'\i}vel em: \url{https://iris.paho.org/handle/10665.2/5
 {RAPOZA, K. Can ‘fake news’ impact the stock market?
 \emph{Forbes}, 2017.}
 
+\bibitem[Reimers e Gurevych 2019]{reimers2019sentencebert}
+\abntrefinfo{Reimers e Gurevych}{REIMERS; GUREVYCH}{2019}
+{REIMERS, N.; GUREVYCH, I. Sentence-{BERT}: Sentence embeddings using siamese {BERT}-networks. In:  \emph{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)}. Hong Kong, China: Association for Computational Linguistics, 2019. p. 3982--3992. Dispon{\'\i}vel em: \url{https://aclanthology.org/D19-1410/}.}
+
 \bibitem[Risch et al. 2021]{overviewClaim}
 \abntrefinfo{Risch et al.}{RISCH et al.}{2021}
 {RISCH, J. et al. Overview of the germeval 2021 shared task on the identification of toxic, engaging, and fact-claiming comments. In:  \emph{Proceedings of the GermEval 2021 Shared Task on the Identification of Toxic, Engaging, and Fact-Claiming Comments}. Duesseldorf, Germany: Association for Computational Linguistics, 2021. Dispon{\'\i}vel em: \url{https://aclanthology.org/2021.germeval-1.1}.}
@@ -215,14 +219,14 @@ Dispon{\'\i}vel em: \url{https://www.justicaeleitoral.jus.br/desinformacao/arqui
 \emph{arXiv}, 2024.
 Dispon{\'\i}vel em: \url{https://arxiv.org/pdf/2304.10557}.}
 
-\bibitem[Vaswani et al. 2017]{vaswani2017attention}
-\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017a}
-{VASWANI, A. et al. Attention is all you need. In:  \emph{Advances in Neural Information Processing Systems (NeurIPS)}. [S.l.: s.n.], 2017.}
+\bibitem[Umair, Sultana e Lee 2024]{umair2024plmkeyphrase}
+\abntrefinfo{Umair, Sultana e Lee}{UMAIR; SULTANA; LEE}{2024}
+{UMAIR, M.; SULTANA, T.; LEE, Y.-K. Pre-trained language models for keyphrase prediction: A review.
+\emph{ICT Express}, v.~10, n.~4, p. 871--890, 2024.}
 
-\bibitem[Vaswani et al. 2017]{transformer_xlm_r}
-\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017b}
-{VASWANI, A. et al. Attention is all you need.
-\emph{NeurIPS}, 2017.}
+\bibitem[Vaswani et al. 2017]{vaswani2017attention}
+\abntrefinfo{Vaswani et al.}{VASWANI et al.}{2017}
+{VASWANI, A. et al. Attention is all you need. In:  \emph{Advances in Neural Information Processing Systems (NeurIPS)}. [S.l.: s.n.], 2017.}
 
 \bibitem[Vosoughi, Roy e Aral 2018]{vosoughi2018}
 \abntrefinfo{Vosoughi, Roy e Aral}{VOSOUGHI; ROY; ARAL}{2018}

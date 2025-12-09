@@ -73,7 +73,15 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
 
 O baixo rendimento em encontrar sentenças factuais importantes (IFS) pode ser atribuído ao fato de o treinamento não ter sido realizado de forma ideal, devido a limitações de \textit{hardware}. O desempenho alcançada, ainda assim, destaca a utilidade do modelo XLM-R-Large como ferramenta para filtragem e segmentação de grandes volumes de texto, facilitando a identificação de informações relevantes para análises de desinformação e processos de verificação de fatos.
 
-Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas conforme pode ser visto na \autoref{tab:exemplo-6x5}. Com textos resumidos pelo BERT, foram retornados 2,391 \textit{tuítes} no $cluster_0$ e 1,333 no $cluster_1$, já para o DistilBERT (dBERT), 1,670 e 928, respectivamente e com o SBERT, 2,040 e 1,234. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
+Apesar de apresentar métricas menos eficientes, o modelo conseguiu extrair textos relevantes das 29 notícias analisadas conforme pode ser visto na \autoref{tab:exemplo-6x5}. Com textos resumidos pelo BERT, foram retornados 2,391 \textit{tuítes} no $cluster_0$ e 1,333 no $cluster_1$, já para o DistilBERT (dBERT), 1,670 e 928, respectivamente e com o SBERT, 2,040 e 1,234 como pode ser observado na Figura~\ref{fig:qtd_tuites_retornados}. Entre as frases relevantes extraídas, destacam-se exemplos como: “o TSE (Tribunal Superior Eleitoral) não testou a segurança das urnas para as eleições de 2022”. No entanto, o modelo também retornou frases menos relevantes, como: “no Telegram disseminam informações falsas sobre o”, “estão registrados na seção” e “circulam nas redes sociais (veja aqui)”. Esse comportamento reforça a necessidade de aprimorar a precisão na filtragem de conteúdo, evitando a extração de dados não essenciais, o que pode aumentar o tempo de processamento e reduzir a eficiência geral do sistema.
+
+\begin{figure}[H] % ou [!htb] se preferir deixar o LaTeX decidir
+    \centering
+    \includegraphics[width=1\textwidth]{figs/qtd_tuites_retornados.png} % coloque o arquivo na pasta escolhida
+    \caption{Textos encontrados por método e \textit{cluster}}
+    \label{fig:qtd_tuites_retornados}
+    \legend{\footnotesize Fonte: elaboração própria.} % abnTeX2
+\end{figure}
 
 \subsection{Segmentação baseada em aspas}
 Para o método envolvendo apenas aspas, houve retorno de frases para apenas 5 das 29

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  8 DEC 2025 00:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.2)  8 DEC 2025 20:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1051,348 +1051,353 @@ l.23
 
 ]
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 27.
+(babel)             Reported on input line 28.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 
-      [2 <./figs/pessoas_online.png>]
-<figs/desordem_informacional.png, id=161, 444.91219pt x 266.49562pt>
-File: figs/desordem_informacional.png Graphic file (type png)
-<use figs/desordem_informacional.png>
-Package pdftex.def Info: figs/desordem_informacional.png  used on input line 31.
-(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
-
+l.28 A
+       classifica√ß√£o proposta por Wardle e Derakhshan~\cite{wardle2017}, p... [2 <./figs/pessoas_online.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 S
-      ob essa perspectiva, o Tribunal Superior Eleitoral (TSE) passou a adot... [3 <./figs/desordem_informacional.png>]
+l.41 
+      [3]
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 
+l.59 
       [4]
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71     \item A
-                nalisar modelos relevantes por meio de revis√£o dos modelos ... [5] [6]) [7]
+l.66 
+      [5]) [6]
 \openout2 = `capitulos/fundamentacao_teorica.aux'.
 
  (./capitulos/fundamentacao_teorica.tex
 Cap\'{\i }tulo 2.
-[8
+[7
 
 
 
 
-] [9{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [10]
+] [8{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [9]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 66.
-<figs/transformers.png, id=317, 268.00125pt x 372.39125pt>
+<figs/transformers.png, id=282, 268.00125pt x 372.39125pt>
 File: figs/transformers.png Graphic file (type png)
 <use figs/transformers.png>
 Package pdftex.def Info: figs/transformers.png  used on input line 81.
 (pdftex.def)             Requested size: 318.49861pt x 442.55444pt.
- [11] [12 <./figs/transformers.png>] [13{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [14] [15] [16] [17]
+ [10] [11 <./figs/transformers.png>] [12{d:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+<figs/desordem_informacional.png, id=324, 444.91219pt x 266.49562pt>
+File: figs/desordem_informacional.png Graphic file (type png)
+<use figs/desordem_informacional.png>
+Package pdftex.def Info: figs/desordem_informacional.png  used on input line 122.
+(pdftex.def)             Requested size: 455.0pt x 272.53761pt.
+ [13] [14 <./figs/desordem_informacional.png>] [15] [16] [17] [18]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 177.
- [18] [19]) [20] [21]
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 209.
+ [19] [20] [21]) [22]
 \openout2 = `capitulos/metodologia.aux'.
 
  (./capitulos/metodologia.tex
 Cap\'{\i }tulo 3.
-[22
+[23
 
 
 
 
-] [23] [24] [25] [26] [27] [28] [29]) [30] [31]
+] [24] [25] [26] [27] [28] [29] [30]) [31] [32]
 \openout2 = `capitulos/resultados.aux'.
 
  (./capitulos/resultados.tex
 Cap\'{\i }tulo 4.
-<figs/compression_ratio.png, id=506, 496.10344pt x 287.57437pt>
+<figs/compression_ratio.png, id=531, 496.10344pt x 287.57437pt>
 File: figs/compression_ratio.png Graphic file (type png)
 <use figs/compression_ratio.png>
 Package pdftex.def Info: figs/compression_ratio.png  used on input line 13.
 (pdftex.def)             Requested size: 455.0pt x 263.75107pt.
-<figs/factual_graph.png, id=508, 578.16pt x 361.35pt>
+<figs/factual_graph.png, id=533, 578.16pt x 361.35pt>
 File: figs/factual_graph.png Graphic file (type png)
 <use figs/factual_graph.png>
 Package pdftex.def Info: figs/factual_graph.png  used on input line 23.
 (pdftex.def)             Requested size: 455.0pt x 284.37164pt.
-[32
+[33
 
 
 
 
-] [33 <./figs/compression_ratio.png>] [34 <./figs/factual_graph.png>] [35] [36] [37]
-<figs/cluster_0_tweets.png, id=558, 432.8973pt x 500.1084pt>
+] [34 <./figs/compression_ratio.png>] [35 <./figs/factual_graph.png>]
+<figs/qtd_tuites_retornados.png, id=559, 481.8pt x 281.55188pt>
+File: figs/qtd_tuites_retornados.png Graphic file (type png)
+<use figs/qtd_tuites_retornados.png>
+Package pdftex.def Info: figs/qtd_tuites_retornados.png  used on input line 80.
+(pdftex.def)             Requested size: 455.0pt x 265.89607pt.
+ [36] [37 <./figs/qtd_tuites_retornados.png>] [38] [39]
+<figs/cluster_0_tweets.png, id=591, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_tweets.png Graphic file (type png)
 <use figs/cluster_0_tweets.png>
-Package pdftex.def Info: figs/cluster_0_tweets.png  used on input line 122.
+Package pdftex.def Info: figs/cluster_0_tweets.png  used on input line 130.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
-<figs/cluster_1_tweets.png, id=559, 432.8973pt x 500.1084pt>
+<figs/cluster_1_tweets.png, id=592, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_tweets.png Graphic file (type png)
 <use figs/cluster_1_tweets.png>
-Package pdftex.def Info: figs/cluster_1_tweets.png  used on input line 129.
+Package pdftex.def Info: figs/cluster_1_tweets.png  used on input line 137.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
- [38]
-<figs/cluster_0_retuites.png, id=564, 432.8973pt x 500.1084pt>
+<figs/cluster_0_retuites.png, id=593, 432.8973pt x 500.1084pt>
 File: figs/cluster_0_retuites.png Graphic file (type png)
 <use figs/cluster_0_retuites.png>
-Package pdftex.def Info: figs/cluster_0_retuites.png  used on input line 136.
+Package pdftex.def Info: figs/cluster_0_retuites.png  used on input line 144.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
- [39 <./figs/cluster_0_tweets.png>]
-<figs/cluster_1_retuites.png, id=570, 432.8973pt x 500.1084pt>
+ [40 <./figs/cluster_0_tweets.png>]
+<figs/cluster_1_retuites.png, id=599, 432.8973pt x 500.1084pt>
 File: figs/cluster_1_retuites.png Graphic file (type png)
 <use figs/cluster_1_retuites.png>
-Package pdftex.def Info: figs/cluster_1_retuites.png  used on input line 143.
+Package pdftex.def Info: figs/cluster_1_retuites.png  used on input line 151.
 (pdftex.def)             Requested size: 455.0pt x 525.66348pt.
- [40 <./figs/cluster_1_tweets.png>] [41 <./figs/cluster_0_retuites.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+ [41 <./figs/cluster_1_tweets.png>] [42 <./figs/cluster_0_retuites.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/bx/n/12 (+20) Termos
  []
 
 
-Overfull \hbox (0.77663pt too wide) in paragraph at lines 180--180
+Overfull \hbox (0.77663pt too wide) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (-20) Vulnerabilida- 
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 180--180
+Underfull \hbox (badness 8132) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) fraudar ur-nas,
  []
 
 
-Underfull \hbox (badness 5417) in paragraph at lines 180--180
+Underfull \hbox (badness 5417) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) tou as ur-nas,
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 180--180
+Underfull \hbox (badness 1424) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) como fis-ca-li-zar
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 180--180
+Underfull \hbox (badness 6995) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) as ur-nas, Vi-
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 180--180
+Underfull \hbox (badness 4181) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ta-dos por ele
  []
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 180--180
+Underfull \hbox (badness 3058) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) fo-ram sa-na-dos
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 180--180
+Underfull \hbox (badness 1502) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) su-pe-rior elei-to-
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 180--180
+Underfull \hbox (badness 1939) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ur-nas para as
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 180--180
+Underfull \hbox (badness 4713) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ur-nas, frau-dar
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 180--180
+Underfull \hbox (badness 4108) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) casso elei-to-ral,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ur-nas ele-trÙ-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ni-cas, muito
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) mais vo-tos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) estamos che-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) gando na
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) se-mana fi-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) da cam-pa-nha
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) elei-to-ral do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) apertar ^^Pcon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) a tela em
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ques-t„o n„o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) tem qual-quer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) re-la-Á„o com
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 180--180
+Underfull \hbox (badness 2564) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) seu voto, per-
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 180--180
+Underfull \hbox (badness 1983) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) der· voto, vo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) mes·rios mal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) intencionados
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 180--180
+Underfull \hbox (badness 6526) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) ten-ta-riam boi-
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 180--180
+Underfull \hbox (badness 1484) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) co-tar o pleito,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) dei-xando de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) en-tre-gar com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) pro-van-tes de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) vo-ta-Á„o, de
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 180--180
+Underfull \hbox (badness 1490) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) se-mi-nam in-for-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 180--180
+Underfull \hbox (badness 2753) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) tes de men-sa-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 180--180
+Underfull \hbox (badness 1609) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) gens no what-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []|\T1/lmr/m/n/12 (+20) FRAUD3 NA
  []
 
 
-Overfull \hbox (2.72385pt too wide) in paragraph at lines 180--180
+Overfull \hbox (2.72385pt too wide) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (-20) ELE1«√0,Bolso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) dei-xar ha-ver,
  []
 
 
-Underfull \hbox (badness 3989) in paragraph at lines 180--180
+Underfull \hbox (badness 3989) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) Bol-so-naro n„o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) deixa ter se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \T1/lmr/m/n/12 (+20) gundo turno,
  []
 
-) [42 <./figs/cluster_1_retuites.png>] [43]
+) [43 <./figs/cluster_1_retuites.png>] [44]
 \openout2 = `capitulos/conclusao.aux'.
 
  (./capitulos/conclusao.tex
 Cap\'{\i }tulo 5.
-[44
+[45
 
 
 
 
-] [45]) [46] (out/dissertacao.bbl (out/dissertacao.brf)
+] [46]) [47] (out/dissertacao.bbl (out/dissertacao.brf)
 \tf@brf=\write5
 \openout5 = `dissertacao.brf'.
 
 
 bibitemlist
-[47
+[48
 
 
 
-] [48] [49]) [50]
+] [49] [50]) [51]
 \tf@toc=\write6
 \openout6 = `dissertacao.toc'.
 
@@ -1404,21 +1409,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: E67E8507061F54C2BB95E328DC665322;3879.
+(rerunfilecheck)             Checksum: 2DB000C0E341311C68C09A90354C5682;4455.
  ) 
 Here is how much of TeX's memory you used:
- 23173 strings out of 467578
- 384237 string characters out of 5424739
- 970411 words of memory out of 5000000
- 51180 multiletter control sequences out of 15000+600000
- 715864 words of font info for 214 fonts, out of 8000000 for 9000
+ 23191 strings out of 467578
+ 384842 string characters out of 5424739
+ 973329 words of memory out of 5000000
+ 51197 multiletter control sequences out of 15000+600000
+ 715763 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,2570b,751s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on out/dissertacao.pdf (56 pages, 1177201 bytes).
+Output written on out/dissertacao.pdf (57 pages, 1216083 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 864 compressed objects within 9 object streams
- 173 named destinations out of 1000 (max. 500000)
- 51619 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1040 PDF objects out of 1200 (max. 8388607)
+ 906 compressed objects within 10 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 51624 words of extra memory for PDF output out of 61914 (max. 10000000)
 
