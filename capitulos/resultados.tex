@@ -2,8 +2,7 @@
 \label{cap:resultados}
 \section{Resultados Obtidos}
 
-Este capítulo apresenta e discute os principais resultados empíricos obtidos ao longo do estudo. Inicialmente, são analisados os efeitos dos diferentes modelos de sumarização automática na redução de ruído e na preservação de trechos factuais dos textos. Em seguida, são avaliadas as abordagens de segmentação baseadas em conjunções e em aspas, com ênfase na capacidade de recuperar trechos relevantes em notícias e em \textit{clusters} de \textit{tweets}. Na sequência, discute-se o desempenho do modelo \textit{XLM-R-Large-ClaimDetection} e do classificador SVM na identificação de afirmações factuais, comparando seus resultados com o modelo original em inglês e com o método manual de referência. Por fim, são comparadas as diferentes estratégias de classificação de desinformação em \textit{tweets} e retuítes, destacando os compromissos entre assertividade, conservadorismo e risco de super-rotulagem.
-
+Este capítulo apresenta e discute os principais resultados empíricos obtidos ao longo do estudo. Inicialmente, são analisados os efeitos dos diferentes modelos de sumarização automática na redução de ruído e na preservação de trechos factuais dos textos. Em seguida, são avaliadas as abordagens de segmentação baseadas em conjunções e em aspas, com ênfase na capacidade de recuperar trechos relevantes em notícias e em \textit{clusters} de \textit{tweets}. Na sequência, discute-se o desempenho do modelo \textit{XLM-R-Large-ClaimDetection} e do classificador SVM na identificação de afirmações factuais, comparando seus resultados com o modelo original em inglês e com o método manual de referência. Por fim, são comparadas as diferentes estratégias de classificação de desinformação em \textit{tweets} e retuítes, destacando os compromissos entre assertividade e conservadorismo.
 
 \subsection{Sumarização}
 Para o primeiro processo de sumarização automática para redução de ruído, três modelos foram avaliados: BERT-base, DistilBERT e SBERT-MiniLM. Em todos os casos, os resumos ficaram entre 25\% e 27\% do tamanho do texto original conforme mostrado na Figura~\ref{fig:compression-ratio}, sem diferenças expressivas de compressão entre os modelos, com leve tendência do DistilBERT a produzir resumos mais concisos e do SBERT-MiniLM a manter textos um pouco maiores.
@@ -17,6 +16,17 @@ Para o primeiro processo de sumarização automática para redução de ruído, 
 \end{figure}
 
 Quando se observa apenas a preservação de trechos factuais, BERT-base e SBERT-MiniLM mantiveram cerca de 25\% a 26\% de conteúdo classificado como factual, superando o DistilBERT, que ficou em torno de 22\% conforme mostrado na Figura~\ref{fig:factualidade}. Em termos de retenção de tópicos centrais, medida pelo índice de Jaccard entre as palavras-chave do original e do resumo, o SBERT-MiniLM apresentou o melhor resultado (0,22), seguido muito de perto pelo BERT-base (0,21), enquanto o DistilBERT apresentou desempenho inferior (0,14). Da mesma forma, quando a similaridade textual foi medida por uma métrica de similaridade (TF-IDF/cosseno), o SBERT-MiniLM obteve o maior valor (0,64), superando ligeiramente o BERT-base e o DistilBERT, ambos com 0,61. No entanto, o tempo de processamento mostrou diferenças marcantes: o BERT-base demandou em média mais de 22 segundos por texto, o DistilBERT cerca de 3 segundos e o SBERT-MiniLM pouco mais de 1 segundo, o que torna o último mais adequado a cenários de grande volume.
+
+Mais especificamente, os valores médios de tempo de processamento por tarefa para sumarização automática foram os seguintes para cada modelo testado:
+\begin{itemize}
+    \item BERT padrão (\textit{model = Summarizer()}), que apresentou um tempo médio de processamento de 301,84 a 309,03 segundos por tarefa.
+    \item DistilBERT, uma versão mais leve do BERT, configurada com camadas ocultas específicas (hidden=[-1, -2] e hidden\_concat=True), que reduziu o tempo médio de execução para aproximadamente 86,87 a 96,21 segundos por tarefa.
+    \item SBERT (\textit{Sentence-BERT}), utilizando a versão \textit{paraphrase-MiniLM-L6-v2}, que apresentou o melhor desempenho, com um tempo médio de processamento de 57,75 a 60,28 segundos por tarefa.
+\end{itemize}
+
+O fator determinante para a escolha do SBERT foi, principalmente, o tempo de processamento reduzido, pois os resultados dos resumos gerados não apresentaram diferenças significativas em relação aos outros modelos testados. Além disso, o SBERT demonstrou desempenho consistente tanto na extração de palavras-chave quanto em processos futuros do estudo, como a análise de conteúdo e a comparação de dados.
+
+Combinando a sumarização e a extração de palavras-chave, foi possível obter uma visualização mais clara e organizada dos dados, reduzindo ruídos e destacando elementos fundamentais para a análise do conteúdo desinformativo, especialmente no contexto das eleições brasileiras de 2022.
 
 \begin{figure}[ht] % ou [!htb] se preferir deixar o LaTeX decidir
     \centering
@@ -47,8 +57,8 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
         \toprule
         Classe & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Unimportant Factual Sentence (UFS)} & 0,99 & 0,86 & 0,92 \\
-        \textit{Important Factual Sentence (IFS)}   & 0,67 & 0,97 & 0,79 \\
+        Factual   & 0,67 & 0,97 & 0,79 \\
+        Não-Factual & 0,99 & 0,86 & 0,92 \\
         \midrule
         Acurácia Geral & \multicolumn{3}{c}{0,88} \\
         \bottomrule
@@ -63,8 +73,8 @@ Em comparação com o modelo original treinado em inglês, que obteve uma acurá
         \toprule
         Classe       & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Factual}      & 0,88      & 0,92   & 0,90     \\
-        \textit{Non-Factual}  & 0,92      & 0,88   & 0,90     \\
+        Factual      & 0,88      & 0,92   & 0,90     \\
+        Não-Factual  & 0,92      & 0,88   & 0,90     \\
         \midrule
         Acurácia Geral & \multicolumn{3}{c}{0,90} \\
         \bottomrule
@@ -101,8 +111,8 @@ O modelo SVM apresenta uma acurácia global moderada, em torno de 0,79. A classe
         \toprule
         Classe        & \textit{Precision} & \textit{Recall} & \textit{F1-Score} \\
         \midrule
-        \textit{Factual}      & 0,6903    & 0,7323 & 0,7107 \\
-        \textit{Non-Factual}  & 0,8538    & 0,8263 & 0,8398 \\
+        Factual      & 0,6903    & 0,7323 & 0,7107 \\
+        Não-Factual  & 0,8538    & 0,8263 & 0,8398 \\
         \midrule
         Acurácia geral & \multicolumn{3}{c}{0,7938} \\
         \bottomrule
@@ -120,7 +130,7 @@ Os gráficos de retuítes, exibidos nas Figuras~\ref{fig:retuites_cluster_0} e \
 
 Já para o \textit{Cluster} 1 (Figura~\ref{fig:retuites_cluster_1}), no método manual de referência 1{,}3\% dos retuítes são classificados como ``com desinformação'', 44{,}5\% como ``sem desinformação'' e 54{,}3\% permanecem ``não rotulados''. Com os modelos, todos os métodos também aumentaram a proporção de retuítes classificados como ``sem desinformação'' em comparação com o método manual, elevando essa classe para a faixa de 51--72\%, ao mesmo tempo em que comprimem a fração ``não rotulado'' para aproximadamente 24--54\%, abaixo dos 62{,}6\% do cenário manual. Novamente, o DistilBERT apresentou o menor aumento, seguido pela segmentação por ``que'', SBERT, BERT e SVM. Já a classe ``com desinformação'' apresentou um aumento porcentual menos significativo em relação ao manual, ficando na faixa de 1{,}6--2{,}3\%, tendo o DistilBERT e SBERT bem próximos ao obtido manualmente (1{,}6 e 1{,}7\% respectivamente).
 
-O DistilBERT atua como um freio nessa tendência. Ele preserva uma parcela maior de ``não rotulado'' em ambos os \textit{clusters}, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe ``com desinformação''. Em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe ``não rotulado'', e, portanto, menor risco de super-rotulagem. Em resumo, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e ``que'' fornecem leituras mais assertivas.
+O DistilBERT atua como um freio nessa tendência. Ele preserva uma parcela maior de ``não rotulado'' em ambos os \textit{clusters}, aproximando a distribuição dos retuítes do que se vê no manual. Em C0, isso se traduz em um crescimento mais moderado da classe ``com desinformação''. Em C1, significa manter, em nível relativamente alto, a incerteza capturada pela classe ``não rotulado'', e, portanto, menor risco de rotulagem excessiva de \textit{tweets} não relevantes. Em resumo, entre os modelos testados, DistilBERT apresenta o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e ``que'' fornecem leituras mais assertivas.
 
 Do ponto de vista analítico, a opção entre assertividade e fidelidade orienta a escolha. Para reproduzir com maior proximidade o retrato
 manual e controlar falsos positivos nos retuítes, DistilBERT é mais similar e retorna resultados mais conservadores. Para maximizar a rotulagem e obter uma visão mais clara dos polos de desinformação e informação correta, BERT, sBERT e a segmentação por ``que'' são mais eficazes.
@@ -187,3 +197,15 @@ na eleição & esta reportagem foi feita numa colaboração entre agência públ
 \hline
 \end{tabularx}
 \end{table}
+
+\section{Discussão}
+
+O objetivo geral deste trabalho foi investigar em que medida modelos de PLN, em particular arquiteturas baseadas em \textit{transformers}, podem ser empregados para apoiar a detecção de fatos relevantes e potenciais casos de desinformação em textos em língua portuguesa, a partir de dados previamente verificados por agências de \textit{fact-checking}.
+
+Inicialmente, a revisão dos modelos de PLN aplicáveis à detecção de fatos relevantes permitiu mapear as principais abordagens da literatura recente e selecionar um conjunto representativo de modelos para experimentação, incluindo variantes baseadas em \textit{BERT}, tendo o modelo DistilBERT com resultados mais próximos aos gerados pelo método manual. Em seguida, esses modelos foram aplicados a um conjunto de textos verificados, ajustados para o português e contextualizados para a análise de desinformação, incorporando procedimentos de sumarização, segmentação e pré-processamento específicos.
+
+Os resultados empíricos podem ser sintetizados em alguns achados centrais, que ajudam a qualificar o uso de modelos de PLN para detecção de fatos relevantes em português no contexto de desinformação.
+
+Em primeiro lugar, comparação entre diferentes estratégias de segmentação discursiva indicou que abordagens baseadas em conjunções (como a segmentação em torno do termo ``que'') geram segmentos mais alinhados com a noção de ``afirmação checável'' do que alternativas mais restritivas, apresentando 91\% de textos factuais, enquanto os modelos baseados em \textit{transformers} tiveram resultados menos promissores, reduzindo homogeneamente a proporção de factualidade quando comparado ao texto original, girando em torno de 24\% de factualidade. Em contraste, a segmentação baseada apenas em trechos entre aspas apresentou baixa eficácia, produzindo menos segmentos informativos e métricas de classificação inferiores, o que sugere que menções explicitamente citadas não são, por si só, um bom indicador de relevância para checagem no conjunto analisado.
+
+Em segundo lugar, os métodos automáticos realizados apresentaram a tendência de aumentar a proporção de textos classificados como ``com desinformação'' em relação ao método manual de referência. Isso indica que os modelos são mais agressivos na identificação de \textit{tweets}. Entre os modelos testados, o DistilBERT apresentou o desvio mais contido em relação ao padrão manual, enquanto BERT, sBERT e a segmentação por ``que'' forneceram leituras mais assertivas. A escolha entre esses modelos deve considerar o equilíbrio desejado entre assertividade e fidelidade ao padrão manual.

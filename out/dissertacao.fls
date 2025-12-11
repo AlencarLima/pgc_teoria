@@ -422,6 +422,10 @@ OUTPUT out/capitulos/metodologia.aux
 INPUT ./capitulos/metodologia.tex
 INPUT ./capitulos/metodologia.tex
 INPUT capitulos/metodologia.tex
+INPUT d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT d:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT ./capitulos/resultados.tex
 INPUT ./capitulos/resultados.tex
 OUTPUT out/capitulos/resultados.aux
@@ -520,4 +524,5 @@ INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso12.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso17.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
 INPUT d:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
