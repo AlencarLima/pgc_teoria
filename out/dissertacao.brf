@@ -36,9 +36,9 @@
 \backcite {jurafsky2023}{{10}{2.2}{section.2.2}}
 \backcite {salton1975vector}{{10}{2.3}{section.2.3}}
 \backcite {hacochenkerner2020bow}{{10}{2.3}{section.2.3}}
-\backcite {manning1999foundations,salton1975vector}{{11}{2.3}{section.2.3}}
-\backcite {manning1999foundations,salton1975vector}{{11}{2.3}{section.2.3}}
-\backcite {salton1975vector}{{11}{2.3}{section.2.3}}
+\backcite {manning1999foundations,salton1975vector}{{10}{2.3}{section.2.3}}
+\backcite {manning1999foundations,salton1975vector}{{10}{2.3}{section.2.3}}
+\backcite {salton1975vector}{{10}{2.3}{section.2.3}}
 \backcite {mikolov2013distributed}{{11}{2.3}{equation.2.3}}
 \backcite {pennington2014glove}{{11}{2.3}{equation.2.3}}
 \backcite {bojanowski2017enriching}{{11}{2.3}{equation.2.3}}
@@ -51,11 +51,11 @@
 \backcite {vaswani2017attention}{{15}{2.6}{figure.caption.8}}
 \backcite {introTransformers}{{15}{2.6}{figure.caption.8}}
 \backcite {mihalcea2004textrank}{{15}{2.7}{section.2.7}}
-\backcite {reimers2019sentencebert}{{15}{2.7}{section.2.7}}
+\backcite {reimers2019sentencebert}{{16}{2.7}{section.2.7}}
 \backcite {umair2024plmkeyphrase}{{16}{2.7}{section.2.7}}
 \backcite {claimDetection}{{16}{2.8}{section.2.8}}
 \backcite {claimDetectionExplicacao}{{16}{2.8}{section.2.8}}
-\backcite {claimDetection}{{16}{2.8}{section.2.8}}
+\backcite {claimDetection}{{17}{2.8}{section.2.8}}
 \backcite {vaswani2017attention}{{17}{2.8}{section.2.8}}
 \backcite {xlm_r}{{17}{2.8}{section.2.8}}
 \backcite {xlm_r_claim_detection}{{18}{2.8}{section.2.8}}
